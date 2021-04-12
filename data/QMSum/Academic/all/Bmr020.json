@@ -1,0 +1,4657 @@
+{
+    "topic_list": [
+        {
+            "topic": "Meeting preliminaries",
+            "relevant_text_span": [
+                [
+                    "0",
+                    "53"
+                ]
+            ]
+        },
+        {
+            "topic": "Paper submission",
+            "relevant_text_span": [
+                [
+                    "54",
+                    "447"
+                ]
+            ]
+        },
+        {
+            "topic": "Transcriptions for IBM",
+            "relevant_text_span": [
+                [
+                    "478",
+                    "1140"
+                ]
+            ]
+        }
+    ],
+    "general_query_list": [
+        {
+            "query": "What were the main topics?",
+            "answer": "The main topics of the agenda were a paper submitted to Eurospeech and the organising of the recording transcriptions to be done by IBM. The results presented in the former show a significant percentage of overlapping speech even without counting in backchanneling. Regarding the transcriptions to be carried out by IBM, the discussion mainly concerned the format of the recordings that should be sent to them. Suggestions included sending only the channels with the dominant speakers for transcription, but it was finally agreed on sending the original files with minimal modifications, as there will be extensive in-house post-processing."
+        }
+    ],
+    "specific_query_list": [
+        {
+            "query": "What was said about the deadline?",
+            "answer": "There is a slight worry about the acceptance of the paper submitted to Eurospeech as the deadline was exceeded.",
+            "relevant_text_span": [
+                [
+                    "53",
+                    "65"
+                ]
+            ]
+        },
+        {
+            "query": "What were the contents of the paper?",
+            "answer": "As to the content of the paper, the overlap statistics have not been normalised against the number of participants in the conversation, although the dependency is probably going to be a weak one. Additionally, the correlation between pauses in speech and interruptions does not provide a cause-and-effect link for these phenomena. ",
+            "relevant_text_span": [
+                [
+                    "185",
+                    "200"
+                ]
+            ]
+        },
+        {
+            "query": "What statistics were included in the paper?",
+            "answer": "The statistics in the paper are based on the transcripts of two meetings and two telephone conversation corpora. In the first two, the overlapped words vary between 9% and 18%. The telephone conversation results were in-between and very similar to each other.",
+            "relevant_text_span": [
+                [
+                    "131",
+                    "138"
+                ]
+            ]
+        },
+        {
+            "query": "What pre-processing was needed for the IBM transcripts?",
+            "answer": "Before that, the files will be automatically pre-segmented into speech/non-speech bins and the beeps will be inserted. ",
+            "relevant_text_span": [
+                [
+                    "624",
+                    "631"
+                ]
+            ]
+        },
+        {
+            "query": "What would help the transcribers?",
+            "answer": "In order to make things easier for the transcribers, breathy channels, which are erroneously marked as speech, will be re-classified correctly with other methods.",
+            "relevant_text_span": [
+                [
+                    "869",
+                    "883"
+                ]
+            ]
+        },
+        {
+            "query": "What difficulties were faced?",
+            "answer": "The preparation of files for transcription by IBM is facing some minor difficulties, as some features (hand-coded time boundaries, multiplicity of channels etc) may complicate the generation of beep files.",
+            "relevant_text_span": [
+                [
+                    "711",
+                    "724"
+                ]
+            ]
+        }
+    ],
+    "meeting_transcripts": [
+        {
+            "speaker": "Grad A",
+            "content": "OK , we 're recording ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "We can say the word \" zero \" all we want ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "I 'm doing some"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "but just {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "square brackets , coffee sipping , square brackets ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "That 's not allowed , I think ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Cur - curly brackets ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Is that voiced or unvoiced ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Curly brackets ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Curly brackets ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Curly brackets ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oops ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Well , correction for transcribers ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mmm ! {comment} {vocalsound} Gar - darn !"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Channel two ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Do we use square brackets for anything ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . Uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "These poor transcribers ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "u"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Not ri not right now . I mean {disfmarker} No ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "There 's gonna be some zeros from this morning 's meeting because I noticed that"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "u"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Barry , I think maybe you turned your mike off before the digits were {disfmarker} Oh , was it during digits ? Oh , so it doesn't matter ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "It 's still not a good idea ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So it 's not {disfmarker} it 's not that bad if it 's at the end , but it 's {disfmarker} in the beginning , it 's {pause} bad ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah , you wanna {disfmarker} you wanna keep them on so you get {pause} good noise {disfmarker} noise floors , through the whole meeting ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "That 's interesting . Hmm ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh , I probably just should have left it on . Yeah I did have to run , but {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Is there any way to change that in the software ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Change what in the software ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Where like you just don't {disfmarker} like if you {disfmarker} if it starts catching zeros , like in the driver or something {disfmarker} in the card , or somewhere in the hardware {disfmarker} Where if you start seeing zeros on w across one channel , you just add some {vocalsound} random , @ @ {comment} noise floor {disfmarker} like a small noise floor ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I mean certainly we could do that , but I don't think that 's a good idea . We can do that in post - processing if {disfmarker} if the application needs it ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Manual post - processing ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Well , I {disfmarker} u I actually don't know what the default {comment} is anymore as to how we 're using the {disfmarker} the front - end stuff but {disfmarker} for {disfmarker} for {disfmarker} when we use the ICSI front - end ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "As an argument ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "but um , there is an {disfmarker} there is an o an option in {disfmarker} in RASTA , which , um , {vocalsound} in when I first put it in , uh , back in the days when I actually wrote things , uh , {vocalsound} I {pause} did actually put in a random bit or so that was in it ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "but {vocalsound} then I realized that putting in a random bit was equivalent to adding uh {disfmarker} adding flat spectrum ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "and it was a lot faster to just add a constant to the {disfmarker} {vocalsound} to the spectrum . So then I just started doing that"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mmm . OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "instead of calling \" rand \" {comment} or something ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "so . So it d it does that . Gee ! Here we all are !"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Uh , so the only agenda items were Jane {disfmarker} was Jane wanted to talk about some of the IBM transcription process ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "There 's an agenda ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I sort of {vocalsound} condensed the three things you said into that . And then just {disfmarker} I only have like , this afternoon and maybe tomorrow morning to get anything done before I go to Japan for ten days . So if there 's anything that n absolutely , desperately needs to be done , you should let me know now ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh , and you just sent off a Eurospeech paper , so ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right . I hope they accept it ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "I mean , I {disfmarker} both actu as {disfmarker} as a submission and {disfmarker} {vocalsound} you know , as a paper . Um {disfmarker} but {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Well yeah , you sent it in {pause} late ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah , I guess you {disfmarker} first you have to do the first one ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "and then {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "We actually exceeded the delayed deadline by o another day , so ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oops ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Oh they {disfmarker} they had some extension that they announced or something ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well yeah . Liz had sent them a note saying \" could we please {pause} have another \" {comment} {pause} I don't know , \" three days \" or something , and they said yes ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And then she said \" Did I say three ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Oh ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I meant four . \""
+        },
+        {
+            "speaker": "Grad A",
+            "content": "that was the other thing uh ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "But u"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "uh , Dave Gelbart sent me email , I think he sent it to you too , {comment} that um , there 's a special topic , section in si in Eurospeech on new , corp corpors corpora . And it 's not due until like May fifteenth ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Oh this isn't the Aurora one ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "No ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "It 's another one ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "It 's a different one ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No it 's {disfmarker} Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Huh !"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "And uh ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Oh !"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I got this mail from {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I s forwarded it to Jane as I thought being the most relevant person . Um {disfmarker} So , I thought it was highly relevant {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah I 'm {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "That 's {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "have you {disfmarker} did you look at the URL ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . I think so too . Um , I haven't gotten over to there yet ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "but what {disfmarker} our discussion yesterday , I really {disfmarker} I {disfmarker} I wanna submit one ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Was this {pause} SmartKom message ? I think {pause} Christoph Draxler sent this ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . And , you offered to {disfmarker} to join me , if you want me to ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I 'll help ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "but obviously I can't , really do , most of it ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . Yeah , that 's right ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "I think several people {disfmarker} sent this ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "so ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "But any {disfmarker} any help you need I can certainly provide ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Well ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "that 's {disfmarker} that 's a great idea ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well {disfmarker} there {disfmarker} there were some interesting results in this paper , though . For instance that Morgan {disfmarker} uh , accounted for fifty - six percent of the Robustness meetings in terms of number of words ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Wow ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "In {disfmarker} in terms of what ? In term"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Number of words ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "One ? Wow ! OK ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "That 's just cuz he talks really fast ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Do you mean ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "n No ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I know"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh . Short words ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "because {disfmarker} is it partly , eh , c correctly identified words ? Or is it {disfmarker} or just overall volume ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "No . Well , according to the transcripts ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "But re well regardless . I think it 's {disfmarker} he 's {disfmarker} he 's in all of them ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh . OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "I mean , we didn't mention Morgan by name"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "and he talks a lot ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "we just {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "One participant ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Well {disfmarker} we have now , but {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "We {disfmarker} we {disfmarker} we {disfmarker} something about {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Did you identify him as a senior {pause} member ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "No , we as identify him as the person dominating the conversation ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Well ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "I mean I get these AARP things , but I 'm not se really senior yet , but {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Um ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "but uh , other than that delightful result , what was the rest of the paper about ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Um , well it was about {disfmarker} it had three sections"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "You sent it to me but I haven't seen it yet ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "uh {disfmarker} three kinds of uh results , if you will . Uh , the one was that the {disfmarker} just the {disfmarker} the amount of overlap"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "The good , the bad , and the ugly ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "um , s in terms of {disfmarker} in terms of number of words and also we computed something called a \" spurt \" , which is essentially a stretch of speech with uh , no pauses exceeding five hundred milliseconds . Um , and we computed how many overlapped i uh spurts there were and how many overlapped words there were . {vocalsound} Um , for four different {pause} corpora , the Meeting Recorder meetings , the Robustness meetings Switchboard and CallHome , and , found {disfmarker} and sort of compared the numbers . Um , and found that the , uh , you know , as you might expect the Meeting Recorder {pause} meetings had the most overlap uh , but next were Switchboard and CallHome , which both had roughly the same , almost identical in fact , and the Robustness meetings were {disfmarker} had the least , so {disfmarker} One sort of unexpected result there is that uh two - party telephone conversations have {vocalsound} about the same amount of overlap ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I 'm surprised ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "sort of in gen you know {disfmarker} order of magnitude - wise as , uh {disfmarker} as face - to - face meetings with multiple {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I have {disfmarker} I had better start changing all my slides !"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah . Also , I {disfmarker} in the Levinson , the pragmatics book , {comment} in you know , uh , textbook , {vocalsound} there 's {disfmarker} I found this great quote where he says {vocalsound} you know {disfmarker} you know , how people {disfmarker} it talks about how uh {disfmarker} how {disfmarker} how people are so good at turn taking ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm . Yeah . Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "and {vocalsound} so {disfmarker} they 're so good that {vocalsound} generally , u the overlapped speech does not {disfmarker} is less than five percent ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh , that 's interesting . Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So , this is way more than five percent ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Did he mean face {disfmarker} like face - to - face ? Or {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well , in real conversations ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "everyday conversations ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "It 's s what these conversation analysts have been studying for years and years there ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well , of course , no , it doesn't necessarily go against what he said , cuz he said \" generally speaking \" . In order to {disfmarker} to go against that kind of a claim you 'd have to big canvassing ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And in f"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well , he {disfmarker} he made a claim {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Well {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": ""
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah , we {disfmarker} we have pretty limited sample here ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Five percent of time or five percent of what ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah , I was gonna ask that too ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Exactly ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well it 's time ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , so {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "It 's {disfmarker} i it 's not against his conclusion ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So {disfmarker} {vocalsound} but still {disfmarker} but still {disfmarker} u"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "it just says that it 's a bi bell curve , and that , {vocalsound} you have something that has a nice range , in your sampling ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah . So there are slight {disfmarker} There are differences in how you measure it , but still it 's {disfmarker} {vocalsound} You know , the difference between um {disfmarker} between that number and what we have in meetings , which is more like , {vocalsound} you know , close to {disfmarker} in meetings like these , uh {disfmarker} you know , close to twenty percent ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "But what was it like , say , in the Robustness meeting , for instance ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "That {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "But {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Robustness meeting ? It was {vocalsound} about half of the r So , {vocalsound} in terms of number of words , it 's like seventeen or eigh eighteen percent for the Meeting Recorder meetings and {vocalsound} about half that for , {vocalsound} uh , the Robustness ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Maybe ten percent ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "But I don't know if that 's really a fair way of comparing between , multi - party , conversations and two - party conversations . Yeah . I {disfmarker} I {disfmarker} I don't know ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Then {disfmarker} then {disfmarker} then you have to {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I mean that 's just something {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , I just wonder if you have to normalize by the numbers of speakers or something ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Then {disfmarker} Yeah , then normalize by {disfmarker} by something like that ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah , that 's a good point ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well , we didn't get to look at that ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "but this obvious thing to see if {disfmarker} if there 's a dependence on the number of uh {disfmarker} participants ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Good idea ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I mean {disfmarker} I bet there 's a weak dependence . I 'm sure it 's {disfmarker} it 's not a real strong one ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ? Because you"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Cuz not everybody talks ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "You have a lot of {disfmarker} a lot of two - party , subsets within the meeting ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Well regardless {disfmarker} it 's an interesting result regardless ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So {disfmarker} Right ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yes , that 's right ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "And {disfmarker} and {disfmarker} and then {disfmarker} and we also d computed this both with and without backchannels ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "so you might think that backchannels have a special status because they 're essentially just {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Uh - huh . So , did {disfmarker} we all said \" uh - huh \" and nodded at the same time ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "R right ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "so ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "But , even if you take out all the backchannels {disfmarker} so basically you treat backchannels l as nonspeech , as pauses ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "you still have significant overlap . You know , it goes down from maybe {disfmarker} For Switchboard it goes down from {disfmarker} I don't know {disfmarker} f um {disfmarker} {comment} I don't know {disfmarker} f fourteen percent of the words to maybe {vocalsound} uh I don't know , eleven percent or something {disfmarker} it 's {disfmarker} it 's not a dramatic change ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "so it 's {disfmarker} Anyway , so it 's uh {disfmarker} That was {disfmarker} that was one set of {pause} results , and then the second one was just basically the {disfmarker} {vocalsound} the stuff we had in the {disfmarker} in the HLT paper on how overlaps effect the {pause} recognition performance ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Nope . Right ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "And we rescored things um , a little bit more carefully . We also fixed the transcripts in {disfmarker} in numerous ways . Uh , but mostly we added one {disfmarker} one number , which was what if you {pause} uh , basically score ignoring all {disfmarker} So {disfmarker} so the {disfmarker} the conjecture from the HLT results was that {vocalsound} most of the added recognition error is from insertions {vocalsound} due to background speech . So , we scored {vocalsound} all the recognition results , {vocalsound} uh , in such a way that the uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Oh by the way , who 's on channel four ? You 're getting a lot of breath ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . I j was just wondering ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That 's {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That 's me ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "uh , well Don 's been working hard ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That 's right ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK , so {disfmarker} {vocalsound} so if you have the foreground speaker speaking here , and then there 's some background speech , may be overlapping it somehow , um , and this is the time bin that we used , then of course you 're gonna get insertion errors here and here ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ? So we scored everything , and I must say the NIST scoring tools are pretty nice for this , where you just basically ignore everything outside of the , {vocalsound} uh , region that was deemed to be foreground speech . And where that was we had to use the t forced alignment , uh , results from s for {disfmarker} so {disfmarker} That 's somewhat {disfmarker} that 's somewhat subject to error , but still we {disfmarker} we {disfmarker} {vocalsound} Uh , Don did some ha hand - checking and {disfmarker} and we think that {disfmarker} based on that , we think that the results are you know , valid , although of course , some error is gonna be in there . But basically what we found is after we take out these regions {disfmarker} so we only score the regions that were certified as foreground speech , {comment} {vocalsound} the recognition error went down to almost {vocalsound} uh , the {pause} level of the non - overlapped {pause} speech . So that means that {vocalsound} even if you do have background speech , if you can somehow separate out or find where it is , {vocalsound} uh , the recognizer does a good job ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "That 's great ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "even though there is this back"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah , I guess that doesn't surprise me , because , with the close - talking mikes , the {disfmarker} the signal will be so much stronger ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right . Right ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm . Um ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "What {disfmarker} what sort of normalization do you do ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "so {disfmarker} Uh , well , we just {disfmarker} @ @ {comment} we do {disfmarker} u you know , vit"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I mean in you recognizer , in the SRI recognizer ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well , we do uh , VTL {disfmarker} {vocalsound} vocal tract length normalization , w and we uh {disfmarker} you know , we {disfmarker} we uh , {vocalsound} make all the features have zero mean and unit variance ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Over an entire utterance ?"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "And {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Or windowed ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Over {disfmarker} over the entire c over the entire channel ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Don't {pause} train {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Over the {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "but you know . Um , now we didn't re - align the recognizer for this . We just took the old {disfmarker} So this is actually a sub - optimal way of doing it ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "right ? So we took the old recognition output and we just scored it differently . So the recognizer didn't have the benefit of knowing where the foreground speech {disfmarker} a start"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Were you including the {disfmarker} the lapel {pause} in this ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "And did the {disfmarker} did {disfmarker} did the la did the {disfmarker} the problems with the lapel go away also ? Or {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Um , it {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "fray for {disfmarker} for insertions ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "It u not per {disfmarker} I mean , not completely , but yes ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Less so ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "dramatically . So we have to um {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "I mean , you still {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well I should bring the {disfmarker} should bring the table with results . Maybe we can look at it {pause} Monday ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "I would presume that you still would have somewhat higher error with the lapel for insertions than {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yes . It 's {disfmarker} It 's {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yes . Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Cuz again , looking forward to the non - close miked case , I think that we s still {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I 'm not looking forward to it ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "i it 's the high signal - to - noise ratio"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "here that {disfmarker} that helps you ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "u s Right . So {disfmarker} so that was number {disfmarker} that was the second set of {disfmarker} uh , the second section . And then , {vocalsound} the third thing was , we looked at , {vocalsound} {vocalsound} uh , what we call \" interrupts \" , although that 's {disfmarker} that may be {vocalsound} a misnomer , but basically {vocalsound} we looked at cases where {disfmarker} Uh , so we {disfmarker} we used the punctuation from the original transcripts and we inferred the beginnings and ends of sentences . So , you know {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Di - did you use upper - lower case also , or not ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Um {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "U upper lower case or no ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Hmm ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "No , we only used , you know , uh periods , uh , question marks and {pause} exclamation . And we know that there 's th that 's not a very g I mean , we miss a lot of them ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . That 's OK but {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "but {disfmarker} but it 's f i i"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Comma also or not ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "No commas . No . And then {vocalsound} we looked at locations where , uh , if you have overlapping speech and someone else starts a sentence , you know , where do these {disfmarker} where do other people start their {vocalsound} turns {disfmarker} not turns really , but you know , sentences ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Ah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "um {disfmarker} So we only looked at cases where there was a foreground speaker and then at the to at the {disfmarker} so the {disfmarker} the foreground speaker started into their sentence and then someone else started later ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Somewhere in between the start and the end ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK ? And so what {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Sorry ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Somewhere in between the start and the end of the foreground ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yes . Uh , so that such that there was overlap between the two sentences ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So , the {disfmarker} the question was how can we {disfmarker} what can we say about the places where the second or {disfmarker} or actually , several second speakers , {vocalsound} um {pause} start their {pause} \" interrupts \" , as we call them ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Three words from the end ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "At pause boundaries ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "w And we looked at this in terms of um {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "On T - closures , only ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So {disfmarker} so we had {disfmarker} {vocalsound} we had um u to {disfmarker} for {disfmarker} for the purposes of this analysis , we tagged the word sequences , and {disfmarker} and we time - aligned them . Um , and we considered it interrupt {disfmarker} if it occurred in the middle of a word , we basically {disfmarker} you know , considered that to be a interrupt as if it were at {disfmarker} at the beginning of the word . So that , {vocalsound} if any part of the word was overlapped , it was considered an interrupted {pause} word ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "And then we looked at the {disfmarker} the locatio the , {vocalsound} um , you know , the features that {disfmarker} the tags because we had tagged these word strings , {comment} {vocalsound} um , that {disfmarker} that occurred right before these {disfmarker} these uh , interrupt locations ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Tag by uh"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "And the tags we looked at are {vocalsound} the spurt tag , which basically says {disfmarker} or actually {disfmarker} Sorry . End of spurt . So {disfmarker} {vocalsound} whether there was a pause essentially here , because spurts are a {disfmarker} defined as being you know , five hundred milliseconds or longer pauses , and then we had things like discourse markers , uh , backchannels , uh , disfluencies . um , uh , filled pauses {disfmarker} So disfluen the D 's are for , {vocalsound} um , {vocalsound} the interruption points of a disfluency , so , where you hesitate , or where you start the repair there . Uh , what else do we had . Uh , repeated {disfmarker} you know , repeated words is another of that kind of disfluencies and so forth . So we had both the beginnings and ends of these {disfmarker} uh so , the end of a filled pause and the end of a discourse marker . And we just eyeballed {disfmarker} I mean {vocalsound} we didn't really hand - tag all of these things . We just {pause} looked at the distribution of words , and so every {vocalsound} \" so yeah \" , and \" OK \" , uh , and \" uh - huh \" were {disfmarker} were the {disfmarker} were deemed to be backchannels and {vocalsound} \" wow \" and \" so \" and {vocalsound} uh \" right \" , uh were um {disfmarker} {pause} Not \" right \" . \" Right \" is a backchannel . But so , we sort of {disfmarker} just based on the lexical {disfmarker} {vocalsound} um , identity of the words , we {disfmarker} we tagged them as one of these things . And of course the d the interruption points we got from the original transcripts . So , and then we looked at the disti so we looked at the {pause} distribution of these different kinds of tags , overall uh , and {disfmarker} and {disfmarker} and particularly at the interruption points . And uh , we found that there is a marked difference so that for instance after {disfmarker} so at the end after a discourse marker or after backchannel or after filled pause , you 're much more likely to be interrupted {vocalsound} than before . OK ? And also of course after spurt ends , which means basically in p inside pauses . So pauses are always an opportunity for {disfmarker} So we have this little histogram which shows these distributions and , {vocalsound} um ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I wonder {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "you know , it 's {disfmarker} it 's {disfmarker} it 's not {disfmarker} No big surprises , but it is {pause} sort of interesting from {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "It 's nice to actually measure it though ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I wonder about the cause and effect there . In other words uh {pause} if you weren't going to pause you {disfmarker} you will because you 're g being interrupted ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well we 're ne"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right . There 's no statement about cause and effect ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , right . No , no , no ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "This is just a statistical correlation ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Right , I {disfmarker} I see . Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "But he {disfmarker} yeah , he 's {disfmarker} he 's right , y I mean maybe you weren't intending to pause at all , but {disfmarker} {vocalsound} You were intending to stop for fifty - seven milliseconds ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "but then Chuck came in"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "and so you {vocalsound} paused for a second"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right . Anyway . {comment} So ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "or more ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "uh , and that was basically it . And {disfmarker} and we {disfmarker} so we wrote this and then , {vocalsound} we found we were at six pages , and then we started {vocalsound} cutting furiously"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oops ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "and {vocalsound} threw out half of the {vocalsound} material again , and uh played with the LaTeX stuff and {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Made the font smaller and the narrows longer ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "uh , and {disfmarker} until it fi"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Font smaller , yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "No , no . W well , d you couldn't really make everything smaller"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Put the abstract end ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "but we s we put {disfmarker} Oh , I {disfmarker} I {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Took out white space ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "you know the {disfmarker} the gap between the two columns is like ten millimeters ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "so I d shrunk it to eight millimeters and that helped some . And stuff like that ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Wasn't there {disfmarker} wasn't there some result , Andreas {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I {disfmarker} I thought maybe Liz presented this at some conference a while ago about {vocalsound} uh , backchannels"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "uh , and that they tend to happen when uh {pause} the pitch drops . You know you get a falling pitch . And so that 's when people tend to backchannel ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah . Well {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh - i i do you rem"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "y We didn't talk about , uh , prosodic , uh , properties at all ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Right . Right . But {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "although that 's {disfmarker} I {disfmarker} I take it that 's something that uh Don will {disfmarker} will look at"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah , we 're gonna be looking at that ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "now that we have the data and we have the alignment , so . This is purely based on you know the words"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "and {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I have a reference for that though . Uh - huh ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Oh you do ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So am I recalling correctly ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Anyway , so ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well , I didn't know about Liz 's finding on that ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "About {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "but I know of another paper that talks about something"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "that {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I 'd like to see that reference too ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It made me think about a cool little device that could be built to uh {disfmarker} to handle those people that call you on the phone and just like to talk and talk and talk . And you just have this little detector that listens for these {vocalsound} drops in pitch and gives them the backchannel . And so then you {vocalsound} hook that to the phone and go off"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah . Uh - huh ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and do the {vocalsound} {disfmarker} do whatever you r wanna do ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Oh yeah . Well {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "while that thing keeps them busy ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "There 's actually {disfmarker} uh there 's this a former student of here from Berkeley , Nigel {disfmarker} Nigel Ward ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh - huh . Sure ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Do you know him ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "He did a system uh , in {disfmarker} he {disfmarker} he lives in Japan now , and he did this backchanneling , automatic backchanneling system ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "It 's a very {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Oh !"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So , exactly what you describe ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Huh ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "but for Japanese . And it 's apparently {disfmarker} for Japa - in Japanese it 's really important that you backchannel . It 's really impolite if you don't , and {disfmarker} So ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Huh . Actually for a lot of these people I think you could just sort of backchannel continuously and it would {pause} pretty much be fine ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It wouldn't matter ? Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . That 's w That 's what I do ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Random intervals ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "There was {disfmarker} there was of course a Monty Python sketch with that . Where the barber who was afraid of scissors was playing a {disfmarker} a tape of clipping sounds , and saying \" uh - huh \" , \" yeah \" , \" how about them sports teams ? \""
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Anyway . So the paper 's on - line and y I {disfmarker} I think I uh {disfmarker} I CC ' ed a message to Meeting Recorder with the URL so you can get it ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Printed it out , haven't read it yet ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Um , uh one more thing . So I {disfmarker} I 'm actually {disfmarker} {vocalsound} about to send Brian Kingbury an email saying where he can find the {disfmarker} the s the m the material he wanted for the s for the speech recognition experiment , so {disfmarker} but I haven't sent it out yet because actually my desktop locked up , like I can't type anything . Uh b so if there 's any suggestions you have for that I was just gonna send him the {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Is it the same directory that you had suggested ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "I made a directory . I called it um {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "He still has his Unix account here , you know ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well this isn't {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "He does ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "And he {disfmarker} and he 's {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah but {disfmarker} but {disfmarker} but he has to {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I 'd hafta add him to Meeting Recorder , I guess ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "he prefe he said he would prefer FTP"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "but {disfmarker} OK ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "and also , um , the other person that wants it {disfmarker} There is one person at SRI who wants to look at the {vocalsound} um , you know , the uh {disfmarker} the data we have so far ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "and so I figured that FTP is the best {pause} approach . So what I did is I um {disfmarker} {vocalsound} {vocalsound} @ @ {comment} I made a n new directory after Chuck said that would c that was gonna be a good thing . Uh , so it 's \" FTP {vocalsound} {pause} pub"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Pub real ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "real \" {disfmarker} Exactly . MTGC {disfmarker} What is it again ? CR {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Ask Dan Ellis ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "u R D {disfmarker} RDR , yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Or {disfmarker} Yeah . Right ? The same {disfmarker} the same as the mailing list ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "and {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "the {disfmarker} {pause} No vowels ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah . Um ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "and then under there {disfmarker} Um actually {disfmarker} Oh and this directory , {vocalsound} is not readable . It 's only uh , accessible . So , {vocalsound} in other words , to access anything under there , you have to {vocalsound} be told what the name is ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So that 's sort of a g {vocalsound} quick and dirty way of doing access control ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So {disfmarker} uh , and the directory for this I call it I \" ASR zero point one \" because it 's sort of meant for recognition ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "So anyone who hears this meeting now knows the {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Beta ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "And then {disfmarker} then in there I have a file that lists all the other {vocalsound} files , so that someone can get that file and then know the file names and therefore download them . If you don't know the file names you can't {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Is that a dash or a dot in there ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "I mean you can {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Don't {disfmarker} don't {disfmarker} don't say ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Dash . Anyway . So all I {disfmarker} all I was gonna do there was stick the {disfmarker} the transcripts after we {disfmarker} the way that we munged them for scoring , because that 's what he cares about , and {disfmarker} um , and also {disfmarker} and then the {disfmarker} the {pause} waveforms that Don segmented . I mean , just basically tar them all up f I mean {disfmarker} w for each meeting I tar them all into one tar file and G - zip them and stick them there ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I uh , put digits in my own home directory {disfmarker} home FTP directory ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "And so ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "but I 'll probably move them there as well ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So we could point Mari to this also for her {vocalsound} March O - one request ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK . Yeah . March O - one ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Or {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Oh !"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "You n Remember she was {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Oh she wanted that also ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well she was saying that it would be nice if we had {disfmarker} they had a {disfmarker} Or was she talking {disfmarker} Yeah . She was saying it would be nice if they had eh {pause} the same set , so that when they did experiments they could compare ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right , but they don't have a recognizer even ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um {disfmarker} I"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "But yeah , we can send {disfmarker} I can CC Mari on this so that she knows {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . So , for the thing that {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "That 's good ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "We need to give Brian the beeps file ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "so I was gonna probably put it {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "We can put it in the same place . Just put in another directory ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , it I 'll make another directory ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well , make ano make another directory ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Exactly ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "You don't n m"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And , Andreas , um , sampled ?"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah . They are ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I think so . Yeah . Um , so either we should regenerate the original {vocalsound} versions , {comment} {pause} or um , we should just make a note of it ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK . Oh . Beca - Well {disfmarker} OK , because in one directory there 's two versions ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah , that 's the first meeting I cut both versions . Just to check which w if there is a significant difference ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK . And so I {disfmarker} but {disfmarker} OK so {disfmarker} but for the other meetings it 's the downsampled version that you have ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "They 're all downsampled , yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Oh , OK . Oh that 's th important to know , OK so we should probably {disfmarker} uh {pause} give them the non - downsampled versions ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . So {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK . Alright , then I 'll hold off on that and I 'll wait for you um {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Probably by tomorrow"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "gen"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I can {disfmarker} I 'll send you an email ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK . Alright . OK . Yeah , definitely they should have the full bandwidth version ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah , because I mean {disfmarker} I I think Liz decided to go ahead with the {pause} downsampled versions cuz we can {disfmarker} There was no s like , r significant difference ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "yeah . OK . Well , it takes {disfmarker} it takes up less disk space , for one thing ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It does take up less disk space , and apparently it did even better {pause} than the original {disfmarker} than the original versions ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "which you know , is just , probably random ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right . Yeah , it was a small difference"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But , um {pause} they probably w want the originals ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "but yeah . Yeah . OK . OK , good . Good that {disfmarker} Well , it 's a good thing that {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK , I think we 're losing , Don and Andreas at three - thirty , right ? OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hey mon hafta booga ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "So , that 's why it was good to have Andreas , say these things but {disfmarker} So , we should probably talk about the IBM transcription process stuff that {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK . So , um you know that Adam created um , a b a script to generate the beep file ?"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "To then create something to send to IBM . And , um , you {disfmarker} you should probably talk about that . But {disfmarker} but you were gonna to use the {pause} originally transcribed file because I tightened the time bins and that 's also the one that they had already {vocalsound} in trying to debug the first stage of this . And uh , my understanding was that , um {disfmarker} I haven't {disfmarker} {vocalsound} I haven't listened to it yet ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "but it sounded very good and {disfmarker} and I understand that you guys {vocalsound} were going to have a meeting today , before this meeting ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "It was just to talk about how to generate it . Um , just so that while I 'm gone , you can regenerate it if you decide to do it a different way . So uh , Chuck and Thilo should , now more or less know how to generate the file"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Excellent . OK ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "and , {vocalsound} the other thing Chuck pointed out is that , um , {vocalsound} since this one is hand - marked , {vocalsound} there are discourse boundaries . Right ? So {disfmarker} so when one person is speaking , there 's breaks ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Whereas Thilo 's won't have that . So what {disfmarker} what we 're probably gonna do is just write a script , that if two , chunks are very close to each other on the same channel we 'll just merge them ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh ! OK . Ah , interesting . Yeah . Yeah . Oh , sure . Yeah , sure . Makes sense ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "So , uh , and that will get around the problem of , the , {vocalsound} you know \" one word beep , one word beep , one word beep , one word beep \" ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . Ah ! Clever . Yes . Clever . Yeah . Excellent ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , in fact after our meeting uh , this morning Thilo came in and said that {vocalsound} um , there could be {pause} other differences between {vocalsound} the uh {pause} already transcribed meeting with the beeps in it and one that has {pause} just r been run through his process ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "And that 's the purpose . Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So tomorrow , {vocalsound} when we go to make the um {pause} uh , chunked file {vocalsound} for IBM , we 're going to actually compare the two . So he 's gonna run his process on that same meeting ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Great idea !"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and then we 're gonna do the beep - ify on both , and listen to them and see if we notice any real differences ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Beep - ify !"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK , now one thing that prevented us from apply you {disfmarker} you from applying {disfmarker} Exactly . The training {disfmarker} So that is the training meeting . OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , w and we know that . Wel - uh we just wanna if {disfmarker} if there 're any major differences between {vocalsound} doing it on the hand"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Uh - huh . Oh , interesting . Ah !"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK . Interesting idea . Great ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So this training meeting , uh w un is that uh {pause} some data where we have uh very um , {vocalsound} you know , accurate {pause} time marks ? for {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I went back and hand - marked the {pause} ba the bins , I ment I mentioned that last week ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK , yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But the {disfmarker} but there 's {disfmarker} yeah , but there is this one issue with them in that there 're {disfmarker} {vocalsound} there are time boundaries in there that occur in the middle of speech ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Because {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So {disfmarker} Like when we went t to um {disfmarker} When I was listening to the original file that Adam had , it 's like you {disfmarker} you hear a word then you hear a beep {vocalsound} and then you hear the continuation of what is the same sentence ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "That 's on the other channel . That 's because of channel overlap ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well , and {disfmarker} and so the {disfmarker} th"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "It 's {disfmarker} i"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So there are these chunks that look like uh {disfmarker} {vocalsound} that have uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I mean that 's not gonna be true of the foreground speaker . That 'll only be if it 's the background speaker ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Right . So you 'll {disfmarker} you 'll have a chunk of , you know , channel {vocalsound} A which starts at zero and ends at ten , and then the same channel starting at eleven , ending at fifteen , and then again , starting at sixteen , ending at twenty . Right , so that 's three chunks where {vocalsound} actually we w can just make one chunk out of that which is A , zero , twenty ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "That 's what I just said ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Sure . Sure ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . So I just wanted to make sure that it was clear ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah , I thought that was {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So {vocalsound} if you were to use these , you have to be careful not to pull out these individual {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Oh ! I mean it {disfmarker} Right , I mean w I mean what I would {disfmarker} I was interested in is having {disfmarker} {vocalsound} a se having time marks for the beginnings and ends of speech by each speaker ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Well , that 's definitely a problem ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Uh , because we could use that to fine tune our alignment process"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Battery ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "to make it more accurate ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Battery ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So {disfmarker} uh , it {disfmarker} I don't care that you know , there 's actually abutting segments that we have to join together . That 's fine ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "But what we do care about is that {vocalsound} the beginnings and ends um {pause} are actually close to the speech {vocalsound} inside of that"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , I think Jane tightened these up by hand ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK , so what is the {disfmarker} sort of how tight are they ?"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh , it looks much better ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Looks good ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "They were , um , reasonably tight , but not excruciatingly tight ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "That would 've taken more time . I just wanted to get it so tha So that if you have like \" yeah \" {comment} in a {disfmarker} swimming in a big bin , then it 's {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "No , no ! I don"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Let me make a note on yours ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "actually I {disfmarker} I {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "I {disfmarker} it 's f That 's fine because we don't want to {disfmarker} th that 's perfectly fine . In fact it 's good . You always want to have a little bit of pause or nonspeech around the speech , say for recognition purposes . Uh , but just {disfmarker} just u w you know get an id I just wanted to have an idea of the {disfmarker} {vocalsound} of how much extra you allowed um {disfmarker} so that I can interpret the numbers if I compared that with a forced alignment segmentation ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I can't answer that ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "but {disfmarker} but my main goal was {pause} um , in these areas where you have a three - way overlap {vocalsound} and one of the overlaps involves \" yeah \" , {vocalsound} and it 's swimming in this huge bin , {vocalsound} I wanted to get it so that it was clo more closely localized ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm . Mm - hmm . Right . But are we talking about , I don't know , {pause} a {vocalsound} {pause} tenth of a second ? a {disfmarker} ? You know ? How {disfmarker} how much {disfmarker} how much extra would you allow at most {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I {disfmarker} I wanted to {disfmarker} I wanted it to be able to {disfmarker} l he be heard normally ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "so that if you {disfmarker} if you play {pause} back that bin and have it in the mode where it stops at the boundary , {vocalsound} it sounds like a normal word ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "It doesn't sound like the person {disfmarker} i it sounds normal . It 's as if the person could 've stopped there ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "And it wouldn't have been an awkward place to stop ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Now sometimes you know , it 's {disfmarker} these are involved in places where there was no time . And so , {vocalsound} {vocalsound} there wouldn't be {pause} a gap afterwards because {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I mean some cases , there 're some people {pause} um , who {disfmarker} who have very long {pause} segments of discourse where , {vocalsound} you know , they 'll {disfmarker} they 'll breath {pause} and then I put a break ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But other than that , it 's really pretty continuous and this includes things like going from one sentence into the {disfmarker} u one utterance into the next , one sentence into the next , um , w without really stopping . I mean {disfmarker} i they , i you know in writing you have this {vocalsound} two spaces and a big gap"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "you know ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But {disfmarker} but uh {pause} {vocalsound} i some people are planning and , you know , I mean , a lot {disfmarker} we always are planning {pause} what we 're going to say next ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But uh , in which case , the gap between {pause} these two complete syntactic units , {vocalsound} um , which of course n spoken things are not always complete syntactically , but {disfmarker} {vocalsound} but it would be a shorter p shorter break {vocalsound} than {vocalsound} maybe you might like ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But the goal there was to {pause} not have {vocalsound} the text be so {disfmarker} so crudely {pause} parsed in a time bin . I mean , because {vocalsound} from a discourse m purpose {pause} it 's {disfmarker} {vocalsound} it 's more {disfmarker} {vocalsound} it 's more useful to be able to see {disfmarker} and also you know , from a speech recognition purpose my impression is that {vocalsound} if you have too long a unit , it 's {disfmarker} it doesn't help you very much either , cuz of the memory ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well , yeah . That 's fine ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So , that means that {vocalsound} the amount of time after something is variable depending partly on context , but my general goal {vocalsound} when there was {pause} sufficient space , room , pause {pause} after it {pause} to have it be {pause} kind of a natural feeling {pause} gap ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Which I c I don't know what it would be quantified as . You know , Wally Chafe says that {vocalsound} um , {vocalsound} in producing narratives , the spurts that people use {vocalsound} tend to be , {vocalsound} uh , that the {disfmarker} the {disfmarker} what would be a pause might be something like two {disfmarker} two seconds ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "And um , that would be , you know one speaker . The discourse {disfmarker} {vocalsound} the people who look at turn taking often do use {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I was interested that you chose uh , {vocalsound} you know um , {comment} the {disfmarker} you know that you use cuz I think that 's a unit that would be more consistent with sociolinguistics . Yeah ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Well we chose um , you know , half a second because {vocalsound} if {disfmarker} if you go much larger , you have a {disfmarker} y you know , your {disfmarker} your statement about how much overlap there is becomes less , {vocalsound} um , precise ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "because you include more of actual pause time into what you consider overlap speech . Um , so , it 's sort of a compromise ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . {comment} {vocalsound} {vocalsound} Yeah , I also used I think something around zero point five seconds for the speech - nonspeech detector {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "and {disfmarker} {vocalsound} it 's also based {disfmarker} I mean Liz suggested that value based on {vocalsound} the distribution of pause times that you see in Switchboard and {disfmarker} and other corpora ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Um {disfmarker} So {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "for the minimum silence length ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm . I see ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "In any case , this {disfmarker} this uh , meeting {pause} that I hand {disfmarker} I {disfmarker} I hand - adjusted two of them I mentioned before ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "and I sent {disfmarker} I sent email ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "so {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So {disfmarker} so at some point we will try to fine - tune our forced alignment"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "And I sent the {comment} {pause} path ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "maybe using those as references because you know , what you would do is you would play with different parameters . And to get an object You need an objective {vocalsound} measure of how closely you can align the models to the actual speech . And that 's where your your data would be {pause} very important to have . So , I will {disfmarker} Um {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah and hopefully the new meetings {pause} which will start from the channelized version will {disfmarker} will have better time boundaries {pause} and alignments ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Mm - hmm . Right ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But I like this idea of {disfmarker} uh , for our purposes for the {disfmarker} for the IBM preparation , {vocalsound} uh , n having these {pause} joined together ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "and uh {disfmarker} It makes a lot of sense . And in terms of transcription , it would be easy to do it that way ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "The way that they have with the longer units ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "not having to fuss with adding these units at this time ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Whi - which could have one drawback . If there is uh a backchannel in between those three things ,"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "the {disfmarker} the n the backchannel will {disfmarker} will occur at the end of {disfmarker} of those three ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And {disfmarker} and in {disfmarker} in the {disfmarker} in the previous version where in the n which is used now , {vocalsound} there , the backchannel would {disfmarker} would be in - between there somewhere , so ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I see ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "That would be more natural"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . Well ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "but {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "that 's {disfmarker} that 's right , but you know , thi this brings me to the other f stage of this which I discussed with you earlier today ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "which is {vocalsound} the second stage is {vocalsound} um , w what to do {pause} in terms of the transcribers adjustment of these data . I discussed this with you too . Um , the tr so the idea initially was , we would get {vocalsound} uh , for the new meetings , so the e EDU meetings , that {vocalsound} Thilo ha has now presegmented all of them for us , on a channel by channel basis . And um , so , I 've assigned {disfmarker} I 've {disfmarker} I 've assigned them to our transcribers and um , so far I 've discussed it with one , with uh {disfmarker} And I had a {pause} about an hour discussion with her about this yesterday , we went through {vocalsound} uh EDU - one , at some extent . And it occurred to me that {vocalsound} um {disfmarker} that {vocalsound} basically what we have in this kind of a format is {disfmarker} you could consider it as a staggered mixed file , we had some discussion over the weekend a about {disfmarker} at {disfmarker} at this other meeting that we were all a at {disfmarker} um , {vocalsound} about whether the tran the IBM transcribers should hear a single channel audio , or a mixed channel audio . And um , {vocalsound} in {disfmarker} in a way , by {disfmarker} by having this {disfmarker} this chunk and then the backchannel {vocalsound} after it , it 's like a stagal staggered mixed channel . And um , {vocalsound} it occurred {pause} to me in my discussion with her yesterday that um , um , the {disfmarker} {pause} the {disfmarker} the maximal gain , it 's {disfmarker} from the IBM {pause} people , may be in long stretches of connected speech . So it 's basically a whole bunch of words {vocalsound} which they can really do , because of the continuity within that person 's turn . So , what I 'm thinking , and it may be that not all meetings will be good for this , {comment} but {disfmarker} but what I 'm thinking is that {vocalsound} in the EDU meetings , they tend to be {vocalsound} driven by a couple of dominant speakers . And , if the chunked files focused on the dominant speakers , {vocalsound} then , when {disfmarker} when it got s patched together when it comes back from IBM , we can add the backchannels . It seems to me {vocalsound} that {vocalsound} um , you know , the backchannels per - se wouldn't be so hard , but then there 's this question of the time {pause} @ @ {comment} uh , marking , and whether the beeps would be {vocalsound} uh y y y And I 'm not exactly sure how that {disfmarker} how that would work with the {disfmarker} with the backchannels . And , so um {disfmarker} And certainly things that are {vocalsound} intrusions of multiple words , {vocalsound} taken out of context and displaced in time from where they occurred , {vocalsound} that would be hard . So , m my {vocalsound} thought is {pause} i I 'm having this transcriber go through {vocalsound} the EDU - one meeting , and indicate a start time {nonvocalsound} f for each dominant speaker , endpoi end time for each dominant speaker , and the idea that {vocalsound} these units would be generated for the dominant speakers , {vocalsound} and maybe not for the other channels ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah the only , um , disadvantage of that is , then it 's hard to use an automatic method to do that . The advantage is that it 's probably faster to do that than it is to use the automated method and correct it . So ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well , it {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "We 'll just have to see ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK . I think {disfmarker} {vocalsound} I {disfmarker} I think um , you know , the original plan was that the transcriber would adjust the t the boundaries , and all that for all the channels but , {vocalsound} you know , that is so time - consuming , and since we have a bottleneck here , we want to get IBM things that are usable s as soon as possible , then this seemed to me it 'd be a way of gett to get them a flood of data , which would be useful when it comes back to us . And um {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh also , at the same time she {disfmarker} when she goes through this , she 'll be {vocalsound} uh {disfmarker} If there 's anything that {vocalsound} was encoded as a pause , but really has something transcribable in it , {vocalsound} then she 's going to {vocalsound} uh , make a mark {disfmarker} w uh , so you know , so {vocalsound} that {disfmarker} that bin would be marked as it {disfmarker} as double dots and she 'll just add an S . And in the other {disfmarker} in the other case , if it 's marked as speech , {vocalsound} and really there 's nothing transcribable in it , then she 's going to put a s dash , and I 'll go through and it {disfmarker} and um , you know , with a {disfmarker} {vocalsound} {vocalsound} with a substitution command , get it so that it 's clear that those are the other category . I 'll just , you know , recode them . But um , {vocalsound} um , the transcribable events {pause} that um , I 'm considering in this , {vocalsound} uh , continue to be {vocalsound} laugh , as well as speech , and cough and things like that , so I 'm not stripping out anything , just {disfmarker} just you know , being very lenient in what 's considered speech . Yeah ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Jane ? In terms of the {disfmarker} this new procedure you 're suggesting , {vocalsound} um , u what is the {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "It 's not that different ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So I 'm a little confused , because how do we know where to put beeps ? Is it {disfmarker} i d y is it {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Transcriber will do it ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So what it {disfmarker} what it {disfmarker} what it involves is {disfmarker} is really a s uh , {vocalsound} uh , the original pr procedure , but {vocalsound} only applied to {pause} uh , a certain {pause} strategically chosen {pause} s aspect of the data ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "We pick the easy parts of the data basically ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "and transcriber marks it by hand ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "You got it ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "And because {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But after we 've done Thilo 's thing ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "No ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yes !"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Oh , after . Oh , OK ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yes !"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I didn't {disfmarker} I didn't understand that ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh yeah !"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So , I 'm @ @ {disfmarker} now I 'm confused ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK . We start with your presegmented version {disfmarker}"
+        },
+        {
+            "speaker": "PhD G",
+            "content": "OK , and I 'm leaving ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah , I have to go as well ."
+        },
+        {
+            "speaker": "PhD G",
+            "content": "So , um {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK , leave the mikes on , and just put them on the table ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK . Thanks ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "We start with the presegmented version {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Let me mark you as no digits ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "You start with the presegmentation , r {vocalsound} yeah ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . And then um , {vocalsound} the transcriber , {vocalsound} instead of going painstakingly through all the channels and moving the boundaries around , and deciding if it 's speech or not , but not transcribing anything . OK ? Instead of doing that , which was our original plan , {vocalsound} the tra They focus on the dominant speaker {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . They just {vocalsound} do that on {pause} the main channels ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . So what they do is they identify who 's the di dominant speaker , and when the speaker starts ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ? OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So I mean , you 're still gonna {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And you just {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So we 're {disfmarker} It 's based on your se presegmentation , that 's the basic {pause} thing ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "and you just use the s the segments of the dominant speaker then ? For {disfmarker} for sending to {disfmarker} to IBM or {disfmarker} ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . Exactly ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So , now Jane , my question is {vocalsound} when they 're all done adjusting the w time boundaries for the dominant speaker , {comment} have they then also erased the time boundaries for the other ones ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm . Uh No . No , no . Huh - uh . S"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So how will we know who {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "That 's {disfmarker} that 's why she 's notating the start and end points of the dominant speakers . So , on a {disfmarker} you know , so {vocalsound} i in EDU - one , i as far as I listened to it , you start off with a {disfmarker} a s section by Jerry . So Jerry starts at minute so - and - so , and goes until minute so - and - so . And then Mark Paskin comes in . And he starts at {vocalsound} minute such - and - such , and goes on till minute so - and - so . OK . And then {vocalsound} meanwhile , she 's listening to {vocalsound} {pause} both of these guys ' channels , determining if there 're any cases of misclassification of speech as nothing , and nothing as speech ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "and {vocalsound} a and adding a tag if that happens ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So she does the adjustments on those guys ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But you know , I wanted to say , his segmentation is so good , that {vocalsound} um , the part that I listened to with her yesterday {vocalsound} didn't need any adjustments of the bins ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "On that meeting ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So far we haven't . So this is not gonna be a major part of the process , at least {disfmarker} least not in {disfmarker} not on ones that {disfmarker} that really {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So if you don't have to adjust the bins , why not just do what it {disfmarker} for all the channels ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Why not just throw all the channels to IBM ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well there 's the question o of {pause} whether {disfmarker} Well , OK . She i It 's a question of how much time we want our transcriber to invest here {vocalsound} when she 's gonna have to invest that when it comes back from IBM anyway ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So if it 's only inserting \" mm - hmm \"s here and there , then , wouldn't that be something that would be just as efficient to do at this end , instead of having it go through I B M , then be patched together , then be double checked here ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Right ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . But {disfmarker} But then we could just use the {disfmarker} the output of the detector , and do the beeping on it , and send it to I B"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Without having her check anything ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well , I guess {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I think we just {disfmarker} we just have to listen to it and see how good they are ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "For some meetings , I 'm {disfmarker} I 'm sure it {disfmarker} i n"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I 'm {disfmarker} I 'm open to that , it was {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah , if it 's working well ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "That 's {disfmarker} And some {disfmarker} on some meetings it 's good ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "that sounds like a good idea since as you say you have to do stuff with the other end anyway ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well yea OK , good . I mean the detector , this {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , I mean we have to fix it when it comes back anyhow ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Now , you were saying that they {disfmarker} they differ in how well they work depending on channel s sys systems and stuff ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . So we should perhaps just select meetings on which the speech - nonspeech detection works well ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But EDU is great ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "and just use , {vocalsound} those meetings to {disfmarker} to {disfmarker} to send to IBM and , do the other ones ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Release to begin with ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "How interesting . You know {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "What 's the problem {disfmarker} the l I forget . Is the problem the lapel , or {disfmarker} or {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Uh , it really depends . Um , my {disfmarker} my {disfmarker} my impression is that it 's better for meetings with fewer speakers , and it 's better for {disfmarker} {vocalsound} for meetings where nobody is breathing ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Oh ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "the dead meetings ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "get {disfmarker} That 's it ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So in fact this might suggest an alternative sort of a {disfmarker} a c a hybrid between these two things ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "No , the undead meeting , yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . Yeah ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So the {disfmarker} the one suggestion is you know we {disfmarker} {vocalsound} we run Thilo 's thing and then we have somebody go and adjust all the time boundaries"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and we send it to IBM . The other one is {vocalsound} we just run his thing and send it to IBM ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "There 's a {disfmarker} a another possibility if we find that there are some problems ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and that is {vocalsound} if we go ahead and we {vocalsound} just run his , and we generate the beeps file , then we have somebody listen beeps file ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . And erase {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And they listen to each section and say \" yes , no \" whether that section is"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Is intelligible ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "i i intelligible or not . And it just {disfmarker} You know , there 's a little interface which will {disfmarker} for all the \" yes \" - es it {disfmarker} then that will be the final {vocalsound} beep file ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Blech ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "That 's interesting ! Cuz that 's {disfmarker} that 's directly related to the e end task ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Stress test ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "How interesting !"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . I mean it wouldn't be that much fun for a transcriber to sit there , hear it , beep , yes or no ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Nope ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "I {disfmarker} I {disfmarker} I don't know ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But it would be quick ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "It would be {disfmarker} kind of quick but they 're still listening to everything ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But there 's no adjusting . And that 's what 's slow . There 's no adjusting of time boundaries ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well , {vocalsound} eh , listening does take time too ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah . I don't know , I {disfmarker} I think I 'm {disfmarker} I 'm really tending towards {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "One and a half times real time ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "I mean , {vocalsound} what 's the worst that happens ? Do the transcribers {disfmarker} I mean as long as th on the other end they can say there 's {disfmarker} there 's something {disfmarker} conventions so that they say \" huh ? \""
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Right . They {disfmarker} they {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "and then we can flag those later ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . That 's true ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "i i It {disfmarker} i"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "We can just catch it at the {disfmarker} catch everything at this side ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well maybe that 's the best way to go ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "How interesting !"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "just {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I mean it just depends on how {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well EDU {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Sorry , go ahead ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "u u u"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So I was gonna say , EDU - one is good enough ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "maybe we could include it in this {disfmarker} in this set of uh , this stuff we send ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah there 's {disfmarker} I {disfmarker} I think there are some meetings where it would {disfmarker} would {disfmarker} It 's possible like this ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah I {disfmarker} I think , we won't know until we generate a bunch of beep files automatically , listen to them and see how bad they are ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "We won't be able to s include it with this first thing ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "If {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Hmm . Oh , OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "because there 's a part of the process of the beep file which requires knowing the normalization coefficients ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh , I see ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And {disfmarker} {vocalsound} So a"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "That 's not hard to do . Just {disfmarker} it takes {disfmarker} you know , it just takes five minutes rather than , taking a second ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "OK"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "So . I just hand {disfmarker} hard - coded it ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Right , except I don't think that {disfmarker} the c the instructions for doing that was in that directory , right ? I {disfmarker} I didn't see where you had gener"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "No , but it 's easy enough to do ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "What {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "But I {disfmarker} but I have a {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Doing the gain ? It 's no problem . Adjusting the gain ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "n Doing th No , getting the coefficients , for each channel ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , that 's no problem ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Know what numbers ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "OK . So we just run that one {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "There are lots of ways to do it ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "We can do that ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I have one program that 'll do it . You can find other programs ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . I {disfmarker} I used it , so ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "We just run that"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "J - sound - stat ? OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Minus D , capital D ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "But {disfmarker} but {disfmarker} but I {disfmarker} I {disfmarker} I have {pause} another suggestion on that , which is , {vocalsound} since , really what this is , is {disfmarker} is {disfmarker} is trying to in the large , send the right thing to them and there is gonna be this {disfmarker} this post - processing step , um , why don't we check through a bunch of things by sampling it ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Right ? In other words , rather than , um , uh , saying we 're gonna listen to everything {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I didn't mean listen to everything , I meant , just see if they 're any good ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah . So y you do a bunch of meetings , you listen to {disfmarker} to a little bit here and there ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "if it sounds like it 's almost always right and there 's not any big problem you send it to them ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Send it to them ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "And , you know , then they 'll send us back what we {disfmarker} w what {disfmarker} what they send back to us ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh , that 'd be great ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "and we 'll {disfmarker} we 'll fix things up and {vocalsound} some meetings will cost more time to fix up than others ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "We should {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "And we should just double - check with Brian on a few simple conventions on how they should mark things ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Sure ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "OK . When they {disfmarker} when there 's either no speech in there ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "or {vocalsound} something they don't understand ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah . Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "things like that ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah , cuz @ @ uh what I had originally said to Brian was well they 'll have to mark , when they can't distinguish between the foreground and background ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "because I thought that was gonna be the most prevalent . But if we send them without editing , then we 're also gonna hafta have m uh , notations for words that are cut off ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "and other sorts of , uh , acoustic problems ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "They do already ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And they may just guess at what those cut - off words are ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "but w I mean we 're gonna adjust {disfmarker} everything when we come back {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "But what {disfmarker} what we would like them to do is be conservative so that they should only write down the transcript if they 're sure ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "And otherwise they should mark it so that we can check ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Mark it . Sure . Yeah . Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well , we have the unintelligibility {pause} convention ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "And actually they have one also ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "which {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "i Can I maybe have {disfmarker} have an order of {disfmarker} it 's probably in your paper that I haven't looked at lately , but {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Certainty ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh , an order of magnitude notion of {disfmarker} of how {disfmarker} on a good meeting , how often uh , do you get segments that come in the middle of words and so forth , and uh {disfmarker} in a bad meeting how {vocalsound} often ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Uh ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Was is it in a {disfmarker} in a {disfmarker} what {disfmarker} what is the t"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Well he 's saying , you know , that the {disfmarker} the EDU meeting was a good {disfmarker} good meeting ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "In a good meeting , what ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "right ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh I see ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh , and so {disfmarker} so {disfmarker} so it was almost {disfmarker} it was almost always doing the right thing ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "the characteristics ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "So I wanted to get some sense of what {disfmarker} what almost always meant . And then , uh in a bad meeting , {vocalsound} or p some meetings where he said oh he 's had some problems , what does that mean ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Uh - huh . OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "So I mean does one of the does it mean one percent and ten percent ? Or does it mean {vocalsound} five percent and fifty percent ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Or {disfmarker} Maybe percentage isn't the right word ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Just"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah th"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "but you know how many {disfmarker} how many per minute , or {disfmarker} You know ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , the {disfmarker} the problem is that , nnn , the numbers Ian gave in the paper is just uh , some frame error rate . So that 's {disfmarker} that 's not really {disfmarker} {vocalsound} What will be effective for {disfmarker} for the transcribers , is {disfmarker} They have to {disfmarker} yeah , in in they have to insure that that 's a real s spurt or something . And {disfmarker} but , {vocalsound} the numbers {disfmarker} Oops . Um {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Hmm !"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Let me think . So the {pause} speech {disfmarker} the amount of speech that is missed by the {pause} detector , for a good meeting , I th is around {pause} or under one percent , I would say . But there can be {disfmarker} Yeah . For {disfmarker} yeah , but there can be more {disfmarker} There 's {disfmarker} There 's more amount speech {disfmarker} uh , more amount of {disfmarker} Yeah well , the detector says there is speech , but there is none . So that {disfmarker} that can be a lot when {disfmarker} when it 's really a breathy channel ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "But I think that 's less of a problem ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "They 'll just listen . It 's just wasted time ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "And th and that 's for a good meeting . Now what about in a meeting that you said we 've {disfmarker} you 've had some more trouble with ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I can't {comment} really {disfmarker} hhh , {comment} {pause} Tsk . {comment} I {pause} don't have really representative numbers , I think . That 's really {disfmarker} I {disfmarker} I did {pause} this on {disfmarker} on four meetings and only five minutes of {disfmarker} of every meet of {disfmarker} of these meetings so , {vocalsound} it 's not {disfmarker} not that representative , but , it 's perhaps , Fff . Um {disfmarker} Yeah , it 's perhaps then {disfmarker} it 's perhaps five percent of something , which s uh the {disfmarker} the frames {disfmarker} speech frames which are {disfmarker} which are missed , but um , I can't {disfmarker} can't really tell ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Right . So I {disfmarker} {vocalsound} So i Sometime , we might wanna go back and look at it more in terms of {vocalsound} how many times is there a spurt that 's {disfmarker} that 's uh , interrupted ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Yeah . Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Something like that ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "The other problem is , that when it {disfmarker} when it uh d i on the breathy ones , where you get {vocalsound} {vocalsound} breathing , uh , inti indicated as speech ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "And {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "And I guess we could just indicate to the transcribers not to {pause} encode that if they {disfmarker} We could still do the beep file ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah again I {disfmarker} I think that that is probably less of a problem because if you 're {disfmarker} if there 's {disfmarker} {vocalsound} If {disfmarker} if a {disfmarker} if a word is {disfmarker} is split , then they might have to listen to it a few times to really understand that they can't quite get it ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK . OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Whereas if they listen {nonvocalsound} to it and there 's {disfmarker} don't hear any speech I think they 'd probably just listen to it once ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "So there 'd {disfmarker} you 'd think there 'd be a {disfmarker} a factor of three or four in {disfmarker} in , uh , cost function ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "you know , between them or something ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , so {disfmarker} but I think that 's {disfmarker} n that really doesn't happen very often that {disfmarker} that {disfmarker} that a word is cut in the middle or something . That 's {disfmarker} that 's really not {disfmarker} not normal ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "So {disfmarker} so what you 're saying is that nearly always what happens when there 's a problem is that {disfmarker} is that uh , there 's {vocalsound} some uh , uh nonspeech that uh {disfmarker} that is b interpreted as speech ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "That is marked as speech . Yeah . Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Well then , we really should just send the stuff ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "That would be great ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Right ? Because that doesn't do any harm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , it 's {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "You know , if they {disfmarker} they hear you know , a dog bark and they say what was the word , they {comment} you know , they {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , I als I {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Ruff ruff !"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah I also thought of {disfmarker} there {disfmarker} there are really some channels where it is almost {comment} um , only bre breathing in it . And to {disfmarker} to re - run 's"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Eh , um . Yeah . I 've got a {disfmarker} a {pause} P - a {pause} method with loops into the cross - correlation with the PZM mike , and then to reject everything which {disfmarker} which seems to be breath ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So , I could run this on those breathy channels , and perhaps throw out {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "That 's a good idea ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Wow , that 's a great idea ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah . But I think {disfmarker} I th Again , I think that sort of {disfmarker} that that would be good ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "and what that 'll do is just cut the time a little further ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "But I think none of this is stuff that really needs somebody doing these {disfmarker} these uh , uh , explicit markings ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Excellent . Oh , I 'd be delighted with that , I {disfmarker} I was very impressed with the {disfmarker} with the result . Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah , cuz the other thing that was concerning me about it was that it seemed kind of specialized to the EDU meeting , and {disfmarker} and that then when you get a meeting like this or something ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "and {disfmarker} {vocalsound} and you have a b a bunch of different dominant speakers"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh yeah , interesting ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "you know , how are you gonna handle it ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Whereas this sounds like a more general solution"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh yeah , I pr I much prefer this ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "is {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I was just trying to find a way {disfmarker} Cuz I {disfmarker} I don't think the staggered mixed channel is awfully good as a way of handling overlaps ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah . Uh - huh ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But {disfmarker} but uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well good . That {disfmarker} that really simplifies thing then ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And we can just , you know , get the meeting , process it , put the beeps file , send it off to IBM ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "You know ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "With very little {pause} work on our side ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Process it , hear into it . I would {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Do what ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Um , {pause} listen to it , and then {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Or at least sample it ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well , sample it ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Sample it ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "I {disfmarker} I would just use some samples ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "make sure you don't send them three hours of \" bzzz \" {comment} or something ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Right ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "That won't be good ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Yeah that would be very good ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And then we can you know {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "That 'll oughta be a good way to get the pipeline going ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh , I 'd be delighted . Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And there 's {disfmarker} there 's one point which I {comment} uh {disfmarker} {vocalsound} yeah , which {disfmarker} which I r {vocalsound} we covered when I {disfmarker} when I r listened to one of the EDU meetings ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Great ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "and that 's {vocalsound} that somebody is playing sound from his laptop ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Uh - huh"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And i {vocalsound} the speech - nonspeech detector just assigns randomly the speech to {disfmarker} to one of the channels , so . Uh - I haven't - I didn't think of {disfmarker} of s of {vocalsound} this before ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "What can you do ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "but what {disfmarker} what shall we do about s things like this ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well you were suggesting {disfmarker} You suggested maybe just not sending that part of the meeting ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yep . Mmm ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But , sometimes the {disfmarker} {vocalsound} the {disfmarker} the laptop is in the background and some {disfmarker} somebody is {disfmarker} is talking , and , {vocalsound} that 's really a little bit confusing , but {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "It 's a little bit confusing ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "That 's life ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I mean , {comment} what 're we gonna do ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Even a hand - transcription would {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Do you {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "a hand - transcriber would have trouble with that ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "So ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "that 's {disfmarker} that 's a second question , \" what {disfmarker} what will different transcribers do with {disfmarker} with the laptop sound ? \""
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Would you {disfmarker} would {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "What was the l what was the laptop sound ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah , go ahead ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "I mean was it speech ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "or was it {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It 's speech ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Great ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well , so {disfmarker} I mean {disfmarker} So my standard approach has been if it 's not someone close - miked , then , they don't end up on one of the close - miked channels . They end up on a different channel . And we have any number of channels available ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I mean it 's an infinite number of channels ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So just put them on some other channel ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "when thi when this is sent to {disfmarker} to the I M - eh , I B M transcribers , I don't know if {disfmarker} if they can tell that 's really {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah , that 's right ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah cuz there will be no channel on which it is foreground ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Uh {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well , they have a convention , in their own procedures , {vocalsound} which is for a background {pause} sound ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right , but , uh , in general I don't think we want them transcribing the background , cuz that would be too much work . "
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ? For it {disfmarker} because in the overlap sections , then they 'll"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well I don't think Jane 's saying they 're gonna transcribe it , but they 'll just mark it as being {disfmarker} there 's some background stuff there ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "But that 's gonna be all over the place ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "right ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "How w how will they tell the difference between that sort of background and the dormal {disfmarker} normal background of two people talking at once ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh , I think {disfmarker} I think it 'd be easy to to say \" background laptop \" ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "How would they know that ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But wait a minute , why would they treat them differently ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well because one of them {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Because otherwise it 's gonna be too much work for them to mark it . They 'll be marking it all over the place ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh , I s background laptop or , background LT {vocalsound} {vocalsound} wouldn't take any time ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Sure , but how are they gonna tell bet the difference between that and two people just talking at the same time ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "And {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh , you can tell . Acoustically , can't you tell ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It 's really good sound , so {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh is it ? Oh !"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Well , I mean , isn't there a category something like uh , \" sounds for someone for whom there is no i close mike \" ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah that would be very important ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "But how do we d how do we do that for the I B M folks ?"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "How can they tell that ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well we may just have to do it when it gets back here ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yes , that 's my opinion as well ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "So we don't do anything for it {disfmarker} with it ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "That sounds good ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "And they 'll just mark it however they mark it ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "That sounds good ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "and we 'll correct it when it comes back ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So th"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "there was a category for @ @ {comment} speech ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah , the default ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah , s a"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "No , not default ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Well , as it comes back , we have a uh {disfmarker} when we can use the channelized interface for encoding it , then it 'll be easy for us to handle ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "But {disfmarker} {vocalsound} but if {disfmarker} if out of context , they can't tell if it 's a channeled speak uh , you know , a close - miked speaker or not , {vocalsound} then that would be confusing to them ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I don't know , I {disfmarker} it doesn't {disfmarker} I don't {disfmarker} Either way would be fine with me , I don't really care ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah . So . Shall we uh , do digits and get out of here ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I have o I have one question . Do you think we should send the um {disfmarker} that whole meeting to them and not worry about pre - processing it ?"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yes ma '"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Or {disfmarker} Uh , what I mean is {vocalsound} we {disfmarker} we should {vocalsound} leave the {vocalsound} part with the audio in the uh , beep file that we send to IBM for that one , or should we {vocalsound} start after the {disfmarker} that part of the meeting is over in what we send ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Which part ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "With {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "So , the part where they 're using sounds from their {disfmarker} from their laptops ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "with the laptop sound , or {disfmarker} ? just {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "w If we have speech from the laptop should we just uh , excise that from what we send to IBM , or should we {vocalsound} i give it to them and let them do with it what they can ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I think we should just {disfmarker} it {disfmarker} it 's gonna be too much work if we hafta {vocalsound} worry about that I think ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK , that 'd be nice to have a {disfmarker} a uniform procedure ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , I think if we just {disfmarker} m send it all to them . you know ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Worry about it when we get back ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Good . And see how well they do ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Let {disfmarker} Yeah , worry about it when we get back in ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "And give them freedom to {disfmarker} {vocalsound} to indicate if it 's just not workable ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK ,"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "excellent ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Cuz , I wouldn't {disfmarker} don't think we would mind {pause} having that {pause} transcribed , if they did it ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I think {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , e"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "As I say , we 'll just have to listen to it and see how horrible it is ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Yeah , yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Sample it , rather ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK . Alright ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I think that {disfmarker} that will be a little bit of a problem"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "That 's great ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "as it really switches around between {vocalsound} two different channels , I think ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm , and {disfmarker} and they 're very {disfmarker} it 's very audible ? on the close - talking channels ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "What {disfmarker} what I would {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Oh well . I mean , it 's the same problem as the lapel mike ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "But {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Oh , interesting ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Comparable , yeah ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK , alright . Digits ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Let 's do digits ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "OK , so we read the transcript number first , right ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Are we gonna do it altogether or separately ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker} What time is it ?"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh , {vocalsound} why don't we do it together ,"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Uh , quarter to four ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "that 's {disfmarker} that 's a nice fast way to do it ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "One , two , three , go !"
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "It 's kind of interesting if there 're any more errors in these , {vocalsound} than we had the first set ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Nnn , yeah , I think there probably will be ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Do you guys plug your ears when you do it ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I do ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I usually do ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I do ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I don't ."
+        },
+        {
+            "speaker": "Postdoc C",
+            "content": "I didn't this time ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "You don't ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No ."
+        },
+        {
+            "speaker": "Professor F",
+            "content": "I haven't been ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "How can you do that ?"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "no ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I {disfmarker} I {disfmarker}"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Uh , concentration ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Perhaps there are {vocalsound} lots of errors in it"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Gah !"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Total concentration . Are you guys ready ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "You hate to have your ears plugged ?"
+        },
+        {
+            "speaker": "Professor F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Really ?"
+        }
+    ]
+}

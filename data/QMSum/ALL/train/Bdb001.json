@@ -1,0 +1,3191 @@
+{
+    "topic_list": [
+        {
+            "topic": "Current XML format to link up different components in data",
+            "relevant_text_span": [
+                [
+                    "19",
+                    "89"
+                ]
+            ]
+        },
+        {
+            "topic": "Best way to store features",
+            "relevant_text_span": [
+                [
+                    "90",
+                    "197"
+                ]
+            ]
+        },
+        {
+            "topic": "Exploring NIST's ATLAS as a potential storage format",
+            "relevant_text_span": [
+                [
+                    "198",
+                    "460"
+                ]
+            ]
+        },
+        {
+            "topic": "Disadvantages of ATLAS and other options",
+            "relevant_text_span": [
+                [
+                    "463",
+                    "594"
+                ]
+            ]
+        },
+        {
+            "topic": "Handling annotations",
+            "relevant_text_span": [
+                [
+                    "595",
+                    "760"
+                ]
+            ]
+        }
+    ],
+    "general_query_list": [
+        {
+            "query": "Summarize the whole meeting",
+            "answer": "Meeting participants wanted to agree upon a standard database to link up different components of the transcripts. The current idea was to use an XML script, but it quickly seemed that other options, like a pfile or ATLAS, are more suitable. The reason being that they would make it easier to deal with different linguistic units, like frames and utterances. Eventually, the team was skeptical of using something that would be hard to learn, like ATLAS. Nonetheless, they wanted to explore their options. The meeting finished with some discussion about handling annotations."
+        }
+    ],
+    "specific_query_list": [
+        {
+            "query": "Summarize the discussion about the current XML format to link up different components in data",
+            "answer": "C developed an XML format that links together utterances based on time tags, essentially creating a lattice. The XML format would be divided into many sections, each with its own ID and timeline tag. The XML format could be modified to deal with smaller linguistic units since that would only entail changing the timestamps. Despite being easy to use, the format was not efficient for smaller linguistic units, like phones. It would work for word units, at best.",
+            "relevant_text_span": [
+                [
+                    "19",
+                    "89"
+                ]
+            ]
+        },
+        {
+            "query": "What did F think about the current XML format to link up different components in data?",
+            "answer": "F was concerned about how the time labels would adjust to smaller phonetic units. F inquired if the time boundaries could be changed by propagating new information throughout the XML. F thought that they could configure different XML files to deal with different units, but it would lead to large file sizes.",
+            "relevant_text_span": [
+                [
+                    "51",
+                    "87"
+                ]
+            ]
+        },
+        {
+            "query": "What did A think about the current XML format to link up different components in data?",
+            "answer": "A had seen an example of this kind of XML format before. A thought that the time boundaries were nicely handled but believed that smaller linguistic units would drain too much memory. It was essentially like a lattice, in his opinion. Though, A did not seem too concerned with dealing with smaller linguistic units since the problem would not be encountered frequently.",
+            "relevant_text_span": [
+                [
+                    "56",
+                    "77"
+                ]
+            ]
+        },
+        {
+            "query": "Summarize the discussion about the disadvantages of ATLAS and other options",
+            "answer": "Since the team is familiar with Perl and a flat file format is easier, it was suggested that the cost of learning a new framework, like ATLAS, might be too high. It was suggested that ATLAS be used for the external file representation initially, and if it seems suitable, then it should be adopted in its entirety. P files were also discussed but the problem with them was that they could still get pretty big.",
+            "relevant_text_span": [
+                [
+                    "463",
+                    "594"
+                ]
+            ]
+        },
+        {
+            "query": "What did C think about the disadvantages of ATLAS and other options?",
+            "answer": "C thought that other options have a big learning curve, which should be taken into account, and that a flat format works well. A flat file format may not be fast, but everyone can handle it. C believed that quick and dirty solutions should be balanced with long-term infrastructural solutions. For instance, Perl can be paired with external representations of ATLAS files to create a working system. C also suggested that alternatives to P files might be interesting too, though the disadvantage would, once again, be the learning curve.",
+            "relevant_text_span": [
+                [
+                    "463",
+                    "474"
+                ],
+                [
+                    "492",
+                    "498"
+                ],
+                [
+                    "530",
+                    "545"
+                ]
+            ]
+        },
+        {
+            "query": "What did F think about the disadvantages of ATLAS and other options?",
+            "answer": "F wanted to ensure that prosodic features could be dealt with at the level of small linguistic units. F proposed that they be attached to the word or segment level with the option of extracting smaller units. This would allow the team to keep what they have without starting over.",
+            "relevant_text_span": [
+                [
+                    "484",
+                    "495"
+                ]
+            ]
+        }
+    ],
+    "meeting_transcripts": [
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , we had a long discussion about how much w how easy we want to make it for people to bleep things out . So {disfmarker} Morgan wants to make it hard ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It {disfmarker} it doesn't {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Did {disfmarker} did {disfmarker} did it {disfmarker} ? I didn't even check yesterday whether it was moving ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It didn't move yesterday either when I started it ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So I don't know if it doesn't like both of us {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Channel three ? Channel three ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "You know , I discovered something yesterday on these , um , wireless ones ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Channel two ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "You can tell if it 's picking up {pause} breath noise and stuff ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , it has a little indicator on it {disfmarker} on the AF ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . So if you {disfmarker} yeah , if you breathe under {disfmarker} breathe and then you see AF go off , then you know {pause} it 's p picking up your mouth noise ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Oh , that 's good . Cuz we have a lot of breath noises ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep . Test ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "In fact , if you listen to just the channels of people not talking , it 's like \" @ @ \" . It 's very disgust"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "What ? Did you see Hannibal recently or something ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Sorry . Exactly . It 's very disconcerting . OK . So , um ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": ""
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I was gonna try to get out of here , like , in half an hour , um , cuz I really appreciate people coming , and {vocalsound} the main thing that I was gonna ask people to help with today is {pause} to give input on what kinds of database format we should {pause} use in starting to link up things like word transcripts and annotations of word transcripts , so anything that transcribers or discourse coders or whatever put in the signal , {vocalsound} with time - marks for , like , words and phone boundaries and all the stuff we get out of the forced alignments and the recognizer . So , we have this , um {disfmarker} I think a starting point is clearly the {disfmarker} the channelized {pause} output of Dave Gelbart 's program , which Don brought a copy of ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . Yeah , I 'm {disfmarker} I 'm familiar with that . I mean , we {disfmarker} I sort of already have developed an XML format for this sort of stuff ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "um , which {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Can I see it ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And so the only question {disfmarker} is it the sort of thing that you want to use or not ? Have you looked at that ? I mean , I had a web page up ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Right . So ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I actually mostly need to be able to link up , or {disfmarker} I it 's {disfmarker} it 's a question both of what the representation is and {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You mean , this {disfmarker} I guess I am gonna be standing up and drawing on the board ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK , yeah . So you should , definitely ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um , so {disfmarker} so it definitely had that as a concept . So tha it has a single time - line ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and then you can have lots of different sections , each of which have I Ds attached to it , and then you can refer from other sections to those I Ds , if you want to . So that , um {disfmarker} so that you start with {disfmarker} with a time - line tag . \" Time - line \" . And then you have a bunch of times . I don't e I don't remember exactly what my notation was ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , I remember seeing an example of this ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "but it {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Right , right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , \" T equals one point three two \" , uh {disfmarker} And then I {disfmarker} I also had optional things like accuracy , and then \" ID equals T one , uh , one seven \" . And then , {nonvocalsound} I also wanted to {disfmarker} to be i to be able to not specify specifically what the time was and just have a stamp ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , so these are arbitrary , assigned by a program , not {disfmarker} not by a user . So you have a whole bunch of those . And then somewhere la further down you might have something like an utterance tag which has \" start equals T - seventeen , end equals T - eighteen \" . So what that 's saying is , we know it starts at this particular time . We don't know when it ends ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ? But it ends at this T - eighteen , which may be somewhere else . We say there 's another utterance . We don't know what the t time actually is but we know that it 's the same time as this end time ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You know , thirty - eight , whatever you want ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So you 're essentially defining a lattice ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK . Yes , exactly ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And then , uh {disfmarker} and then these also have I Ds . Right ? So you could {disfmarker} you could have some sort of other {disfmarker} other tag later in the file that would be something like , um , oh , I don't know , {comment} uh , {nonvocalsound} \" noise - type equals {nonvocalsound} door - slam \" . You know ? And then , uh , {nonvocalsound} you could either say \" time equals a particular time - mark \" or you could do other sorts of references . So {disfmarker} or {disfmarker} or you might have a prosody {disfmarker} \" Prosody \" right ? D ? T ? D ? T ? T ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "It 's an O instead of an I , but the D is good ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You like the D ? That 's a good D ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um , you know , so you could have some sort of type here , and then you could have , um {disfmarker} the utterance that it 's referring to could be U - seventeen or something like that ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK . So , I mean , that seems {disfmarker} that seems g great for all of the encoding of things with time and ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Oh , well ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "um {disfmarker} I {disfmarker} I guess my question is more , uh , what d what do you do with , say , a forced alignment ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "How - how"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean you 've got all these phone labels , and what do you do if you {disfmarker} just conceptually , if you get , um , transcriptions where the words are staying but the time boundaries are changing , cuz you 've got a new recognition output , or s sort of {disfmarker} what 's the , um , sequence of going from the waveforms that stay the same , the transcripts that may or may not change , and then the utterance which {disfmarker} where the time boundaries that may or may not change {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , that 's {disfmarker} That 's actually very nicely handled here because you could {disfmarker} you could {disfmarker} all you 'd have to change is the , {vocalsound} um , time - stamps in the time - line without {disfmarker} without , uh , changing the I Ds ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Um . And you 'd be able to propagate all of the {disfmarker} the information ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right . That 's , the who that 's why you do that extra level of indirection . So that you can just change the time - line ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Except the time - line is gonna be huge . If you say {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "suppose you have a phone - level alignment ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "yeah , especially at the phone - level ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You 'd have {disfmarker} you 'd have {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "The {disfmarker} we {disfmarker} we have phone - level backtraces ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , this {disfmarker} I don't think I would do this for phone - level . I think for phone - level you want to use some sort of binary representation"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Um {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "because it 'll be too dense otherwise ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK . So , if you were doing that and you had this sort of companion , uh , thing that gets called up for phone - level , uh , what would that look like ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Why"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I would use just an existing {disfmarker} an existing way of doing it ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "How would you {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm . But {disfmarker} but why not use it for phone - level ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "H h"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "It 's just a matter of {disfmarker} it 's just a matter of it being bigger . But if you have {disfmarker} you know , barring memory limitations , or uh {disfmarker} I w I mean this is still the m"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's parsing limitations . I don't want to have this text file that you have to read in the whole thing to do something very simple for ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , no . You would use it only {pause} for {pause} purposes where you actually want the phone - level information , I 'd imagine ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So you could have some file that configures how much information you want in your {disfmarker} in your XML or something ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right . I mean , you 'd {disfmarker} y"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Um ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I {disfmarker} I am imagining you 'd have multiple versions of this depending on the information that you want ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "cuz th it does get very bush with {disfmarker} Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um , I 'm just {disfmarker} what I 'm wondering is whether {disfmarker} I think for word - level , this would be OK ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "For word - level , it 's alright ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah . Definitely ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "For lower than word - level , you 're talking about so much data that I just {disfmarker} I don't know . I don't know if that {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , we actually have {disfmarker} So , one thing that Don is doing , is we 're {disfmarker} we 're running {disfmarker} For every frame , you get a pitch value ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Lattices are big , too ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "and not only one pitch value but different kinds of pitch values"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , I mean , for something like that I would use P - file"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "depending on {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "or {disfmarker} or any frame - level stuff I would use P - file ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Meaning {disfmarker} ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Uh , that 's a {disfmarker} well , or something like it . It 's ICS uh , ICSI has a format for frame - level representation of features . Um ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK . That you could call {disfmarker} that you would tie into this representation with like an ID ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right . Right . Or {disfmarker} or there 's a {disfmarker} there 's a particular way in XML to refer to external resources ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And {disfmarker} OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So you would say \" refer to this external file \" . Um , so that external file wouldn't be in {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So that might {disfmarker} that might work ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But what {disfmarker} what 's the advantage of doing that versus just putting it into this format ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "More compact , which I think is {disfmarker} is better ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I mean , if you did it at this {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean these are long meetings and with {disfmarker} for every frame ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You don't want to do it with that {disfmarker} Anything at frame - level you had better encode binary"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "um {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "or it 's gonna be really painful ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Or you just compre I mean , I like text formats . Um , b you can always , uh , G - zip them , and , um , you know , c decompress them on the fly if y if space is really a concern ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , I was thi I was thinking the advantage is that we can share this with other people ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , but if you 're talking about one per frame , you 're talking about gigabyte - size files . You 're gonna actually run out of space in your filesystem for one file ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "These are big files . These are really {disfmarker} I mean {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ? Because you have a two - gigabyte limit on most O Ss ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right , OK . I would say {disfmarker} OK , so frame - level is probably not a good idea . But for phone - level stuff it 's perfectly {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And th it 's {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Like phones , or syllables , or anything like that ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Phones are every five frames though , so . Or something like that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "But {disfmarker} but {disfmarker} but most of the frames are actually not speech . So , you know , people don't {disfmarker} v Look at it , words times the average {disfmarker} The average number of phones in an English word is , I don't know , {comment} five maybe ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah , but we actually {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So , look at it , t number of words times five . That 's not {disfmarker} that not {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Oh , so you mean pause phones take up a lot of the {disfmarker} long pause phones ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Exactly ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah . OK . That 's true . But you do have to keep them in there . Y yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So I think it {disfmarker} it 's debatable whether you want to do phone - level in the same thing ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But I think , a anything at frame - level , even P - file , is too verbose ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK . So {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I would use something tighter than P - files ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Do you {disfmarker} Are you familiar with it ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I haven't seen this particular format ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I mean , I 've {disfmarker} I 've used them ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "but {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I don't know what their structure is ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I 've forgot what the str"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But , wait a minute , P - file for each frame is storing a vector of cepstral or PLP values ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's whatever you want , actually ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "right ? Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So that {disfmarker} what 's nice about the P - file {disfmarker} It {disfmarker} i Built into it is the concept of {pause} frames , utterances , sentences , that sort of thing , that structure . And then also attached to it is an arbitrary vector of values . And it can take different types ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So it {disfmarker} th they don't all have to be floats . You know , you can have integers and you can have doubles , and all that sort of stuff ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So that {disfmarker} that sounds {disfmarker} that sounds about what I w"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um . Right ? And it has a header {disfmarker} it has a header format that {pause} describes it {pause} to some extent . So , the only problem with it is it 's actually storing the {pause} utterance numbers and the {pause} frame numbers in the file , even though they 're always sequential . And so it does waste a lot of space ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But it 's still a lot tighter than {disfmarker} than ASCII . And we have a lot of tools already to deal with it ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "You do ? OK . Is there some documentation on this somewhere ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , there 's a ton of it . Man - pages and , uh , source code , and me ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK , great . So , I mean , that sounds good . I {disfmarker} I was just looking for something {disfmarker} I 'm not a database person , but something sort of standard enough that , you know , if we start using this we can give it out , other people can work on it ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , it 's not standard ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "or {disfmarker} {comment} Is it {disfmarker} ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I mean , it 's something that we developed at ICSI . But , uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But it 's {pause} been used here"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But it 's been used here"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "and people 've {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and {disfmarker} and , you know , we have a {pause} well - configured system that you can distribute for free , and {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I mean , it must be the equivalent of whatever you guys used to store feat your computed features in , right ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah , th we have {disfmarker} Actually , we {disfmarker} we use a generalization of the {disfmarker} the Sphere format ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Um , but {disfmarker} Yeah , so there is something like that but it 's , um , probably not as sophist"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , what does H T K do for features ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And I think there 's {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Or does it even have a concept of features ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "They ha it has its own {disfmarker} I mean , Entropic has their own feature format that 's called , like , S - SD or some so SF or something like that ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I 'm just wondering , would it be worth while to use that instead ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah . Th - this is exactly the kind of decision {disfmarker} It 's just whatever {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But , I mean , people don't typically share this kind of stuff , right ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "They generate their own ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I mean {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Actually , I {disfmarker} I just {disfmarker} you know , we {disfmarker} we 've done this stuff on prosodics and three or four places have asked for those prosodic files , and we just have an ASCII , uh , output of frame - by - frame ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Ah , right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Which is fine , but it gets unwieldy to go in and {disfmarker} and query these files with really huge files ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , we could do it . I was just thinking if there 's something that {disfmarker} where all the frame values are {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And a and again , if you have a {disfmarker} if you have a two - hour - long meeting , that 's gonna {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Hmm ? They 're {disfmarker} they 're fair they 're quite large ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , I mean , they 'd be emo enormous ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And these are for ten - minute Switchboard conversations ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "and {disfmarker} So it 's doable , it 's just that you can only store a feature vector at frame - by - frame and it doesn't have any kind of ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Is {disfmarker} is the sharing part of this a pretty important {pause} consideration"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "um {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "or does that just sort of , uh {disfmarker} a nice thing to have ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I {disfmarker} I don't know enough about what we 're gonna do with the data . But I thought it would be good to get something that we can {disfmarker} that other people can use or adopt for their own kinds of encoding . And just , I mean we have to use some we have to make some decision about what to do ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And especially for the prosody work , what {disfmarker} what it ends up being is you get features from the signal , and of course those change every time your alignments change . So you re - run a recognizer , you want to recompute your features , um , and then keep the database up to date ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Or you change a word , or you change a {vocalsound} utterance boundary segment , which is gonna happen a lot . And so I wanted something where {pause} all of this can be done in a elegant way and that if somebody wants to try something or compute something else , that it can be done flexibly . Um , it doesn't have to be pretty , it just has to be , you know , easy to use , and {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , the other thing {disfmarker} We should look at ATLAS , the NIST thing ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and see if they have anything at that level ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I mean , I 'm not sure what to do about this with ATLAS , because they chose a different route . I chose something that {disfmarker} Th - there are sort of two choices . Your {disfmarker} your file format can know about {disfmarker} know that you 're talking about language {pause} and speech , which is what I chose , and time , or your file format can just be a graph representation . And then the application has to impose the structure on top . So what it looked like ATLAS chose is , they chose the other way , which was their file format is just nodes and links , and you have to interpret what they mean yourself ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And why did you not choose that type of approach ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Uh , because I knew that we were doing speech , and I thought it was better if you 're looking at a raw file to be {disfmarker} t for the tags to say \" it 's an utterance \" , as opposed to the tag to say \" it 's a link \" ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK . OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So , but {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But other than that , are they compatible ? I mean , you could sort of {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , they 're reasonably compatible ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , you {disfmarker} you could {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "You could probably translate between them ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah , that 's w So ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So , well , the other thing is if we choose to use ATLAS , which maybe we should just do , we should just throw this out before we invest a lot of time in it ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK . I don't {disfmarker} So this is what the meeting 's about ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "just sort of how to {disfmarker} Um , cuz we need to come up with a database like this just to do our work . And I actually don't care , as long as it 's something useful to other people , what we choose ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So maybe it 's {disfmarker} maybe oth you know , if {disfmarker} if you have any idea of how to choose , cuz I don't ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The only thing {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Do they already have tools ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I mean , I {disfmarker} I chose this for a couple reasons . One of them is that it 's easy to parse . You don't need a full XML parser . It 's very easy to just write a Perl script {pause} to parse it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "As long as uh each tag is on one line ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Exactly . Exactly . Which I always do ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And you can have as much information in the tag as you want , right ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , I have it structured . Right ? So each type tag has only particular items that it can take ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Can you {disfmarker} But you can add to those structures if you {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sure . If you have more information . So what {disfmarker} What NIST would say is that instead of doing this , you would say something like \" link {nonvocalsound} start equals , um , you know , some node ID ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah . So {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "end equals some other node ID \" , and then \" type \" would be \" utterance \" ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You know , so it 's very similar ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So why would it be a {disfmarker} a waste to do it this way if it 's similar enough that we can always translate it ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It probably wouldn't be a waste . It would mean that at some point if we wanted to switch , we 'd just have to translate everything ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Write a translator . But it se Since they are developing a big {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But it {disfmarker} but that sounds {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But that 's {disfmarker} I don't think that 's a big deal ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "As long as it is {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "they 're developing a big infrastructure . And so it seems to me that if {disfmarker} if we want to use that , we might as well go directly to what they 're doing , rather than {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "If we want to {disfmarker} Do they already have something that 's {disfmarker} that would be useful for us in place ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . See , that 's the question . I mean , how stable is their {disfmarker} Are they ready to go ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The {disfmarker} I looked at it {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "or {disfmarker} ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The last time I looked at it was a while ago , probably a year ago , uh , when we first started talking about this ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And at that time at least {vocalsound} it was still not very {pause} complete . And so , specifically they didn't have any external format representation at that time . They just had the sort of conceptual {pause} node {disfmarker} uh , annotated transcription graph , which I really liked . And that 's exactly what this stuff is based on . Since then , they 've developed their own external file format , which is , uh , you know , this sort of s this sort of thing . Um , and apparently they 've also developed a lot of tools , but I haven't looked at them . Maybe I should ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "We should {disfmarker} we should find out ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , would the tools {disfmarker} would the tools run on something like this , if you can translate them anyway ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um , th what would {disfmarker} would {disfmarker} would {disfmarker} what would worry me is that maybe we might miss a little detail"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "It 's a hassle"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , that {disfmarker} I guess it 's a question that {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "if {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "uh , yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "that would make it very difficult to translate from one to the other ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I {disfmarker} I think if it 's conceptually close , and they already have or will have tools that everybody else will be using , I mean , {vocalsound} it would be crazy to do something s you know , separate that {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , we might as well . Yep ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So I 'll {disfmarker} I 'll take a closer look at it ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Actually , so it 's {disfmarker} that {disfmarker} that would really be the question , is just what you would feel is in the long run the best thing ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And {disfmarker} Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Cuz {vocalsound} once we start , sort of , doing this I don't {disfmarker} we don't actually have enough time to probably have to rehash it out again"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The {disfmarker} Yep . The other thing {disfmarker} the other way that I sort of established this was as easy translation to and from the Transcriber format ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "and {disfmarker} s Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "but {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , I like this . This is sort of intuitively easy to actually r read ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "as easy it could {disfmarker} as it could be . But , I suppose that {pause} as long as they have a type here that specifies \" utt \" , um ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's almost the same ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "it 's {disfmarker} yeah , close enough that {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The {disfmarker} the {disfmarker} the {disfmarker} the point is {disfmarker} with this , though , is that you can't really add any supplementary information . Right ? So if you suddenly decide that you want {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "You have to make a different type ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . You 'd have to make a different type ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So {disfmarker} Well , if you look at it and {disfmarker} Um , I guess in my mind I don't know enough {disfmarker} Jane would know better , {comment} about the {pause} types of annotations and {disfmarker} and {disfmarker} But I imagine that those are things that would {disfmarker} well , you guys mentioned this , {comment} that could span any {disfmarker} it could be in its own channel , it could span time boundaries of any type ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "it could be instantaneous , things like that . Um , and then from the recognition side we have backtraces at the phone - level ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "If {disfmarker} if it can handle that , it could handle states or whatever . And then at the prosody - level we have frame {disfmarker} sort of like cepstral feature files ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "uh , like these P - files or anything like that . And that 's sort of the world of things that I {disfmarker} And then we have the aligned channels , of course ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "It seems to me you want to keep the frame - level stuff separate ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "and {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "And then {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I {disfmarker} I definitely agree and I wanted to find actually a f a nicer format or a {disfmarker} maybe a more compact format than what we used before ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Just cuz you 've got {vocalsound} ten channels or whatever and two hours of a meeting . It 's {disfmarker} it 's a lot of {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Huge ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Now {disfmarker} now how would you {disfmarker} how would you represent , um , multiple speakers in this framework ? Were {disfmarker} You would just represent them as {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You would have like a speaker tag or something ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "there 's a spea speaker tag up at the top which identifies them and then each utt the way I had it is each turn or each utterance , {comment} I don't even remember now , had a speaker ID tag attached to it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm . OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And in this format you would have a different tag , which {disfmarker} which would , uh , be linked to the link . So {disfmarker} so somewhere else you would have another thing {pause} that would be ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "um {disfmarker} Let 's see , would it be a node or a link ? Um {disfmarker} And so {disfmarker} so this one would have , um , an ID is link {disfmarker} {comment} link seventy - four or something like that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And then somewhere up here you would have a link that {disfmarker} that , uh , you know , was referencing L - seventy - four and had speaker Adam ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Is i ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You know , or something like that ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Actually , it 's the channel , I think , that {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Well , channel or speaker or whatever ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , w yeah , channel is what the channelized output out"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "It doesn't {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "This isn't quite right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I have to look at it again ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah , but {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "But {disfmarker} but {disfmarker} so how in the NIST format do we express {vocalsound} a hierarchical relationship between , um , say , an utterance and the words within it ? So how do you {pause} tell {pause} that {pause} these are the words that belong to that utterance ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um , you would have another structure lower down than this that would be saying they 're all belonging to this ID ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So each thing refers to the {pause} utterance that it belongs to ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right . And then each utterance could refer to a turn ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So it 's {disfmarker} it 's not hi it 's sort of bottom - up ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and each turn could refer to something higher up ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And what if you actually have {disfmarker} So right now what you have as utterance , um , the closest thing that comes out of the channelized is the stuff between the segment boundaries that the transcribers put in or that Thilo put in , which may or may not actually be , like , a s it 's usually not {disfmarker} um , the beginning and end of a sentence , say ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , that 's why I didn't call it \" sentence \" ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So , right . Um , so it 's like a segment or something ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So , I mean , I assume this is possible , that if you have {disfmarker} someone annotates the punctuation or whatever when they transcribe , you can say , you know , from {disfmarker} for {disfmarker} from the c beginning of the sentence to the end of the sentence , from the annotations , this is a unit , even though it never actually {disfmarker} i It 's only a unit by virtue of the annotations {pause} at the word - level ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sure . I mean , so you would {disfmarker} you would have yet another tag ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And then that would get a tag somehow ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You 'd have another tag which says this is of type \" sentence \" ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK . OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And , what {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But it 's just not overtly in the {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Um , cuz this is exactly the kind of {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I think that should be {pause} possible as long as the {disfmarker} But , uh , what I don't understand is where the {disfmarker} where in this type of file {pause} that would be expressed ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right . You would have another tag somewhere . It 's {disfmarker} well , there 're two ways of doing it ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "S so it would just be floating before the sentence or floating after the sentence without a time - mark ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You could have some sort of link type {disfmarker} type equals \" sentence \" , and ID is \" S - whatever \" . And then lower down you could have an utterance . So the type is \" utterance \" {disfmarker} equals \" utt \" . And you could either say that {disfmarker} No . I don't know {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So here 's the thing ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I take that back ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Um {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Can you {disfmarker} can you say that this is part of this ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "See , cuz it 's {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hhh ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "it 's {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "You would just have a r"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "S"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "or do you say this is part of this ? I think {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "You would refer up to the sentence ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But they 're {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Well , the thing {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "they 're actually overlapping each other , sort of ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "the thing is that some something may be a part of one thing for one purpose and another thing of another purpose ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So f"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "You have to have another type then , I guess ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "s Um , well , s let 's {disfmarker} let 's ta so let 's {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , I think I 'm {disfmarker} I think w I had better look at it again"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "so {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "because I {disfmarker} I 'm {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK . OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "y So for instance @ @ {comment} sup"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "There 's one level {disfmarker} there 's one more level of indirection that I 'm forgetting ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Suppose you have a word sequence and you have two different segmentations of that same word sequence . f Say , one segmentation is in terms of , um , you know , uh , sentences . And another segmentation is in terms of , um , {vocalsound} I don't know , {comment} prosodic phrases . And let 's say that they don't {pause} nest . So , you know , a prosodic phrase may cross two sentences or something ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I don't know if that 's true or not but {vocalsound} let 's as"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Well , it 's definitely true with the segment ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "That 's what I {disfmarker} exactly what I meant by the utterances versus the sentence could be sort of {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah . So , you want to be s you want to say this {disfmarker} this word is part of that sentence and this prosodic phrase ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "But the phrase is not part of the sentence"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "and neither is the sentence part of the phrase ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I I 'm pretty sure that you can do that , but I 'm forgetting the exact level of nesting ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So , you would have to have {vocalsound} two different pointers from the word up {disfmarker} one level up , one to the sent"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So {disfmarker} so what you would end up having is a tag saying \" here 's a word , and it starts here and it ends here \" ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And then lower down you would say \" here 's a prosodic boundary and it has these words in it \" . And lower down you 'd have \" here 's a sentence ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "An - Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and it has these words in it \" ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So you would be able to go in and say , you know , \" give me all the words in the bound in the prosodic phrase"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "and give me all the words in the {disfmarker} \" Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So I think that 's {disfmarker} that would wor"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Um , OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Let me look at it again ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm . The {disfmarker} the o the other issue that you had was , how do you actually efficiently extract , um {disfmarker} find and extract information in a structure of this type ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "That 's good ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So you gave some examples like {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Well , uh , and , I mean , you guys might {disfmarker} I don't know if this is premature because I suppose once you get the representation you can do this , but the kinds of things I was worried about is ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "No , that 's not clear ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I mean , yeah , you c sure you can do it ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Well , OK . So i if it {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "but can you do it sort of l l you know , it {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I I mean , I can't do it , but I can {disfmarker} um ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "y y you gotta {disfmarker} you gotta do this {disfmarker} you {disfmarker} you 're gonna want to do this very quickly"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "or else you 'll spend all your time sort of searching through very {vocalsound} complex data structures {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Right . You 'd need a p sort of a paradigm for how to do it . But an example would be \" find all the cases in which Adam started to talk while Andreas was talking and his pitch was rising , Andreas 's pitch \" . That kind of thing ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right . I mean , that 's gonna be {disfmarker} Is the rising pitch a {pause} feature , or is it gonna be in the same file ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Well , the rising pitch will never be {pause} hand - annotated . So the {disfmarker} all the prosodic features are going to be automatically {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But the {disfmarker} I mean , that 's gonna be hard regardless ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So they 're gonna be in those {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "right ? Because you 're gonna have to write a program that goes through your feature file and looks for rising pitches ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So {disfmarker} Right . So normally what we would do is we would say \" what do we wanna assign rising pitch to ? \" Are we gonna assign it to words ? Are we gonna just assign it to sort of {disfmarker} when it 's rising we have a begin - end rise representation ? But suppose we dump out this file and we say , uh , for every word we just classify it as , w you know , rise or fall or neither ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK . Well , in that case you would add that to this {pause} format"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "r"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So we would basically be sort of , um , taking the format and enriching it with things that we wanna query in relation to the words that are already in the file ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "and then querying it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You want sort of a grep that 's {disfmarker} that works at the structural {disfmarker} on the structural representation ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You have that . There 's a {pause} standard again in XML , specifically for searching XML documents {disfmarker} structured X - XML documents , where you can specify both the content and the structural position ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah , but it 's {disfmarker} it 's not clear that that 's {disfmarker} That 's relative to the structure of the XML document ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "If {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "not to the structure of what you 're representing in the document ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You use it as a tool . You use it as a tool , not an end - user . It 's not an end - user thing ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's {disfmarker} it 's {disfmarker} you would use that to build your tool to do that sort of search ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right . Be Because here you 're specifying a lattice ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So the underlying {disfmarker} that 's the underlying data structure . And you want to be able to search in that lattice ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But as long as the {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's a graph , but {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "That 's different from searching through the text ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But it seems like as long as the features that {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , no , no , no . The whole point is that the text and the lattice are isomorphic . They {pause} represent each other {pause} completely ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Um {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So that {disfmarker} I mean th"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "That 's true if the features from your acoustics or whatever that are not explicitly in this are at the level of these types ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hhh ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "That {disfmarker} that if you can do that {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , but that 's gonna be the trouble no matter what . Right ? No matter what format you choose , you 're gonna have the trou you 're gonna have the difficulty of relating the {disfmarker} the frame - level features {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "That 's right . That 's true . That 's why I was trying to figure out what 's the best format for this representation ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And it 's still gonna be {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "it 's still gonna be , uh , not direct ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "You know , it {disfmarker} Or another example was , you know , uh , where in the language {disfmarker} where in the word sequence are people interrupting ? So , I guess that one 's actually easier ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "What about {disfmarker} what about , um , the idea of using a relational database to , uh , store the information from the XML ? So you would have {disfmarker} XML basically would {disfmarker} Uh , you {disfmarker} you could use the XML to put the data in , and then when you get data out , you put it back in XML . So use XML as sort of the {disfmarker} the transfer format ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Transfer ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "uh , but then you store the data in the database , which allows you to do all kinds of {pause} good search things in there ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The , uh {disfmarker} One of the things that ATLAS is doing is they 're trying to define an API which is independent of the back store ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Huh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "so that , uh , you could define a single API and the {disfmarker} the storage could be flat XML files or a database ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "My opinion on that is for the s sort of stuff that we 're doing , {comment} I suspect it 's overkill to do a full relational database , that , um , just a flat file and , uh , search tools I bet will be enough ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "But {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But that 's the advantage of ATLAS , is that if we actually take {disfmarker} decide to go that route completely and we program to their API , then if we wanted to add a database later it would be pretty easy ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "It seems like the kind of thing you 'd do if {disfmarker} I don't know , if people start adding all kinds of s bells and whistles to the data . And so that might be {disfmarker} I mean , it 'd be good for us to know {disfmarker} to use a format where we know we can easily , um , input that to some database if other people are using it ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Something like that ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I guess I 'm just a little hesitant to try to go whole hog on sort of the {disfmarker} the whole framework that {disfmarker} that NIST is talking about , with ATLAS and a database and all that sort of stuff ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "cuz it 's a big learning curve , just to get going ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Whereas if we just do a flat file format , sure , it may not be as efficient but everyone can program in Perl and {disfmarker} and use it ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "But this is {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So , as opposed to {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I {disfmarker} I 'm still , um , {vocalsound} not convinced that you can do much at all on the text {disfmarker} on the flat file that {disfmarker} that {disfmarker} you know , the text representation . e Because the text representation is gonna be , uh , not reflecting the structure of {disfmarker} of your words and annotations . It 's just {disfmarker} it 's {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , if it 's not representing it , then how do you recover it ? Of course it 's representing it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "No . You {disfmarker} you have to {disfmarker} what you have to do is you have to basically {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "That 's the whole point ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Y yeah . You can use Perl to read it in and construct a internal representation that is essentially a lattice . But , the {disfmarker} and then {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , that was a different point ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ? So what I was saying is that {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "But that 's what you 'll have to do . Bec - be"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "For Perl {disfmarker} if you want to just do Perl . If you wanted to use the structured XML query language , that 's a different thing . And it 's a set of tools {vocalsound} that let you specify given the D - DDT {disfmarker} DTD of the document , um , what sorts of structural searches you want to do . So you want to say that , you know , you 're looking for , um , a tag within a tag within a particular tag that has this particular text in it , um , and , uh , refers to a particular value . And so the point isn't that an end - user , who is looking for a query like you specified , wouldn't program it in this language . What you would do is , someone would build a tool that used that as a library . So that they {disfmarker} so that you wouldn't have to construct the internal representations yourself ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Is a {disfmarker} See , I think the kinds of questions , at least in the next {disfmarker} to the end of this year , are {disfmarker} there may be a lot of different ones , but they 'll all have a similar nature . They 'll be looking at either a word - level prosodic , uh , an {disfmarker} a value ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "like a continuous value , like the slope of something . But you know , we 'll do something where we {disfmarker} some kind of data reduction where the prosodic features are sort o uh , either at the word - level or at the segment - level ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "or {disfmarker} or something like that . They 're not gonna be at the phone - level and they 're no not gonna be at the frame - level when we get done with sort of giving them simpler shapes and things . And so the main thing is just being able {disfmarker} Well , I guess , the two goals . Um , one that Chuck mentioned is starting out with something that we don't have to start over , that we don't have to throw away if other people want to extend it for other kinds of questions ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "and being able to at least get enough , uh , information out on {disfmarker} where we condition the location of features on information that 's in the kind of file that you {pause} put up there . And that would {disfmarker} that would do it ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . I think that there are quick and dirty solutions ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , for me ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and then there are long - term , big - infrastructure solutions . And so {vocalsound} we want to try to pick something that lets us do a little bit of both ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "In the between , right . And especially that the representation doesn't have to be thrown away ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um {disfmarker} Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "even if your tools change ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And so it seems to me that {disfmarker} I mean , I have to look at it again to see whether it can really do what we want , but if we use the ATLAS external file representation , um , it seems like it 's rich enough that you could do quick tools just as I said in Perl , and then later on if we choose to go up the learning curve , we can use the whole ATLAS inter infrastructure ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah . I mean , that sounds good to me ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "which has all that built in ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I {disfmarker} I don't {disfmarker} So if {disfmarker} if you would l look at that and let us know what you think ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sure ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , I think we 're sort of guinea pigs , cuz I {disfmarker} I want to get the prosody work done but I don't want to waste time , you know , getting the {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , maybe {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "um {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , I wouldn't wait for the formats , because anything you pick we 'll be able to translate to another form ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Well {disfmarker} Ma well , maybe you should actually look at it yourself too to get a sense of what it is you 'll {disfmarker} you 'll be dealing with ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "because , um , you know , Adam might have one opinion but you might have another , so"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah , definitely ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I think the more eyes look at this the better ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Especially if there 's , e um {disfmarker} you know , if someone can help with at least the {disfmarker} the setup of the right {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hi , Jane ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Oh , hi ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "the right representation , then , i you know , I hope it won't {disfmarker} We don't actually need the whole full - blown thing to be ready ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Can you {disfmarker} Oh , well ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "so . Um , so maybe if you guys can look at it and sort of see what ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sure ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "um {disfmarker} I think we 're {disfmarker} we 're {disfmarker} {vocalsound} we 're actually just {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "We 're about done ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "yeah ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "wrapping up , but , um {disfmarker} Yeah , sorry , it 's a uh short meeting , but , um {disfmarker} Well , I don't know . Is there anything else , like {disfmarker} I mean that helps me a lot ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , I think the other thing we might want to look at is alternatives to P - file ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "but {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I mean , th the reason I like P - file is I 'm already familiar with it , we have expertise here , and so if we pick something else , there 's the learning - curve problem . But , I mean , it is just something we developed at ICSI ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Is there an {disfmarker} is there an IP - API ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And so {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "There 's an API for it . And , uh ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "There used to be a problem that they get too large ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "a bunch of libraries , P - file utilities ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "and so {pause} basically the {disfmarker} uh the filesystem wouldn't {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , that 's gonna be a problem no matter what . You have the two - gigabyte limit on the filesystem size . And we definitely hit that with Broadcast News ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Maybe you could extend the API to , uh , support , uh , like splitting up , you know , conceptually one file into smaller files on disk so that you can essentially , you know , have arbitrarily long f"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep . Most of the tools can handle that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So that we didn't do it at the API - level . We did it at the t tool - level . That {disfmarker} that {disfmarker} most {disfmarker} many of them can s you can specify several P - files and they 'll just be done sequentially ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So , I guess , yeah , if {disfmarker} if you and Don can {disfmarker} if you can show him the P - file stuff and see ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sure ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So this would be like for the F - zero {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "True ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I mean , if you do \" man P - file \" or \" apropos P - file \" , you 'll see a lot ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I 've used the P - file , I think . I 've looked at it at least , briefly , I think when we were doing s something ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "What does the P stand for anyway ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I have no idea ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh , in there ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I didn't de I didn't develop it . You know , it was {disfmarker} I think it was Dave Johnson . So it 's all part of the Quicknet library . It has all the utilities for it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "No , P - files were around way before Quicknet . P - files were {disfmarker} were around when {disfmarker} w with , um , {vocalsound} RAP ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Oh , were they ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "It 's like the history of ICSI ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You worked with P - files ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Like {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "No ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I worked with P - files ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I don't remember what the \" P \" is , though ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "No ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But there are ni they 're {disfmarker} The {pause} Quicknet library has a bunch of things in it to handle P - files ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "so it works pretty well ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": ""
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And that isn't really , I guess , as important as the {disfmarker} the main {disfmarker} I don't know what you call it , the {disfmarker} the main sort of word - level {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Neither do I ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Probably stands for \" Phil \" . Phil Kohn ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's a Phil file ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . That 's my guess ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Huh . OK . Well , that 's really useful . I mean , this is exactly the kind of thing that I wanted to settle . Um , so {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , I 've been meaning to look at the ATLAS stuff again anyway ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Great ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So , just keep {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah . I guess it 's also sort of a political deci I mean , if {disfmarker} if you feel like that 's a community that would be good to tie into anyway , then it 's {disfmarker} sounds like it 's worth doing ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , I think it {disfmarker} it w"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "j I think there 's {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And , w uh , as I said , I {disfmarker} what I did with this stuff {disfmarker} I based it on theirs . It 's just they hadn't actually come up with an external format yet . So now that they have come up with a format , it doesn't {disfmarker} it seems pretty reasonable to use it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But let me look at it again ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "OK , great ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "As I said , that {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Cuz we actually can start {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "There 's one level {disfmarker} there 's one more level of indirection and I 'm just blanking on exactly how it works . I gotta look at it again ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I mean , we can start with , um , I guess , this input from Dave 's , which you had printed out , the channelized input . Cuz he has all of the channels , you know , with the channels in the tag and stuff like that ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , I 've seen it ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So that would be i directly ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep . Easy {disfmarker} easy to map ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "um {disfmarker} Yeah . And so then it would just be a matter of getting {disfmarker} making sure to handle the annotations that are , you know , not at the word - level and , um , t to import the"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Where are those annotations coming from ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Well , right now , I g Jane would {disfmarker} {vocalsound} would {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Are you talking about the overlap a annotations ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah , any kind of annotation {pause} that , like , isn't already there . Uh , you know , anything you can envision ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Yeah . So what I was imagining was {disfmarker} um , so Dave says we can have unlimited numbers of green ribbons . And so put , uh , a {disfmarker} a green ribbon on for an overlap code . And since we w we {disfmarker} I {disfmarker} I think it 's important to remain flexible regarding the time bins for now . And so it 's nice to have {disfmarker} However , you know , you want to have it , uh , time time uh , located in the discourse . So , um , if we {disfmarker} if we tie the overlap code to the first word in the overlap , then you 'll have a time - marking . It won't {disfmarker} it 'll be independent of the time bins , however these e evolve , shrink , or whatever , increase , or {disfmarker} Also , you could have different time bins for different purposes . And having it tied to the first word in an overlap segment is unique , uh , you know , anchored , clear . And it would just end up on a separate ribbon ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "So the overlap coding is gonna be easy with respect to that . You look puzzled ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I {disfmarker} I just {disfmarker} I don't quite understand what these things are ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "What , the codes themselves ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well , th overlap codes ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Or the {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I 'm not sure what that @ @ {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , I mean , is that {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It probably doesn't matter ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Well , we don't have to go into the codes ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I mean , it doesn't ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "No , I d"
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "We don't have to go into the codes ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I mean , that {disfmarker} not for the topic of this meeting ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "But let me just {disfmarker} No . W the idea is just to have a separate green ribbon , you know , and {disfmarker} and {disfmarker} and let 's say that this is a time bin . There 's a word here . This is the first word of an overlapping segment of any length , overlapping with any other , uh , word {disfmarker} uh , i segment of any length . And , um , then you can indicate that this here was perhaps a ch a backchannel , or you can say that it was , um , a usurping of the turn , or you can {disfmarker} you know , any {disfmarker} any number of categories . But the fact is , you have it time - tagged in a way that 's independent of the , uh , sp particular time bin that the word ends up in . If it 's a large unit or a small unit , or"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "we sh change the boundaries of the units , it 's still unique and {disfmarker} and , uh , fits with the format ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "flexible , all that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Um , it would be nice {disfmarker} um , eh , gr this is sort of r regarding {disfmarker} uh , uh it 's related but not directly germane to the topic of discussion , but , when it comes to annotations , um , you often find yourself in the situation where you have {pause} different annotations {pause} of the same , say , word sequence . OK ?"
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "And sometimes the word sequences even differ slightly because they were edited s at one place but not the other ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So , once this data gets out there , some people might start annotating this for , I don't know , dialogue acts or , um , you know , topics or what the heck . You know , there 's a zillion things that people might annotate this for . And the only thing that is really sort of common among all the versi the various versions of this data is the word sequence , or approximately ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Or the time ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Or the times . But , see , if you 'd annotate dialogue acts , you don't necessarily want to {disfmarker} or topics {disfmarker} you don't really want to be dealing with time - marks ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "I guess ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You 'd {disfmarker} it 's much more efficient for them to just see the word sequence , right ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I mean , most people aren't as sophisticated as {disfmarker} as we are here with , you know , uh , time alignments and stuff . So {disfmarker} So the {disfmarker} the {disfmarker} the point is {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Should {disfmarker} should we mention some names on the people who are n ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right . So , um , the p my point is that {pause} you 're gonna end up with , uh , word sequences that are differently annotated . And {pause} you want some tool , uh , that is able to sort of merge these different annotations back into a single , uh , version . OK ? Um , and we had this problem very massively , uh , at SRI when we worked , uh , a while back on , {vocalsound} uh {disfmarker} well , on dialogue acts as well as , uh , you know , um , what was it ? uh ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Well , all the Switchboard in it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "utterance types . There 's , uh , automatic , uh , punctuation and stuff like that ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Because we had one set of {pause} annotations that were based on , uh , one version of the transcripts with a particular segmentation , and then we had another version that was based on , uh , a different s slightly edited version of the transcripts with a different segmentation . So , {vocalsound} we had these two different versions which were {disfmarker} you know , you could tell they were from the same source but they weren't identical . So it was extremely hard {vocalsound} to reliably merge these two back together to correlate the information from the different annotations ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep . I {disfmarker} I don't see any way that file formats are gonna help us with that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "No ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's {disfmarker} it 's all a question of semantic ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "No . But once you have a file format , I can imagine writing {disfmarker} not personally , but someone writing a tool that is essentially an alignment tool , um , that mediates between various versions ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "and {disfmarker} uh , sort of like th uh , you know , you have this thing in UNIX where you have , uh , diff ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Diff ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "W - diff or diff ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "There 's the , uh , diff that actually tries to reconcile different {disfmarker} two diffs f {comment} based on the same original ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Is it S - diff ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Something like that , um , but operating on these lattices that are really what 's behind this {disfmarker} uh , this annotation format ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "There 's actually a diff library you can use {pause} to do things like that that {disfmarker} so you have different formats ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "You could definitely do that with the {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So somewhere in the API you would like to have like a merge or some {disfmarker} some function that merges two {disfmarker} two versions ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , I think it 's gonna be very hard . Any sort of structured anything when you try to merge is really , really hard"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "because you ha i The hard part isn't the file format . The hard part is specifying what you mean by \" merge \" ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Is {disfmarker} Exactly ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And that 's very difficult ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But the one thing that would work here actually for i that is more reliable than the utterances is the {disfmarker} the speaker ons and offs . So if you have a good ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But this is exactly what I mean , is that {disfmarker} that the problem i"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "um {disfmarker} Yeah . You just have to know wha what to tie it to ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , exactly . The problem is saying \" what are the semantics ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "what do you mean by \" merge \" ? \""
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Right , right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right . So {disfmarker} so just to let you know what we {disfmarker} where we kluged it by , uh , doing {disfmarker} uh , by doing {disfmarker} Hhh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Both were based on words , so , bo we have two versions of the same words intersp you know , sprinkled with {disfmarker} with different tags for annotations ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And then you did diff ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "And we did diff . Exactly !"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , that 's just what I thought ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "And that 's how {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "That 's just wh how I would have done it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah . But , you know , it had lots of errors and things would end up in the wrong order , and so forth . Uh , so , um , if you had a more {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Uh , it {disfmarker} it was a kluge because it was basically reducing everything to {disfmarker} uh , to {disfmarker} uh , uh , to textual alignment ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "A textual {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Um , so {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But , d isn't that something where whoever {disfmarker} if {vocalsound} {disfmarker} if the people who are making changes , say in the transcripts , cuz this all happened when the transcripts were different {disfmarker} ye um , if they tie it to something , like if they tied it to the acoustic segment {disfmarker} if they {disfmarker} You know what I mean ? Then {disfmarker} Or if they tied it to an acoustic segment and we had the time - marks , that would help ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But the problem is exactly as Adam said , that you get , you know , y you don't have that information or it 's lost in the merge somehow ,"
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Well , can I ask one question ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "so {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "It {disfmarker} it seems to me that , um , we will have o an official version of the corpus , which will be only one {disfmarker} one version in terms of the words {disfmarker} where the words are concerned . We 'd still have the {disfmarker} the merging issue maybe if coding were done independently of the {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "And you 're gonna get that"
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "But {disfmarker} but {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "because if the data gets out , people will do all kinds of things to it . And , uh , s you know , several years from now you might want to look into , um , the prosody of referring expressions . And someone at the university of who knows where has annotated the referring expressions . So you want to get that annotation and bring it back in line with your data ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But unfortunately they 've also hand - edited it ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "OK , then {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But they 've also {disfmarker} Exactly . And so that 's exactly what we should {disfmarker} somehow when you distribute the data , say that {disfmarker} you know , that {disfmarker} have some way of knowing how to merge it back in and asking people to try to do that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Well , then the {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "What 's {disfmarker} what 's wrong with {pause} doing times ? I {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "I agree . That was what I was wondering ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Uh , yeah , time is the {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well ,"
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Time is unique . You were saying that you didn't think we should {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Time is passing !"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Time {disfmarker} time {disfmarker} times are ephemeral ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Andreas was saying {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "what if they haven't notated with them , times ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah . He {disfmarker} he 's a language modeling person , though ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Um {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So {disfmarker} so imagine {disfmarker} I think his {disfmarker} his example is a good one . Imagine that this person who developed the corpus of the referring expressions didn't include time ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm . Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "He included references to words ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Ach !"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "He said that at this word is when {disfmarker} when it happened ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Well , then {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Or she ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Or she ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "But then couldn't you just indirectly figure out the time {pause} tied to the word ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "But still they {disfmarker} Exactly ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sure . But what if {disfmarker} what if they change the words ?"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Not {disfmarker} Well , but you 'd have some anchoring point . He couldn't have changed all the words ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But can they change the words without changing the time of the word ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sure . But they could have changed it a little . The {disfmarker} the point is , that {disfmarker} that they may have annotated it off a word transcript that isn't the same as our word transcript , so how do you merge it back in ? I understand what you 're saying ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And I {disfmarker} I guess the answer is , um , it 's gonna be different every time . It 's j it 's just gonna be {disfmarker}"
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I it 's exactly what I said before ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "You only know the boundaries of the {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "which is that \" what do you mean by \" merge \" ? \" So in this case where you have the words and you don't have the times , well , what do you mean by \" merge \" ? If you tell me what you mean , I can write a program to do it ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Right . Right . You can merge at the level of the representation that the other person preserved and that 's it ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right . And that 's about all you can do ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And beyond that , all you know is {disfmarker} is relative ordering and sometimes even that is wrong ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So {disfmarker} so in {disfmarker} so in this one you would have to do a best match between the word sequences ,"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "So ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "extract the times f from the best match of theirs to yours , and use that ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "And then infer that their time - marks are somewhere in between ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Yeah , exactly ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "But it could be that they just {disfmarker} uh , I mean , it could be that they chunked {disfmarker} they {disfmarker} they lost certain utterances and all that stuff ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right , exactly . So it could get very , very ugly ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "or {disfmarker}"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Definitely ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Definitely . Alright ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "That 's interesting ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Well , I guess , w I {disfmarker} I didn't want to keep people too long and Adam wanted t people {disfmarker} I 'll read the digits . If anyone else offers to , that 'd be great . And"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Ah , well ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD F",
+            "content": "if not , I guess {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "For th for the {disfmarker} {nonvocalsound} for the benefit of science we 'll read the digits ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "More digits , the better . OK , this is"
+        },
+        {
+            "speaker": "PhD F",
+            "content": "Thanks {disfmarker} thanks a lot . It 's really helpful . I mean , Adam and Don {nonvocalsound} will sort of meet and I think that 's great . Very useful . Go next ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Scratch that ."
+        },
+        {
+            "speaker": "Postdoc E",
+            "content": "O three"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Oh , right ."
+        }
+    ]
+}

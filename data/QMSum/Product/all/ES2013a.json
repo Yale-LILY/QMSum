@@ -1,0 +1,662 @@
+{
+    "topic_list": [
+        {
+            "topic": "Meeting agenda and team building",
+            "relevant_text_span": [
+                [
+                    "2",
+                    "73"
+                ]
+            ]
+        },
+        {
+            "topic": "Selling target of the remote control",
+            "relevant_text_span": [
+                [
+                    "74",
+                    "93"
+                ]
+            ]
+        },
+        {
+            "topic": "Remote control function and design",
+            "relevant_text_span": [
+                [
+                    "93",
+                    "123"
+                ]
+            ]
+        },
+        {
+            "topic": "Work allocation",
+            "relevant_text_span": [
+                [
+                    "123",
+                    "133"
+                ]
+            ]
+        }
+    ],
+    "general_query_list": [
+        {
+            "query": "Summarize the whole meeting.",
+            "answer": "Project Manager introduced the agenda of the meeting, and the group became acquainted with each other. The selling target of the remote control would be set as four million. The group discussed industrial design, working design including the theme of Hello Kitty and bright colours. They also decided that the remote control was only for television, and its technical functions must be simple and marketing the user requirements specification."
+        }
+    ],
+    "specific_query_list": [
+        {
+            "query": "Summarize the discussion about the marketing target of the remote control.",
+            "answer": "The preliminary aim of the profit was fifty million Euros. The setting price was twenty-five Euros each remote control, and therefore the profit was twelve and a half Euros per item. To reach the profit goal of fifty million, Marketing set a sales figure of four million.",
+            "relevant_text_span": [
+                [
+                    "74",
+                    "93"
+                ]
+            ]
+        },
+        {
+            "query": "Why did Marketing disagree with Project Manager when Project Manager proposed the setting price?",
+            "answer": "The setting price of each remote control that Project Manager proposed was twenty-five, but Marketing had doubts about the profits. Marketing wasn't sure that if the mark-up of fifty percent is normal for a product, and preferred sixty percent.",
+            "relevant_text_span": [
+                [
+                    "74",
+                    "78"
+                ]
+            ]
+        },
+        {
+            "query": "What did Project Manager think of the necessity of setting the selling target?",
+            "answer": "Project Manager thought that setting the selling target was of high importance for a big international company making marketing plans including sales target.",
+            "relevant_text_span": [
+                [
+                    "79",
+                    "90"
+                ]
+            ]
+        },
+        {
+            "query": "Summarize the discussion about the design of the remote control.",
+            "answer": "User Interface presumed that the remote control was only for the television, and suggested that the technical functions should be simple and removed the superfluous functions. They also suggested setting the theme of the remote control as Hello Kitty, and making it in bright colours.",
+            "relevant_text_span": [
+                [
+                    "93",
+                    "123"
+                ]
+            ]
+        },
+        {
+            "query": "What did User Interface think about the technical function design of the new remote control?",
+            "answer": "User Interface argued that the simplicity of the remote control of high importance, which means superfluous functions such as subtitles and mute should be removed from the remote control and be controlled through the menu.",
+            "relevant_text_span": [
+                [
+                    "114",
+                    "123"
+                ]
+            ]
+        },
+        {
+            "query": "Why did User Interface agree with Industrial Designer's opinion when discussing the adapted product of the remote control?",
+            "answer": "User Interface held the same opinion as Industrial Designer that different remote controls that were incompatible with each other brought inconvenience to users. User Interface still presumed that this remote control was only for television.",
+            "relevant_text_span": [
+                [
+                    "94",
+                    "104"
+                ]
+            ]
+        }
+    ],
+    "meeting_transcripts": [
+        {
+            "speaker": "Marketing",
+            "content": "Is this okay ?"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Uh yeah . Fine now . Oh , it's not liking us , it went that-a-way . Computer adjusting . Oh . Uh . Okay . {vocalsound} So . Right . You ready back there ? {vocalsound} Uh okay . Welcome everyone . Um this is the kick-off meeting for the day . Um we're the new group uh to create a new remote control for Real Reaction . As you can see our agenda is to open up the meeting , um become acquainted with each other , um have a little training on tools , uh create a plan , discuss things and and we only have twenty minut twenty five minutes total . Okay . The new remote control is to be original , trendy and user-friendly . That , Steph , is your part , is the user-friendliness . The originality um is gonna take all of us . Um the trendiness we'll probably go look at {disfmarker} for some marketing research information from you , Sarah . Um and we'll get on with it . Okay , so we'll have a functional design individual work um with meeting and then conceptual design t and then detailed design . Okay ? Right . Everybody's supposed to try out the whiteboard . Kate , why don't you try it first , if you can either bring your things with you , I guess {disfmarker}"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Uh yeah , if I can pick up with all these bits and pieces , hang on ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "And while you're doing that we'll try and figure out how to hook these things on as well , 'cause we're all gonna have to be able to walk around ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Uh right , so you want an animal and the characteristics of that animal . {vocalsound}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Do you have to be able to recognise what animal it is ? {vocalsound} Um {disfmarker}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Uh I do not think so ,"
+        },
+        {
+            "speaker": "User Interface",
+            "content": "{vocalsound} {vocalsound} Are we all gonna draw a cat ?"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "I think it's just to try out the whiteboard . {vocalsound} {vocalsound} Ah {vocalsound} ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound} Only animal I could thin I could draw {vocalsound} ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "I know ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Its a sort of bunny rabbit cat . {vocalsound}"
+        },
+        {
+            "speaker": "User Interface",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "You can tell it's not a bunny rabbit by the ears ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Uh-huh ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Um I suppose it should have a mouth as well , sort of {disfmarker}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Okay ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Right , yeah ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Great . And the characteristics ?"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Um the favourite characteristics of the cat um {disfmarker} the whiskers I think , um because they're the easiest to draw ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Uh-huh ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "In fact , I'll give it some more {disfmarker}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Okay ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound} Oh , and the tail"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Fantastic . Since you're handy as well , why don't you do yours next , Steph . I think it's to get us used to using the pen ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound} Yes . Um sure it's not to test our artistic {disfmarker}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Uh no . {vocalsound} A mouse-y ?"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "It's a mouse ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "That's not a mouse-y , no ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "No it's not a mouse . It's a wombat ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "It's a ratty ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Argh ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "A what ?"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Rat ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "A ratty ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Not a mouse , a rat ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "A webbed foot . Webbed f {vocalsound}"
+        },
+        {
+            "speaker": "User Interface",
+            "content": "{vocalsound} It's clothes . That's it's clothes . {vocalsound}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Oh right {vocalsound} ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "It's a ratty with a with a with a very long tail ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "And your favourite characteristics of that animal ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "I love whiskers . Uh they're intelligent and they're cheeky {vocalsound} and uh fantastic pets"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "and very friendly ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Okay . Kate ?"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound} {vocalsound}"
+        },
+        {
+            "speaker": "User Interface",
+            "content": "And they sit on your shoulder and whisper the answers to your homework in your ear when you're doing your homework ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Thanks ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Oh , a fish ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound} Gosh ,"
+        },
+        {
+            "speaker": "User Interface",
+            "content": "A shark ?"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "why didn't I think of fish ? That's even easier to draw than cat . {vocalsound}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Mm {vocalsound} this is very representational fish . {vocalsound}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Oh , okay ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Fine ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Um I like them because they're sleek"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Favourite characteristics ?"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "and they have a lot of freedom but they also do n uh swim in groups ,"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "'Kay ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "so ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "So they have team elements . {vocalsound}"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Do you have a favourite one ?"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "I'm afraid I'm with Steph . And I think your pen's running out of whatever . But I'm afraid I take the coward's way out , and the cat's looking the other way . {vocalsound}"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "He's hiding ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Um cats are sometimes very independent . My parents had cats . Uh and they can mm decide for themselves what is best . Okay . Now um {vocalsound} we have to get down to the nitty-gritty of how to make this and this remote control has to be sold {disfmarker} um we're to sell it for twenty five Euros , with a profit aim ultimately of fifty million Euros . That tells you something about how many um we have to sell on an international scale . Um would be an awful lot of these , would be like what , a hundred million of them um to make twenty five Euros on each one and to make a total profit of fifty million . Um the production is to only cost twelve and a half Euros per item . Now if they cost twelve and a half , you're selling it for twenty five , you're making twelve and a half Euros each . Um and we're to make a profit of fifty million , that's t uh {disfmarker} can you do the maths and how many are we selling ?"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "{vocalsound} Uh yeah . {vocalsound} I was just wondering if that's the um {disfmarker} If fifty percent is normal {disfmarker}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Mark-up ?"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "B yeah . Um I would think would be more like sixty percent . But um let me {disfmarker}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Okay ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "I have two thoughts . One hundred , fifty percent ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "{gap}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "And and your question is how many do we have to sell ?"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Yes , 'cause our market um is international and your problem is {disfmarker} has to do with marketing of {disfmarker} you know , you gotta know how many we're going to be selling to know how big a market you have to target and who is that ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "At twenty five . Mm-hmm . Yeah , that's um {disfmarker}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "To give you a pretty good idea of where you're looking ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "So that's four million of them ?"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Something like that ? Okay ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "That's fifty million Euros . In order to make fifty million Euros , and you're only getting twelve and a half each {disfmarker}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "And if we make {disfmarker} Mm-hmm ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "That's a lot of selling . Two four {disfmarker}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Yeah . Four million ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "To be fifty , be four million . You'd have to sell four million ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Okay ? Right . Experience with a remote control . Any of you use of remote control for a television or D_V_D_ or something ? You're both nodding ,"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "That that that's the sorta product we're talking about , one that will work for a {disfmarker} in a home environment , for a T_V_s and {disfmarker}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "all three . Well I've seen some remote controls that are for more than one device at a time , but I also have heard about them not working well or not well co-ordinated and you wind up working with this one for thi this three and then this one over here for another ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "It is true that you always sit around {disfmarker} you know , you're sitting on your sofa and you wanna change something , there's five different remotes , and one for the D_V_D_ and one for the video and one for cable and one for whatever else ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Mm-hmm . Y yeah ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "And they don't always talk to each other ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "But I presume this is t I presume this is just for television ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Don't know . Okay ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Are there any um ideas for the remote ? What would it be for and what group would be be for ? We have to think about that one ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "We could make a Hello Kitty"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "themed remote ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "User Interface",
+            "content": "I think one in b bright colours would be good . {vocalsound}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "{vocalsound} I think one that works would be good . {vocalsound}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "We could totally go for the Japan-a-mation . Well I mean there's also the cachet that um uh the Japanese make great {vocalsound} products . Electrical {disfmarker} their industrial design is very good ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "I think one that doesn't have lots of superfluous functions . Like I've got one at home that has well , apart from the obvious , channels , channel up , channel down , volume ,"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "you know , subtitles , mute , there's a lotta buttons that I've got no idea what they do , like {vocalsound} ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "{vocalsound}"
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Well , that's a really good point ,"
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Okay ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "because I think one of the things that {disfmarker} being somewhat computer literate , we tend to um go to menus and then make choices , you know , so if it's like an uh volume button , you know , you can go in and say mute or or volume . We don't need to have like the l the numbers if we also have uh uh channel up channel down ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "Mm ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Mm . {vocalsound} Okay ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Mm . We can make it smart like an iPod , you know , make everything menus ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "Ooh , closing the meeting ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Yeah . Um I know this sounds like it was very quick ,"
+        },
+        {
+            "speaker": "User Interface",
+            "content": "That was quick ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "but the I think that's the industrial design is the first one ,"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Mm ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "that's Kate , for the working design ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Mm-hmm ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "And user , that's you S Steph , for the technical functions design , and for marketing the user requirements specification . I think there's going to be a lot of {disfmarker} we have to help each other and work through this as a group , and I think we all , you know , {vocalsound} we like our kitty-cat and our rat and our fish , but I think we all have to like each other um to get this done . Uh as it says , we're gonna get individual instructions , but uh I don't think they allowed a lot of extra time , so I think a little bit of less of this and more at do will set us in good stead . Do you all agree ?"
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "Mm-hmm ."
+        },
+        {
+            "speaker": "User Interface",
+            "content": "Mm-hmm ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Alright . Um then I don't see any reason to prolong it and f we should finish this meeting at ni right now and go into other things . Alright , so this is the end of the first meeting ."
+        },
+        {
+            "speaker": "Marketing",
+            "content": "Okay ."
+        },
+        {
+            "speaker": "Industrial Designer",
+            "content": "'Kay ."
+        },
+        {
+            "speaker": "Project Manager",
+            "content": "Thank you all ."
+        }
+    ]
+}

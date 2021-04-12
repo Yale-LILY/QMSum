@@ -1,0 +1,3627 @@
+{
+    "topic_list": [
+        {
+            "topic": "Hans Guenter visit",
+            "relevant_text_span": [
+                [
+                    "0",
+                    "36"
+                ]
+            ]
+        },
+        {
+            "topic": "Mean log magnitude spectral subtraction",
+            "relevant_text_span": [
+                [
+                    "40",
+                    "134"
+                ]
+            ]
+        },
+        {
+            "topic": "Wiener filtering",
+            "relevant_text_span": [
+                [
+                    "136",
+                    "393"
+                ]
+            ]
+        },
+        {
+            "topic": "Spectral subtraction",
+            "relevant_text_span": [
+                [
+                    "394",
+                    "653"
+                ]
+            ]
+        },
+        {
+            "topic": "Latency in the system",
+            "relevant_text_span": [
+                [
+                    "654",
+                    "863"
+                ]
+            ]
+        }
+    ],
+    "general_query_list": [
+        {
+            "query": "Summarize the meeting",
+            "answer": "The meeting began with a short introduction to Hans Guenter, who was arriving soon and would be visiting for a few weeks. The team then discussed integrating mean log magnitude spectral subtraction into the SmartKom system. It seemed, however, that lengthening the time for this task was not very effective. The team also learned more about Wiener filtering which worked well when mixed with other approaches. It was almost as effective as the best systems. The team then delved into spectral subtraction and discussed the various ways in which it could be refined. The meeting ended with comments on the additional latency that was caused by this method."
+        }
+    ],
+    "specific_query_list": [
+        {
+            "query": "Summarize the discussion on the mean log magnitude spectral subtraction",
+            "answer": "The log magnitude spectral subtraction used twelve seconds from the past and future to calculate the mean. The short window did not have a big effect on the model performance, which was much desired. The silence, for the most part, had been cut out to make the model more effective. The professor added that the system was similar to caching utterances.",
+            "relevant_text_span": [
+                [
+                    "51",
+                    "101"
+                ]
+            ]
+        },
+        {
+            "query": "What was the professor's take on the 12 second mean?",
+            "answer": "The professor suggested that the model essentially improved performance after the first utterance as it had more data. There was a higher error probability for the first utterance. This issue could potentially be resolved using a second-pass system, in which the initial utterance was processed differently.",
+            "relevant_text_span": [
+                [
+                    "99",
+                    "130"
+                ]
+            ]
+        },
+        {
+            "query": "What did Grad E think about the goal of his experiment?",
+            "answer": "Grad E thought that the idea of doing mean log magnitude spectral subtraction was figuring out the effect of training time on the model performance. It seemed that longer times had diminishing returns after a certain point.",
+            "relevant_text_span": [
+                [
+                    "51",
+                    "72"
+                ]
+            ]
+        },
+        {
+            "query": "Summarize the discussion on latency in the system",
+            "answer": "PhD D informed the team that there was additional latency in the system with spectral subtraction. The professor wanted the team to be cognizant of the latency. The team suggested a spectral whitening approach or using a probability focused approach to solve the problem.",
+            "relevant_text_span": [
+                [
+                    "654",
+                    "832"
+                ]
+            ]
+        },
+        {
+            "query": "Why did the professor not like latency?",
+            "answer": "The professor wanted to make sure that the team does not end up in a bind. If they later had to cut latency, it would create a problem. This was his preferred conservative approach.",
+            "relevant_text_span": [
+                [
+                    "689",
+                    "700"
+                ]
+            ]
+        },
+        {
+            "query": "How long was the latency?",
+            "answer": "The latency of the recursion was fifty milliseconds. The recursion added that much to the overall latency of the system. Though, PhD B suggested doing tasks in parallel to reduce total latency.",
+            "relevant_text_span": [
+                [
+                    "660",
+                    "713"
+                ]
+            ]
+        }
+    ],
+    "meeting_transcripts": [
+        {
+            "speaker": "PhD A",
+            "content": "OK , we 're going ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Damn ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And uh Hans - uh , Hans - Guenter will be here , um , I think by next {disfmarker} next Tuesday or so ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So he 's {disfmarker} he 's going to be here for about three weeks ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh ! That 's nice ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Just for a visit ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "and , uh {disfmarker} Uh , we 'll see ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Huh ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "We might {disfmarker} might end up with some longer collaboration or something ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Cool ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So he 's gonna look in on everything we 're doing"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "and give us his {disfmarker} his thoughts . And so it 'll be another {disfmarker} another good person looking at things ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh . Hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Th - that 's his spectral subtraction group ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Is that right ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh , OK . So I guess I should probably talk to him a bit too ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh , yeah . Yeah . Yeah . No , he 'll be around for three weeks . He 's , uh , um , very , very , easygoing , easy to talk to , and , uh , very interested in everything ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Really nice guy ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , we met him in Amsterdam ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , yeah , he 's been here before ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I mean , he 's {disfmarker} he 's {disfmarker} he 's {disfmarker} he 's {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Wh - Back when I was a grad student he was here for a , uh , uh {disfmarker} a year or {comment} n six months ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I haven't noticed him ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "N nine months ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Something like that ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Something like that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . Yeah . He 's {disfmarker} he 's done a couple stays here ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So , um , {vocalsound} {comment} I guess we got lots to catch up on . And we haven't met for a couple of weeks . We didn't meet last week , Morgan . Um , I went around and talked to everybody , and it seemed like they {disfmarker} they had some new results but rather than them coming up and telling me I figured we should just wait a week and they can tell both {disfmarker} you know , all of us . So , um , why don't we {disfmarker} why don't we start with you , Dave , and then , um , we can go on ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So , um , since we 're looking at putting this , um {disfmarker} mean log m magnitude spectral subtraction , um , into the SmartKom system , I I did a test seeing if , um , it would work using past only {comment} and plus the present to calculate the mean . So , I did a test , um , {vocalsound} where I used twelve seconds from the past and the present frame to , um , calculate the mean . And {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Twelve seconds {disfmarker} Twelve {disfmarker} twelve seconds back from the current {pause} frame , is that what you mean ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Uh {disfmarker} Twelve seconds , um , counting back from the end of the current frame ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK , OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "yeah . So it was , um , twen I think it was twenty - one frames and that worked out to about twelve seconds ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And compared to , um , do using a twelve second centered window , I think there was a drop in performance but it was just a slight drop ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm !"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Is {disfmarker} is that right ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Um , yeah , I mean , it was pretty {disfmarker} it was pretty tiny . Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Uh - huh . So that was encouraging . And , um , that {disfmarker} that {disfmarker} um , that 's encouraging for {disfmarker} for the idea of using it in an interactive system like And , um , another issue I 'm {disfmarker} I 'm thinking about is in the SmartKom system . So say twe twelve seconds in the earlier test seemed like a good length of time , but what happens if you have less than twelve seconds ? And , um {disfmarker} So I w bef before , um {disfmarker} Back in May , I did some experiments using , say , two seconds , or four seconds , or six seconds . In those I trained the models using mean subtraction with the means calculated over two seconds , or four seconds , or six seconds . And , um , here , I was curious , what if I trained the models using twelve seconds but I f I gave it a situation where the test set I was {disfmarker} subtracted using two seconds , or four seconds , or six seconds . And , um {disfmarker} So I did that for about three different conditions . And , um {disfmarker} I mean , I th I think it was , um , four se I think {disfmarker} I think it was , um , something like four seconds and , um , six seconds , and eight seconds . Something like that . And it seems like it {disfmarker} it {disfmarker} it hurts compared to if you actually train the models {comment} using th that same length of time but it {disfmarker} it doesn't hurt that much . Um , u usually less than point five percent , although I think I did see one where it was a point eight percent or so rise in word error rate . But this is , um , w where , um , even if I train on the , uh , model , and mean subtracted it with the same length of time as in the test , it {disfmarker} the word error rate is around , um , ten percent or nine percent . So it doesn't seem like that big a d a difference ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But it {disfmarker} but looking at it the other way , isn't it {disfmarker} what you 're saying that it didn't help you to have the longer time for training , if you were going to have a short time for {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That {disfmarker} that 's true . Um ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I mean , why would you do it , if you knew that you were going to have short windows in testing ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Wa"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah , it seems like for your {disfmarker} I mean , in normal situations you would never get twelve seconds of speech , right ? I 'm not {disfmarker} e u"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "You need twelve seconds in the past to estimate , right ? Or l or you 're looking at six sec {disfmarker} seconds in future and six in {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um , t twelve s"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "No , total ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "N n uh {disfmarker} For the test it 's just twelve seconds in the past ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No , it 's all {disfmarker} Oh , OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Is this twelve seconds of {disfmarker} uh , regardless of speech or silence ? Or twelve seconds of speech ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Of {disfmarker} of speech ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "The other thing , um , which maybe relates a little bit to something else we 've talked about in terms of windowing and so on is , that , um , I wonder if you trained with twelve seconds , and then when you were two seconds in you used two seconds , and when you were four seconds in , you used four seconds , and when you were six {disfmarker} and you basically build up to the twelve seconds . So that if you have very long utterances you have the best ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "but if you have shorter utterances you use what you can ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Right . And that 's actually what we 're planning to do in"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But {disfmarker} s so I g So I guess the que the question I was trying to get at with those experiments is , \" does it matter what models you use ? Does it matter how much time y you use to calculate the mean when you were , um , tra doing the training data ? \""
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . But I mean the other thing is that that 's {disfmarker} I mean , the other way of looking at this , going back to , uh , mean cepstral subtraction versus RASTA kind of things , is that you could look at mean cepstral subtraction , especially the way you 're doing it , uh , as being a kind of filter . And so , the other thing is just to design a filter . You know , basically you 're {disfmarker} you 're {disfmarker} you 're doing a high - pass filter or a band - pass filter of some sort and {disfmarker} and just design a filter . And then , you know , a filter will have a certain behavior and you loo can look at the start up behavior when you start up with nothing ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And {disfmarker} and , you know , it will , uh , if you have an IIR filter for instance , it will , um , uh , not behave in the steady - state way that you would like it to behave until you get a long enough period , but , um , uh , by just constraining yourself to have your filter be only a subtraction of the mean , you 're kind of , you know , tying your hands behind your back because there 's {disfmarker} filters have all sorts of be temporal and spectral behaviors ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And the only thing , you know , consistent that we know about is that you want to get rid of the very low frequency component ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But do you really want to calculate the mean ? And you neglect all the silence regions {comment} or you just use everything that 's twelve seconds , and {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um , you {disfmarker} do you mean in my tests so far ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Ye - yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Most of the silence has been cut out ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Just {disfmarker} There 's just inter - word silences ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Mm - hmm . And they are , like , pretty short . Shor"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Pretty short ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Mm - hmm . So you really need a lot of speech to estimate the mean of it ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Well , if I only use six seconds , it still works pretty well ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Yeah . Uh - huh ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I saw in my test before . I was trying twelve seconds cuz that was the best {pause} in my test before"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and that increasing past twelve seconds didn't seem to help ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Hmm . Huh ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "th um , yeah , I guess it 's something I need to play with more to decide how to set that up for the SmartKom system . Like , may maybe if I trained on six seconds it would work better when I only had two seconds or four seconds , and {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . Yeah . And , um {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , and again , if you take this filtering perspective and if you essentially have it build up over time . I mean , if you computed means over two and then over four , and over six , essentially what you 're getting at is a kind of , uh , ramp up of a filter anyway . And so you may {disfmarker} may just want to think of it as a filter . But , uh , if you do that , then , um , in practice somebody using the SmartKom system , one would think {comment} {disfmarker} if they 're using it for a while , it means that their first utterance , instead of , you know , getting , uh , a forty percent error rate reduction , they 'll get a {disfmarker} uh , over what , uh , you 'd get without this , uh , um , policy , uh , you get thirty percent . And then the second utterance that you give , they get the full {disfmarker} you know , uh , full benefit of it if it 's this ongoing thing ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , so you {disfmarker} you cache the utterances ? That 's how you get your , uh {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Well , I 'm saying in practice , yeah ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "M"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Ah . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "that 's {disfmarker} If somebody 's using a system to ask for directions or something ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "you know , they 'll say something first . And {disfmarker} and to begin with if it doesn't get them quite right , ma m maybe they 'll come back and say , \" excuse me ? \""
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "uh , or some {disfmarker} I mean it should have some policy like that anyway ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And {disfmarker} and , uh , uh , in any event they might ask a second question . And it 's not like what he 's doing doesn't , uh , improve things . It does improve things , just not as much as he would like . And so , uh , there 's a higher probability of it making an error , uh , in the first utterance ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "What would be really cool is if you could have {disfmarker} uh , this probably {disfmarker} users would never like this {disfmarker} but if you had {disfmarker} could have a system where , {vocalsound} before they began to use it they had to introduce themselves , verbally ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You know . \" Hi , my name is so - and - so ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I 'm from blah - blah - blah . \" And you could use that initial speech to do all these adaptations and {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh , the other thing I guess which {disfmarker} which , uh , I don't know much about {disfmarker} as much as I should about the rest of the system but {disfmarker} but , um , couldn't you , uh , if you {disfmarker} if you sort of did a first pass I don't know what kind of , uh , uh , capability we have at the moment for {disfmarker} for doing second passes on {disfmarker} on , uh , uh , some kind of little {disfmarker} small lattice , or a graph , or confusion network , or something . But if you did first pass with , um , the {disfmarker} with {disfmarker} either without the mean sub subtraction or with a {disfmarker} a very short time one , and then , um , once you , uh , actually had the whole utterance in , if you did , um , the , uh , uh , longer time version then , based on everything that you had , um , and then at that point only used it to distinguish between , you know , top N , um , possible utterances or something , you {disfmarker} you might {disfmarker} it might not take very much time . I mean , I know in the large vocabulary stu uh , uh , systems , people were evaluating on in the past , some people really pushed everything in to make it in one pass but other people didn't and had multiple passes . And , um , the argument , um , against multiple passes was u u has often been \" but we want to this to be r you know {disfmarker} have a nice interactive response \" . And the counterargument to that which , say , uh , BBN I think had , {comment} was \" yeah , but our second responses are {disfmarker} second , uh , passes and third passes are really , really fast \" ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , um , if {disfmarker} if your second pass takes a millisecond who cares ? Um ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "S so , um , the {disfmarker} the idea of the second pass would be waiting till you have more recorded speech ? Or {disfmarker} ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , so if it turned out to be a problem , that you didn't have enough speech because you need a longer {disfmarker} longer window to do this processing , then , uh , one tactic is {disfmarker} you know , looking at the larger system and not just at the front - end stuff {comment} {disfmarker} is to take in , um , the speech with some simpler mechanism or shorter time mechanism ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "um , do the best you can , and come up with some al possible alternates of what might have been said . And , uh , either in the form of an N - best list or in the form of a lattice , or {disfmarker} or confusion network , or whatever ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And then the decoding of that is much , much faster or can be much , much faster if it isn't a big bushy network . And you can decode that now with speech that you 've actually processed using this longer time , uh , subtraction ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So I mean , it 's {disfmarker} it 's common that people do this sort of thing where they do more things that are more complex or require looking over more time , whatever , in some kind of second pass ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "um , and again , if the second pass is really , really fast {disfmarker} Uh , another one I 've heard of is {disfmarker} is in {disfmarker} in connected digit stuff , um , going back and l and through backtrace and finding regions that are considered to be a d a digit , but , uh , which have very low energy ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , uh {disfmarker} I mean , there 's lots of things you can do in second passes , at all sorts of levels . Anyway , I 'm throwing too many things out . But ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So is that , uh {disfmarker} that it ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I guess that 's it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK , uh , do you wanna go , Sunil ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yep . Um , so , the last two weeks was , like {disfmarker} So I 've been working on that Wiener filtering . And , uh , found that , uh , s single {disfmarker} like , I just do a s normal Wiener filtering , like the standard method of Wiener filtering . And that doesn't actually give me any improvement over like {disfmarker} I mean , uh , b it actually improves over the baseline but it 's not like {disfmarker} it doesn't meet something like fifty percent or something . So , I 've been playing with the v"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Improves over the base line MFCC system ? Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Yeah . Yeah . So , um {disfmarker} So that 's {disfmarker} The improvement is somewhere around , like , thirty percent over the baseline ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Is that using {disfmarker} in combination with something else ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No , just {disfmarker} just one stage Wiener filter"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "With {disfmarker} with a {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "which is a standard Wiener filter ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "No , no , but I mean in combination with our on - line normalization or with the LDA ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , yeah , yeah , yeah . So I just plug in the Wiener filtering ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I mean , in the s in our system , where {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So , I di i di"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , does it g does that mean it gets worse ? Or {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No . It actually improves over the baseline of not having a Wiener filter in the whole system . Like I have an LDA f LDA plus on - line normalization , and then I plug in the Wiener filter in that ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "so it improves over not having the Wiener filter . So it improves but it {disfmarker} it doesn't take it like be beyond like thirty percent over the baseline . So {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But that 's what I 'm confused about , cuz I think {disfmarker} I thought that our system was more like forty percent without the Wiener filtering ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No , it 's like , uh ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Is this with the v new VAD ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "well , these are not {disfmarker} No , it 's the old VAD . So my baseline was , {vocalsound} uh , {vocalsound} nine {disfmarker} This is like {disfmarker} w the baseline is ninety - five point six eight , and eighty - nine , and {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So I mean , if you can do all these in word errors it 's a lot {disfmarker} a lot easier actually ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "What was that ? Sorry ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "If you do all these in word error rates it 's a lot easier , right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , OK , OK , OK . Errors , right , I don't have ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK , cuz then you can figure out the percentages ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It 's all accuracies ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "The baseline is something similar to a w I mean , the t the {disfmarker} the baseline that you are talking about is the MFCC baseline , right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "The t yeah , there are two baselines ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Or {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK . So the baseline {disfmarker} One baseline is MFCC baseline that {disfmarker} When I said thirty percent improvement it 's like MFCC baseline ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So {disfmarker} so {disfmarker} so what 's it start on ? The MFCC baseline is {disfmarker} is what ? Is at what level ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It 's the {disfmarker} it 's just the mel frequency and that 's it ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "No , what 's {disfmarker} what 's the number ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Uh , so I I don't have that number here . OK , OK , OK , I have it here . Uh , it 's the VAD plus the baseline actually . I 'm talking about the {disfmarker} the MFCC plus I do a frame dropping on it . So that 's like {disfmarker} the word error rate is like four point three . Like {disfmarker} Ten point seven ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Four point three . What 's ten point seven ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It 's a medium misma OK , sorry . There 's a well ma well matched , medium mismatched , and a high matched ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Ah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So I don't have the {disfmarker} like the {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK , four point three , ten point seven ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And forty forty ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "and {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Forty percent is the high mismatch ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And that becomes like four point three {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Not changed ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , it 's like ten point one . Still the same . And the high mismatch is like eighteen point five ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Eighteen point five ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Five ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And what were you just describing ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , the one is {disfmarker} this one is just the baseline plus the , uh , Wiener filter plugged into it ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But where 's the , uh , on - line normalization and so on ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , OK . So {disfmarker} Sorry . So , with the {disfmarker} with the on - line normalization , the performance was , um , ten {disfmarker} OK , so it 's like four point three . Uh , and again , that 's the ba the ten point , uh , four and twenty point one . That was with on - line normalization and LDA . So the h well matched has like literally not changed by adding on - line or LDA on it . But the {disfmarker} I mean , even the medium mismatch is pretty much the same . And the high mismatch was improved by twenty percent absolute ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK , and what kind of number {disfmarker} an and what are we talking about here ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It 's the It - it 's Italian ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Is this TI - digits"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I 'm talking about Italian ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "or {disfmarker} Italian ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And what did {disfmarker} So , what was the , um , uh , corresponding number , say , for , um , uh , the Alcatel system for instance ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Mmm . "
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Do you know ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , so it looks to be , um {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "You have it ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yep , it 's three point four , uh , eight point , uh , seven , and , uh , thirteen point seven ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker} Thanks ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So , uh , this is the single stage Wiener filter , with {disfmarker} The noise estimation was based on first ten frames ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Actually I started with {disfmarker} using the VAD to estimate the noise and then I found that it works {disfmarker} it doesn't work for Finnish and Spanish because the VAD endpoints are not good to estimate the noise because it cuts into the speech sometimes , so I end up overestimating the noise and getting a worse result . So it works only for Italian by u for {disfmarker} using a VAD to estimate noise ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It works for Italian because the VAD was trained on Italian ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So , uh {disfmarker} so this was , uh {disfmarker} And so this was giving {disfmarker} um , this {disfmarker} this was like not improving a lot on this baseline of not having the Wiener filter on it . And , so , uh , I ran this stuff with one more stage of Wiener filtering on it but the second time , what I did was I {disfmarker} estimated the new Wiener filter based on the cleaned up speech , and did , uh , smoothing in the frequency to {disfmarker} to reduce the variance {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I mean , I have {disfmarker} I 've {disfmarker} I 've observed there are , like , a lot of bumps in the frequency when I do this Wiener filtering which is more like a musical noise or something . And so by adding another stage of Wiener filtering , the results on the SpeechDat - Car was like , um {disfmarker} So , I still don't have the word error rate . I 'm sorry about it . But the overall improvement was like fifty - six point four six . This was again using ten frames of noise estimate and two stage of Wiener filtering . And the rest is like the LDA plu and the on - line normalization all remaining the same . Uh , so this was , like , compared to , uh , uh {disfmarker} Fifty - seven is what you got by using the French Telecom system , right ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "No , I don't think so ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Y i"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Is it on Italian ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No , this is over the whole SpeechDat - Car . So {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Oh , yeah , fifty - seven {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "point {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , so the new {disfmarker} the new Wiener filtering schema is like {disfmarker} some fifty - six point four six which is like one percent still less than what you got using the French Telecom system ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh - huh . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But it 's a pretty similar number in any event ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It 's very similar ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . But again , you 're {disfmarker} you 're more or less doing what they were doing , right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It 's {disfmarker} it 's different in a sense like I 'm actually cleaning up the cleaned up spectrum which they 're not doing . They 're d what they 're doing is , they have two stage {disfmarker} stages of estimating the Wiener filter , but {disfmarker} the final filter , what they do is they {disfmarker} they take it to their time domain by doing an inverse Fourier transform ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And they filter the original signal using that fil filter ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "which is like final filter is acting on the input noisy speech rather than on the cleaned up . So this is more like I 'm doing Wiener filter twice , but the only thing is that the second time I 'm actually smoothing the filter and then cleaning up the cleaned up spectrum first level . And so that {disfmarker} that 's {disfmarker} that 's what the difference is ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And actually I tried it on s the original clean {disfmarker} I mean , the original spectrum where , like , I {disfmarker} the second time I estimate the filter but actually clean up the noisy speech rather the c s first {disfmarker} output of the first stage and that doesn't {disfmarker} seems to be a {disfmarker} giving , I mean , that much improvement . I {disfmarker} I didn didn't run it for the whole case . And {disfmarker} and what I t what I tried was , by using the same thing but {disfmarker} Uh , so we actually found that the VAD is very , like , crucial . I mean , just by changing the VAD itself gives you the {disfmarker} a lot of improvement"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "by instead of using the current VAD , if you just take up the VAD output from the channel zero , {comment} when {disfmarker} instead of using channel zero and channel one , because that was the p that was the reason why I was not getting a lot of improvement for estimating {comment} the noise . So I just used the channel zero VAD to estimate the noise so that it gives me some reliable mar markers for this noise estimation ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "What 's a channel zero VAD ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Um ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I 'm {disfmarker} I 'm confused about that ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "so , it 's like {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So it 's the close - talking microphone ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , the close - talking without {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh , oh , oh , oh ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So because the channel zero and channel one are like the same speech , but only w I mean , the same endpoints ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": ""
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But the only thing is that the speech is very noisy for channel one , so you can actually use the output of the channel zero for channel one for the VAD . I mean , that 's like a cheating method ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . I mean , so a are they going to pro What are they doing to do , do we know yet ? about {disfmarker} as far as what they 're {disfmarker} what the rules are going to be and what we can use ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , so actually I received a {disfmarker} a new document , describing this ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , that 's {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And what they did finally is to , mmm , uh , not to align the utterances but to perform recognition , um , only on the close - talking microphone ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Which is the channel zero ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and to take the result of the recognition to get the boundaries uh , of speech ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So it 's not like that 's being done in one place or one time ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "That 's {disfmarker} that 's just a rule and we 'd {disfmarker} you {disfmarker} you were permitted to do that . Is {disfmarker} is that it ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh , I think they will send , um , files but we {disfmarker} we don't {disfmarker} Well , apparently {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh , so they will send files so everybody will have the same boundaries to work with ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But actually their alignment actually is not seems to be improving in like on all cases ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Oh , i Yeah , so what happened here is that , um , the overall improvement that they have with this method {disfmarker} So {disfmarker} Well , to be more precise , what they have is , they have these alignments and then they drop the beginning silence and {disfmarker} and the end silence but they keep , uh , two hundred milliseconds before speech and two hundred after speech . And they keep the speech pauses also . Um , and the overall improvement over the MFCC baseline So , when they just , uh , add this frame dropping in addition it 's r uh , forty percent , right ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Fourteen percent , I mean ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , which is {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um , which is , um , t which is the overall improvement . But in some cases it doesn't improve at all . Like , uh , y do you remember which case ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It gives like negative {disfmarker} Well , in {disfmarker} in like some Italian and TI - digits ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , some @ @ ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "right ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . So by using the endpointed speech , actually it 's worse than the baseline in some instances , which could be due to the word pattern ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mmm . Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And {disfmarker} Yeah , the other thing also is that fourteen percent is less than what you obtain using a real VAD ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , our neural net {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So with without cheating like this ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So {disfmarker} Uh {disfmarker} So I think this shows that there is still work {disfmarker} Uh , well , working on the VAD is still {disfmarker} still important I think ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , c"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Can I ask just a {disfmarker} a high level question ? Can you just say like one or two sentences about Wiener filtering and why {disfmarker} why are people doing that ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "What 's {disfmarker} what 's the deal with that ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "OK , so the Wiener filter , it 's {disfmarker} it 's like {disfmarker} it 's like you try to minimize {disfmarker} I mean , so the basic principle of Wiener filter is like you try to minimize the , uh , d uh , difference between the noisy signal and the clean signal if you have two channels . Like let 's say you have a clean t signal and you have an additional channel where you know what is the noisy signal ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And then you try to minimize the error between these two ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So that 's the basic principle . And you get {disfmarker} you can do that {disfmarker} I mean , if {disfmarker} if you have only a c noisy signal , at a level which you , you w try to estimate the noise from the w assuming that the first few frames are noise or if you have a w voice activity detector , uh , you estimate the noise spectrum ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And then you {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Do you assume the noise is the same ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . in {disfmarker} yeah , after the speech starts ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker} but that 's not the case in , uh , many {disfmarker} many of our cases but it works reasonably well ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I see ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And {disfmarker} and then you What you do is you , uh b fff . So again , I can write down some of these eq Oh , OK . Yeah . And then you do this {disfmarker} uh , this is the transfer function of the Wiener filter , so \" SF \" is a clean speech spectrum , power spectrum"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And \" N \" is the noisy power spectrum . And so this is the transfer function ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "actually , I guess {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And then you multiply your noisy power spectrum with this . You get an estimate of the clean power spectrum ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I see . OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker} but the thing is that you have to estimate the SF from the noisy spectrum , what you have . So you estimate the NF from the initial noise portions and then you subtract that from the current noisy spectrum to get an estimate of the SF . So sometimes that becomes zero because you do you don't have a true estimate of the noise . So the f filter will have like sometimes zeros in it"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "because some frequency values will be zeroed out because of that . And that creates a lot of discontinuities across the spectrum because @ @ the filter . So , uh , so {disfmarker} that 's what {disfmarker} that was just the first stage of Wiener filtering that I tried ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So is this , um , basically s uh , similar to just regular spectral subtraction ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It 's all pretty related ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "yeah . It 's {disfmarker} it 's {disfmarker} there 's a di there 's a whole class of techniques where you try in some sense to minimize the noise ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And it 's typically a mean square sense , uh {disfmarker} uh {disfmarker} uh , i in {disfmarker} in {disfmarker} in some way . And , uh {disfmarker} uh , spectral subtraction is {disfmarker} is , uh {disfmarker} uh , one approach to it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Do people use the Wiener filtering in combination with the spectral subtraction typically , or is i are they sort of competing techniques ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Not seen . They are very s similar techniques ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah . O oh , OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So it 's like I haven't seen anybody using s Wiener filter with spectral subtraction ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I see , I see ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I mean , in the long run you 're doing the same thing"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "but y but there you make different approximations , and {disfmarker} in spectral subtraction , for instance , there 's a {disfmarker} a {disfmarker} an estimation factor ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "You sometimes will figure out what the noise is and you 'll multiply that noise spectrum times some constant and subtract that rather than {disfmarker} and sometimes people {disfmarker} even though this really should be in the power domain , sometimes people s work in the magnitude domain because it {disfmarker} it {disfmarker} it works better ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And , uh , uh , you know ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So why did you choose , uh , Wiener filtering over some other {disfmarker} one of these other techniques ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Uh , the reason was , like , we had this choice of using spectral subtraction , Wiener filtering , and there was one more thing which I which I 'm trying , is this sub space approach . So , Stephane is working on spectral subtraction ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So I picked up {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So you 're sort of trying @ @ them all ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Y Yeah ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Ah ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "we just wanted to have a few noise production {disfmarker} compensation techniques"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I see . Oh , OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "and then pick some from that {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "pick one ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I m I mean {disfmarker} yeah , I mean , there 's Car - Carmen 's working on another , on the vector Taylor series ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "VA Yeah , VAD . w Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So they were just kind of trying to cover a bunch of different things with this task and see , you know , what are {disfmarker} what are the issues for each of them ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Ah , OK . That makes sense ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah . Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Um ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Cool , thanks ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker} so one of {disfmarker} one of the things that I tried , like I said , was to remove those zeros in the fri filter by doing some smoothing of the filter ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Like , you estimate the edge of square and then you do a f smoothing across the frequency so that those zeros get , like , flattened out ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And that doesn't seems to be improving by trying it on the first time . So what I did was like I p did this and then you {disfmarker} I plugged in the {disfmarker} one more {disfmarker} the same thing but with the smoothed filter the second time ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And that seems to be working ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So that 's where I got like fifty - six point five percent improvement on SpeechDat - Car with that . And {disfmarker} So the other thing what I tried was I used still the ten frames of noise estimate but I used this channel zero VAD to drop the frames . So I 'm not {disfmarker} still not estimating . And that has taken the performance to like sixty - seven percent in SpeechDat - Car , which is {disfmarker} which {disfmarker} which like sort of shows that by using a proper VAD you can just take it to further , better levels . And {disfmarker} So ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So that 's sort of like , you know , best - case performance ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , so far I 've seen sixty - seven {disfmarker} I mean , no , I haven't seen s like sixty - seven percent . And , uh , using the channel zero VAD to estimate the noise also seems to be improving but I don't have the results for all the cases with that . So I used channel zero VAD to estimate noise as a lesser 2 x frame , which is like , {vocalsound} everywhere I use the channel zero VAD . And that seems to be the best combination , uh , rather than using a few frames to estimate and then drop a channel ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So I 'm {disfmarker} I 'm still a little confused . Is that channel zero information going to be accessible during this test ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Nnn , no . This is just to test whether we can really improve by using a better VAD ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I mean {disfmarker} So this is like the noise compensation f is fixed"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "but you make a better decision on the endpoints . That 's , like {disfmarker} seems to be {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "so we c so I mean , which {disfmarker} which means , like , by using this technique what we improve just the VAD"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "we can just take the performance by another ten percent or better ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So , that {disfmarker} that was just the , uh , reason for doing that experiment . And , w um {disfmarker} Yeah , but this {disfmarker} all these things , I have to still try it on the TI - digits , which is like I 'm just running . And there seems to be not improving a {disfmarker} a lot on the TI - digits , so I 'm like investigating that , why it 's not . And , um , um {disfmarker} Well after that . So , uh {disfmarker} so the other {disfmarker} the other thing is {disfmarker} like I 've been {disfmarker} I 'm doing all this stuff on the power spectrum . So {disfmarker} Tried this stuff on the mel as well {disfmarker} mel and the magnitude , and mel magnitude , and all those things . But it seems to be the power spectrum seems to be getting the best result . So , one of {disfmarker} one of reasons I thought like doing the averaging , after the filtering using the mel filter bank , that seems to be maybe helping rather than trying it on the mel filter ba filtered outputs ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So just th"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Ma Makes sense ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , th that 's {disfmarker} that 's the only thing that I could think of why {disfmarker} why it 's giving improvement on the mel . And , yep . So that 's it ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh , how about the subspace stuff ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Subspace , {comment} I 'm {disfmarker} I 'm like {disfmarker} that 's still in {disfmarker} a little bit in the back burner because I 've been p putting a lot effort on this to make it work , on tuning things and other stuff ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So I was like going parallely but not much of improvement . I 'm just {disfmarker} have some skeletons ready , need some more time for it ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Tha - that it ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yep . Yep ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Cool . Do you wanna go , Stephane ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh , yeah . So , {vocalsound} I 've been , uh , working still on the spectral subtraction . Um , So to r to remind you {vocalsound} {vocalsound} a little bit of {disfmarker} of what I did before , is just {vocalsound} to apply some spectral subtraction with an overestimation factor also to get , um , an estimate of the noise , uh , spectrum , and subtract this estimation of the noise spectrum from the , uh , signal spectrum , {comment} but subtracting more when the SNR is {disfmarker} is , uh , low , which is a technique that it 's often used ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "\" Subtracting more \" , meaning {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So you overestimate the noise spectrum . You multiply the noise spectrum by a factor , uh , which depends on the SNR ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , OK . I see ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So , above twenty DB , it 's one , so you just subtract the noise ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And then it 's b Generally {disfmarker} Well , I use , actually , a linear , uh , function of the SNR ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "which is bounded to , like , two or three , {comment} when the SNR is below zero DB ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um , doing just this , uh , either on the FFT bins or on the mel bands , um , t doesn't yield any improvement"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh ! Um , uh , what are you doing with negative , uh , powers ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "o Yeah . So there is also a threshold , of course , because after subtraction you can have negative energies ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and {disfmarker} So what I {disfmarker} I just do is to put , uh {disfmarker} to {disfmarker} to add {disfmarker} to put the threshold first and then to add a small amount of noise , which right now is speech - shaped . Um {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Speech - shaped ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , so it 's {disfmarker} a it has the overall {disfmarker} overall energy , uh {disfmarker} pow it has the overall power spectrum of speech . So with a bump around one kilohertz ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So when y when you talk about there being something less than zero after subtracting the noise , is that at a particular frequency bin ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "i Uh - huh . Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "There can be frequency bins with negative values ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "And so when you say you 're adding something that has the overall shape of speech , is that in a {disfmarker} in a particular frequency bin ? Or you 're adding something across all the frequencies when you get these negatives ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "For each frequencies I a I 'm adding some , uh , noise , but the a the amount of {disfmarker} the amount of noise I add is not the same for all the frequency bins ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Ah ! OK . I gotcha . Right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh . Right now I don't think if it makes sense to add something that 's speech - shaped , because then you have silence portion that have some spectra similar to the sp the overall speech spectra ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But {disfmarker} Yeah . So this is something I can still work on ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So what does that mean ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "but {disfmarker} Hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I 'm trying to understand what it means when you do the spectral subtraction and you get a negative . It means that at that particular frequency range you subtracted more energy than there was actually {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "That means that {disfmarker} Mm - hmm . Yeah . So {disfmarker} so yeah , you have an {disfmarker} an estimation of the noise spectrum , but sometimes , of course , it 's {disfmarker} as the noise is not perfectly stationary , sometimes this estimation can be , uh , too small , so you don't subtract enough . But sometimes it can be too large also . If {disfmarker} if the noise , uh , energy in this particular frequency band drops for some reason ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So in {disfmarker} in an ideal word i world {comment} if the noise were always the same , then , when you subtracted it the worst that i you would get would be a zero . I mean , the lowest you would get would be a zero , cuz i if there was no other energy there you 're just subtracting exactly the noise ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yep , there 's all {disfmarker} there 's all sorts of , uh , deviations from the ideal here ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I mean , for instance , you 're {disfmarker} you 're talking about the signal and noise , um , at a particular point . And even if something is sort of stationary in ster terms of statistics , there 's no guarantee that any particular instantiation or piece of it is exactly a particular number or bounded by a particular range ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , you 're figuring out from some chunk of {disfmarker} of {disfmarker} of the signal what you think the noise is . Then you 're subtracting that from another chunk ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "and there 's absolutely no reason to think that you 'd know that it wouldn't , uh , be negative in some places ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh , on the other hand that just means that in some sense you 've made a mistake because you certainly have stra subtracted a bigger number than is due to the noise ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Um {disfmarker} Also , we speak {disfmarker} the whole {disfmarker} where all this stuff comes from is from an assumption that signal and noise are uncorrelated . And that certainly makes sense in s in {disfmarker} in a statistical interpretation , that , you know , over , um , all possible realizations that they 're uncorrelated"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "or assuming , uh , ergodicity that i that i um , across time , uh , it 's uncorrelated . But if you just look at {disfmarker} a quarter second , uh , and you cross - multiply the two things , uh , you could very well , uh , end up with something that sums to something that 's not zero . So in fact , the two signals could have some relation to one another . And so there 's all sorts of deviations from ideal in this . And {disfmarker} and given all that , you could definitely end up with something that 's negative . But if down the road you 're making use of something as if it is a power spectrum , um , then it can be bad to have something negative . Now , the other thing I wonder about actually is , what if you left it negative ? What happens ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Is that the log ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I mean , because {disfmarker} Um , are you taking the log before you add them up to the mel ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "After that . No , after ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . So the thing is , I wonder how {disfmarker} if you put your thresholds after that , I wonder how often you would end up with , uh {disfmarker} with negative values ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But you will {disfmarker} But you end up reducing some neighboring frequency bins {disfmarker} @ @ in the average , right ? When you add the negative to the positive value which is the true estimate ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . But nonetheless , uh , you know , these are {disfmarker} it 's another f kind of smoothing , right ? that you 're doing ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . So , you 've done your best shot at figuring out what the noise should be , and now i then you 've subtracted it off . And then after that , instead of {disfmarker} instead of , uh , uh , leaving it as is and adding things {disfmarker} adding up some neighbors , you artificially push it up ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Which is , you know , it 's {disfmarker} there 's no particular reason that that 's the right thing to do either , right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , um , uh , i in fact , what you 'd be doing is saying , \" well , we 're d we 're {disfmarker} we 're going to definitely diminish the effect of this frequency in this little frequency bin in the {disfmarker} in the overall mel summation \" . It 's just a thought . I d I don't know if it would be {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Sort of the opposite of that would be if {disfmarker} if you find out you 're going to get a negative number , you don't do the subtraction for that bin ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Uh - huh . That is true ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Nnn , yeah ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "although {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "That would be almost the opposite , right ? Instead of leaving it negative , you don't do it . If your {disfmarker} if your subtraction 's going to result in a negative number , you {disfmarker} you don't do subtraction in that ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , but that means that in a situation where you thought that {disfmarker} that the bin was almost entirely noise , you left it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah . Yeah , I 'm just saying that 's like the opposite ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "We just {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Well , yeah that 's {disfmarker} that 's the opposite ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And , yeah , some people also {disfmarker} if it 's a negative value they , uh , re - compute it using inter interpolation from the edges and bins ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "For frames , frequency bins ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well , there are different things that you can do ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "People can also , uh , reflect it back up and essentially do a full wave rectification instead of a {disfmarker} instead of half wave ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But it was just a thought that {disfmarker} that it might be something to try ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Mm - hmm . Yep . Well , actually I tried , {vocalsound} something else based on this , um , is to {disfmarker} to put some smoothing , um , because it seems to {disfmarker} to help or it seems to help the Wiener filtering"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and , mmm {disfmarker} So what I did is , uh , some kind of nonlinear smoothing . Actually I have a recursion that computes {disfmarker} Yeah , let me go back a little bit . Actually , when you do spectral subtraction you can , uh , find this {disfmarker} this equivalent in the s in the spectral domain . You can uh compute , y you can say that d your spectral subtraction is a filter , um , and the gain of this filter is the , um , {vocalsound} signal energy minus what you subtract , divided by the signal energy . And this is a gain that varies over time , and , you know , of course , uh , depending on the s on the noise spectrum and on the speech spectrum . And {disfmarker} what happen actually is that during low SNR values , the gain is close to zero but it varies a lot . Mmm , and this {disfmarker} this is the cause of musical noise and all these {disfmarker} the {disfmarker} {comment} the fact you {disfmarker} we go below zero one frame and then you can have an energy that 's above zero ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And {disfmarker} Mmm . So the smoothing is {disfmarker} I did a smoothing actually on this gain , uh , trajectory . But it 's {disfmarker} the smoothing is nonlinear in the sense that I tried to not smooth if the gain is high , because in this case we know that , uh , the estimate of the gain is correct because we {disfmarker} we are not close to {disfmarker} to {disfmarker} to zero , um , and to do more smoothing if the gain is low . Mmm . Um . Yeah . So , well , basically that 's this idea , and it seems to give pretty good results , uh , although I 've just {disfmarker} just tested on Italian and Finnish . And on Italian it seems {disfmarker} my result seems to be a little bit better than the Wiener filtering ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Mm - hmm . Yeah , the one you showed yesterday ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Right ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh , I don't know if you have these improvement the detailed improvements for Italian , Finnish , and Spanish there"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Fff . No , I don't have , for each ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "or you have {disfmarker} just have your own ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I {disfmarker} I just {disfmarker} just have the final number here ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So these numbers he was giving before with the four point three , and the ten point one , and so forth , those were Italian , right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , yeah , yeah . So {disfmarker} so , no ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I actually didn't give you the number which is the final one ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "uh , no , we 've {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "which is , after two stages of Wiener filtering . I mean , that was I just {disfmarker} well , like the overall improvement is like fifty - six point five . So ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I mean , his number is still better than what I got in the two stages of Wiener filtering ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "On Italian . But on Finnish it 's a little bit worse , apparently ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But do you have numbers in terms of word error rates on {disfmarker} on Italian ? So just so you have some sense of reference ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Uh , so , it 's , uh , three point , uh , eight ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Am I right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , OK . Yeah , right , OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And then , uh , d uh , nine point , uh , one ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And finally , uh , sixteen point five ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And this is , um , spectral subtraction plus what ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Plus {disfmarker} plus nonlinear smoothing . Well , it 's {disfmarker} the system {disfmarker} it 's exactly the sys the same system as Sunil tried ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "On - line normalization and LDA ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "but {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . But instead of double stage Wiener filtering , it 's {disfmarker} it 's this smoothed spectral subtraction . Um , yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "What is it the , um , France Telecom system uses"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "for {disfmarker} Do they use spectral subtraction , or Wiener filtering , or {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "They use spectral subtraction , right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "For what ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "French Telecom ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It {disfmarker} it 's Wiener filtering ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , it 's {disfmarker} it 's Wiener filtering ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "am I right ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Sorry ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well , it 's some kind of Wiener filtering {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , filtering . Yeah , it 's not exactly Wiener filtering but some variant of Wiener filtering ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I see ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , plus , uh , I guess they have some sort of cepstral normalization , as well ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "s They have like {disfmarker} yeah , th the {disfmarker} just noise compensation technique is a variant of Wiener filtering ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "plus they do some {disfmarker} some smoothing techniques on the final filter . The {disfmarker} th they actually do the filtering in the time domain ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So they would take this HF squared back , taking inverse Fourier transform . And they convolve the time domain signal with that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , I see ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And they do some smoothing on that final filter , impulse response ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But they also have two {disfmarker} two different smoothing @ @ ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I mean , I 'm {disfmarker} I 'm @ @ ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "One in the time domain and one in the frequency domain by just taking the first , um , coefficients of the impulse response ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So , basically it 's similar . I mean , what you did , it 's similar"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It 's similar in the smoothing and {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "because you have also two {disfmarker} two kind of smoothing ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "One in the time domain , and one in the frequency domain ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . The frequency domain ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Does the smoothing in the time domain help {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Well , do you get this musical noise stuff with Wiener filtering or is that only with , uh , spectral subtraction ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No , you get it with Wiener filtering also ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Does the smoothing in the time domain help with that ? Or some other smoothing ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , no , you still end up with zeros in the s spectrum . Sometimes ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I mean , it 's not clear that these musical noises hurt us in recognition ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "We don't know if they do ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I mean , they {disfmarker} they sound bad ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , I know ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But we 're not listening to it , usually ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh , actually the {disfmarker} the smoothing that I did {disfmarker} do here reduced the musical noise . Well , it {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Mm - hmm . Yeah , yeah ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "the {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well , I cannot {disfmarker} you cannot hear beca well , actually what I d did not say is that this is not in the FFT bins . This is in the mel frequency bands . Um {disfmarker} So , it could be seen as a f a {disfmarker} a smoothing in the frequency domain because I used , in ad mel bands in addition and then the other phase of smoothing in the time domain . Mmm . But , when you look at the spectrogram , if you don't have an any smoothing , you clearly see , like {disfmarker} in silence portions , and at the beginning and end of speech , you see spots of high energy randomly distributed over the {disfmarker} the spectrogram ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "That 's the musical noise ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Which is musical noise ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "yeah , if {disfmarker} if it {disfmarker} If you listen to it {disfmarker} uh , if you do this in the FFT bins , then you have spots of energy randomly distributing . And if you f if you re - synthesize these spot sounds as , like , sounds ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "uh {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Well , none of these systems , by the way , have {disfmarker} I mean , y you both are {disfmarker} are working with , um , our system that does not have the neural net ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . So one would hope , presumably , that the neural net part of it would {disfmarker} would improve things further as {disfmarker} as they did before ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Yeah . Um {disfmarker} Yeah , although if {disfmarker} if we , um , look at the result from the proposals , {comment} one of the reason , uh , the n system with the neural net was , um , more than {disfmarker} well , around five percent better , is that it was much better on highly mismatched condition . I 'm thinking , for instance , on the TI - digits trained on clean speech and tested on noisy speech ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh , for this case , the system with the neural net was much better ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But not much on the {disfmarker} in the other cases ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And if we have no , uh , spectral subtraction or Wiener filtering , um , i the system is {disfmarker} Uh , we thought the neural {disfmarker} neural network is much better than before , even in these cases of high mismatch . So , maybe the neural net will help less but , um {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Maybe ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Could you train a neural net to do spectral subtraction ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , it could do a nonlinear spectral subtraction"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "but I don't know if it {disfmarker} I mean , you have to figure out what your targets are ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah , I was thinking if you had a clean version of the signal and {disfmarker} and a noisy version , and your targets were the M F - uh , you know , whatever , frequency bins {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , well , that 's not so much spectral subtraction then ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "but {disfmarker} but {disfmarker} but it 's {disfmarker} but at any rate , yeah , people , uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "People do that ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "y yeah , in fact , we had visitors here who did that I think when you were here ba way back when ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh , people {disfmarker} d done lots of experimentation over the years with training neural nets . And it 's not a bad thing to do . It 's another approach ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "M I mean , it 's {disfmarker} it , um {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "The objection everyone always raises , which has some truth to it is that , um , it 's good for mapping from a particular noise to clean but then you get a different noise ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And the experiments we saw that visitors did here showed that it {disfmarker} there was at least some , um , {vocalsound} {comment} gentleness to the degradation when you switched to different noises . It did seem to help . So that {disfmarker} you 're right , that 's another {disfmarker} another way to go ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "How did it compare on {disfmarker} I mean , for {disfmarker} for good cases where it {disfmarker} it {disfmarker} uh , stuff that it was trained on ? Did it do pretty well ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh , yeah , it did very well ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Um ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "but to some extent that 's kind of what we 're doing . I mean , we 're not doing exactly that , we 're not trying to generate good examples but by trying to do the best classifier you possibly can , for these little phonetic categories ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm . You could say it 's sort of built in ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It 's {disfmarker} Yeah , it 's kind of built into that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And {disfmarker} and that 's why we have found that it {disfmarker} it does help ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Um {disfmarker} so , um , yeah , I mean , we 'll just have to try it . But I {disfmarker} I would {disfmarker} I would {disfmarker} I would imagine that it will help some . I mean , it {disfmarker} we 'll just have to see whether it helps more or less the same , but I would imagine it would help some ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So in any event , all of this {disfmarker} I was just confirming that all of this was with a simpler system ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "yeah . Um , Yeah , so this is th the , um {disfmarker} Well , actually , this was kind of the first try with this spectral subtraction plus smoothing ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and I was kind of excited by the result ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um , then I started to optimize the different parameters . And , uh , the first thing I tried to optimize is the , um , time constant of the smoothing . And it seems that the one that I chose for the first experiment was the optimal one , so {vocalsound} uh ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It 's amazing how often that happens ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um , so this is the first thing . Um {disfmarker} Yeah , another thing that I {disfmarker} it 's important to mention is , um , that this has a this has some additional latency . Um . Because when I do the smoothing , uh , it 's a recursion that estimated the means , so {disfmarker} of the g of the gain curve . And this is a filter that has some latency . And I noticed that it 's better if we take into account this latency . So , instead o of using the current estimated mean to , uh , subtract the current frame , it 's better to use an estimate that 's some somewhere in the future . Um {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "And that 's what causes the latency ? OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "You mean , the m the mean is computed o based on some frames in the future also ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Or {disfmarker} or no ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It 's the recursion , so it 's {disfmarker} it 's the center recursion , right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um {disfmarker} and the latency of this recursion is around fifty milliseconds ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "One five ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": ""
+        },
+        {
+            "speaker": "Professor C",
+            "content": "One five ? Five zero ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Five zero ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Five zero ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I 'm sorry ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "mmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "why {disfmarker} why is that delay coming ? Like , you estimate the mean ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , the mean estimation has some delay , right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Oh , yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "I mean , the {disfmarker} the filter that {disfmarker} that estimates the mean has a time constant ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "It isn't {disfmarker} OK , so it 's like it looks into the future also . OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "What if you just look into the past ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It 's , uh , not as good . It 's not bad ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "How m by how much ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um , it helps a lot over the ba the baseline but , mmm {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "By how much ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "it {disfmarker} It 's around three percent , um , relative ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Worse ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Yeah . Um ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "mmm {disfmarker} So , uh {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It 's depending on how all this stuff comes out we may or may not be able to add any latency ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , but {disfmarker} Yeah . So , yeah , it depends . Uh , y actually , it 's {disfmarker} it 's l it 's three percent . Right . Mmm . Yeah , b but I don't think we have to worry too much on that right now while {disfmarker} you kno . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Um , s Yeah , I mean , I think the only thing is that {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I would worry about it a little ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Because if we completely ignore latency , and then we discover that we really have to do something about it , we 're going to be {disfmarker} find ourselves in a bind ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , um , you know , maybe you could make it twenty - five . You know what I mean ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , just , you know , just be {disfmarker} be a little conservative"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Oh yes ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "because we may end up with this crunch where all of a sudden we have to cut the latency in half or something ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "s Mm - hmm . Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um . So , yeah , there are other things in the , um , algorithm that I didn't , uh , @ @ a lot yet ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh !"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "which {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Sorry . A quick question just about the latency thing . If {disfmarker} if there 's another part of the system that causes a latency of a hundred milliseconds , is this an additive thing ? Or c or is yours hidden in that ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Uh {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "No , it 's {disfmarker} it 's added ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "It 's additive . OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "We can {disfmarker} OK . We can do something in parallel also , in some like {disfmarker} some cases like , if you wanted to do voice activity detection ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "And we can do that in parallel with some other filtering you can do ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So you can make a decision on that voice activity detection and then you decide whether you want to filter or not ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "But by then you already have the sufficient samples to do the filtering ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker} So , sometimes you can do it anyway ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I mean , couldn't , uh {disfmarker} I {disfmarker} Couldn't you just also {disfmarker} I mean , i if you know that the l the largest latency in the system is two hundred milliseconds , don't you {disfmarker} couldn't you just buffer up that number of frames and then everything uses that buffer ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "And that way it 's not additive ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Well , in fact , everything is sent over in buffers cuz of {disfmarker} isn't it the TCP buffer some {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "You mean , the {disfmarker} the data , the super frame or something ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah , but that has a variable latency because the last frame doesn't have any latency"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "and first frame has a twenty framed latency . So you can't r rely on that latency all the time ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Because {disfmarker} I mean the transmission over {disfmarker} over the air interface is like a buffer ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Twenty frame {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "twenty four frames ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So {disfmarker} But the only thing is that the first frame in that twenty - four frame buffer has a twenty - four frame latency . And the last frame doesn't have any latency ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Because it just goes as {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah , I wasn't thinking of that one in particular"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "but more of , you know , if {disfmarker} if there is some part of your system that has to buffer twenty frames , uh , can't the other parts of the system draw out of that buffer and therefore not add to the latency ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . Yeah . And {disfmarker} and that 's sort of one of the {disfmarker} all of that sort of stuff is things that they 're debating in their standards committee ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh ! Hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Yeah . So , um , there is uh , {comment} these parameters that I still have to {disfmarker} to look at . Like , I played a little bit with this overestimation factor , uh , but I still have to {disfmarker} to look more at this , um , at the level of noise I add after . Uh , I know that adding noise helped , um , the system just using spectral subtraction without smoothing , but I don't know right now if it 's still important or not , and if the level I choose before is still the right one . Same thing for the shape of the {disfmarker} the noise . Maybe it would be better to add just white noise instead of speech shaped noise ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "That 'd be more like the JRASTA thing in a sense . Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Um , yep . Uh , and another thing is to {disfmarker} Yeah , for this I just use as noise estimate the mean , uh , spectrum of the first twenty frames of each utterance . I don't remember for this experiment what did you use for these two stage {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I used ten {disfmarker} just ten frames . Yeah , because {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "The ten frames ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I mean , the reason was like in TI - digits I don't have a lot . I had twenty frames most of the time ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Um . But , so what 's this result you told me about , the fact that if you use more than ten frames you can {disfmarker} improve by t"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Well , that 's {disfmarker} that 's using the channel zero . If I use a channel zero VAD to estimate the noise ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Which {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But this is ten frames plus {disfmarker} plus"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Channel zero dropping ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "channel {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh , no , these results with two stage Wiener filtering is ten frames"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "t Oh , this {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "but possibly more . I mean , if channel one VAD gives you {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "f Yeah . Mm - hmm . Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . OK . Yeah , but in this experiment I did {disfmarker} I didn't use any VAD . I just used the twenty first frame to estimate the noise . And {disfmarker} So I expected it to be a little bit better , {vocalsound} if , uh , I use more {disfmarker} more frames . Um . OK , that 's it for spectral subtraction . The second thing I was working on is to , um , try to look at noise estimation , {comment} mmm , and using some technique that doesn't need voice activity detection . Um , and for this I u simply used some code that , uh , {vocalsound} I had from {disfmarker} from Belgium , which is technique that , um , takes a bunch of frame , um , and for each frequency bands of this frame , takes a look at the minima of the energy . And then average these minima and take this as an {disfmarker} an energy estimate of the noise for this particular frequency band . And there is something more to this actually . What is done is that , {vocalsound} uh , these minima are computed , um , based on , um , high resolution spectra . So , I compute an FFT based on the long , uh , signal frame which is sixty - four millisecond {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So you have one minimum for each frequency ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "What {disfmarker} what I {disfmarker} what I d uh , I do actually , is to take a bunch of {disfmarker} to take a tile on the spectrogram and this tile is five hundred milliseconds long and two hundred hertz wide ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "And this tile {disfmarker} Uh , in this tile appears , like , the harmonics if you have a voiced sound , because it 's {disfmarker} it 's the FTT bins . And when you take the m the minima of {disfmarker} of these {disfmarker} this tile , when you don't have speech , these minima will give you some noise level estimate , If you have voiced speech , these minima will still give you some noise estimate because the minima are between the harmonics . And {disfmarker} If you have other {disfmarker} other kind of speech sounds then it 's not the case , but if the time frame is long enough , uh , like s five hundred milliseconds seems to be long enough , {comment} you still have portions which , uh , are very close {disfmarker} whi which minima are very close to the noise energy ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I 'm confused . You said five hundred milliseconds"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mmm ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "but you said sixty - four milliseconds . Which is which ? What ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Sixty - four milliseconds is to compute the FFT , uh , bins ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "The {disfmarker} the FFT ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um , actually it 's better to use sixty - four milliseconds because , um , if you use thirty milliseconds , then , uh , because of the {disfmarker} this short windowing and at low pitch , uh , sounds , {vocalsound} the harmonics are not , wha uh , correctly separated ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So if you take these minima , it {disfmarker} b {vocalsound} they will overestimate the noise a lot ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So you take sixty - four millisecond F F Ts and then you average them {comment} over five hundred ? Or {disfmarker} ? Uh , what do you do over five hundred ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So I take {disfmarker} to {disfmarker} I take a bunch of these sixty - four millisecond frame to cover five hundred milliseconds ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Ah . OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and then I look for the minima ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I see ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "on the {disfmarker} on {disfmarker} on the bunch of uh fifty frames , right ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I see ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mmm . So the interest of this is that , as y with this technique you can estimate u some reasonable noise spectra with only five hundred milliseconds of {disfmarker} of signal , so if the {disfmarker} the n the noise varies a lot , uh , you can track {disfmarker} better track the noise ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "which is not the case if you rely on the voice activity detector . So even if there are no no speech pauses , you can track the noise level . The only requirement is that you must have , in these five hundred milliseconds segment , {comment} you must have voiced sound at least . Cuz this {disfmarker} these will help you to {disfmarker} to track the {disfmarker} the noise level . Um . So what I did is just to simply replace the VAD - based , uh , noise estimate by this estimate , first on SpeechDat - Car {disfmarker} Well , only on SpeechDat - Car actually . And it 's , uh , slightly worse , like one percent relative compared to the VAD - based {pause} estimates . Um , I think the reason why it 's not better , is that the SpeechDat - Car noises are all stationary . Um . So , u y y there really is no need to have something that 's adaptive"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and {disfmarker} Uh , well , they are mainly stationary . Um . But , I expect s maybe some improvement on TI - digits because , nnn , in this case the noises are all sometimes very variable . Uh , so I have to test it . Mmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But are you comparing with something {disfmarker} e I 'm {disfmarker} I 'm {disfmarker} p s a little confused again , i it {disfmarker} Uh , when you compare it with the V A D - based ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "VAD - Is this {disfmarker} is this the {disfmarker} ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "It 's {disfmarker} It 's the France - Telecom - based spectra , s uh , Wiener filtering and VAD . So it 's their system but just I replace their noise estimate by this one ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh , you 're not doing this with our system ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "In i I 'm not {disfmarker} No , no . Yeah , it 's our system but with just the Wiener filtering from their system . Right ? Mmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Actually , th the best system that we still have is , uh , our system but with their noise compensation scheme , right ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . But {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So I 'm trying to improve on this , and {disfmarker} by {disfmarker} by replacing their noise estimate by , uh , something that might be better ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . But the spectral subtraction scheme that you reported on also re requires a {disfmarker} a noise estimate ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Couldn't you try this for that ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "But I di"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Do you think it might help ?"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Not yet , because I did this in parallel ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I see ,"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and I was working on one and the other ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I see . Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah , for {disfmarker} for sure I will . I can try also , mmm , the spectral subtraction ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So I 'm also using that n new noise estimate technique on this Wiener filtering what I 'm trying ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So I {disfmarker} I have , like , some experiments running , I don't have the results ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "So ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "I don't estimate the f noise on the ten frames but use his estimate ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Um . Yeah . I , um , also implemented a sp um {disfmarker} spectral whitening idea which is in the , um , Ericsson proposal . Uh , the idea is just to {vocalsound} um , flatten the log , uh , spectrum , um , and to flatten it more if the {disfmarker} the probability of silence is higher . So in this way , you can also reduce {disfmarker} somewhat reduce the musical noise and you reduce the variability if you have different noise shapes , because the {disfmarker} the spectrum becomes more flat in the silence portions . Um . Yeah . With this , no improvement , uh , but there are a lot of parameters that we can play with and , um {disfmarker} Actually , this {disfmarker} this could be seen as a soft version of the frame dropping because , um , you could just put the threshold and say that \" below the threshold , I will flatten {disfmarker} comp completely flatten the {disfmarker} the spectrum \" . And above this threshold , uh , keep the same spectrum . So it would be like frame dropping , because during the silence portions which are below the threshold of voice activity probability , {comment} uh , w you would have some kind of dummy frame which is a perfectly flat spectrum . And this , uh , whitening is something that 's more soft because , um , you whiten {disfmarker} you just , uh , have a function {disfmarker} the whitening is a function of the speech probability , so it 's not a hard decision ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um , so I think maybe it can be used together with frame dropping and when we are not sure about if it 's speech or silence , well , maybe it has something do with this ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It 's interesting . I mean , um , you know , in {disfmarker} in JRASTA we were essentially adding in , uh , white {disfmarker} uh , white noise dependent on our estimate of the noise ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "On the overall estimate of the noise . Uh , I think it never occurred to us to use a probability in there ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "You could imagine one that {disfmarker} that {disfmarker} that made use of where {disfmarker} where the amount that you added in was , uh , a function of the probability of it being s speech or noise ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Mm - hmm . Yeah , w Yeah , right now it 's a constant that just depending on the {disfmarker} the noise spectrum ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "There 's {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Cuz that {disfmarker} that brings in sort of powers of classifiers that we don't really have in , uh , this other estimate . So it could be {disfmarker} it could be interesting ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "What {disfmarker} what {disfmarker} what point does the , uh , system stop recording ? How much {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "It 'll keep going till {disfmarker} I guess when they run out of disk space ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It went a little long ? I mean , disk {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "but {disfmarker} I think we 're OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "So ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Uh {disfmarker} Yeah , so there are {disfmarker} with this technique there are some {disfmarker} I just did something exactly the same as {disfmarker} as the Ericsson proposal but , um , {vocalsound} the probability of speech is not computed the same way . And I think , i for {disfmarker} yeah , for a lot of things , actually a g a good speech probability is important . Like for frame dropping you improve , like {disfmarker} you can improve from ten percent as Sunil showed , if you use the channel zero speech probabilities ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "For this it might help , um {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "S so , yeah . Uh , so yeah , the next thing I started to do is to , {vocalsound} uh , try to develop a better voice activity detector . And , um {disfmarker} I d um {disfmarker} yeah , for this I think we can maybe try to train the neural network for voice activity detection on all the data that we have , including all the SpeechDat - Car data . Um {disfmarker} And so I 'm starting to obtain alignments on these databases . Um , and the way I mi I do that is that I just use the HTK system but I train it only on the close - talking microphone . And then I aligned {disfmarker} I obtained the Viterbi alignment of the training utterances . Um {disfmarker} It seems to be , uh i Actually what I observed is that for Italian it doesn't seem {disfmarker} Th - there seems to be a problem ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "No . So , it doesn't seems to help by their use of channel zero or channel one ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Well . Because {disfmarker} What ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Uh , you mean their d the frame dropping , right ? Yeah , it doesn't {disfmarker}"
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Yeah . So , u but actually the VAD was trained on Italian also ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Italian ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "so {disfmarker} Um , the c the current VAD that we have was trained on , uh , t SPINE , right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "TI - digits ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Italian , and TI - digits with noise and {disfmarker}"
+        },
+        {
+            "speaker": "PhD B",
+            "content": ""
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Uh , yeah . And it seems to work on Italian but not on the Finnish and Spanish data . So , maybe one reason is that s s Finnish and Spanish noise are different . And actually we observed {disfmarker} we listened to some of the utterances and sometimes for Finnish there is music in the recordings and strange things , right ?"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Um {disfmarker} Yeah , so the idea was to train all the databases and obtain an alignment to train on these databases , and , um , also to , um , try different kind of features , {vocalsound} uh , as input to the VAD network . And we came up with a bunch of features that we want to try like , um , the spectral slope , the , um , the degree o degree of voicing with the features that , uh , we started to develop with Carmen , um , e with , uh , the correlation between bands and different kind of features ,"
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah . Mm - hmm ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "and {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "The energy also ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "The energy ."
+        },
+        {
+            "speaker": "PhD B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , right ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Yeah . Of course . Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . Well , Hans - Guenter will be here next week so I think he 'll be interested in all {disfmarker} all of these things . And , so ."
+        },
+        {
+            "speaker": "PhD D",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK , shall we , uh , do digits ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Want to go ahead , Morgan ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Sure ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        }
+    ]
+}

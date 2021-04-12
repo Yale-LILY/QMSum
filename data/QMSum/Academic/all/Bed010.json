@@ -1,0 +1,2530 @@
+{
+    "topic_list": [
+        {
+            "topic": "Current system overview",
+            "relevant_text_span": [
+                [
+                    "0",
+                    "61"
+                ]
+            ]
+        },
+        {
+            "topic": "Demos",
+            "relevant_text_span": [
+                [
+                    "62",
+                    "152"
+                ]
+            ]
+        },
+        {
+            "topic": "Model technicalities",
+            "relevant_text_span": [
+                [
+                    "153",
+                    "499"
+                ]
+            ]
+        },
+        {
+            "topic": "Meeting close-up",
+            "relevant_text_span": [
+                [
+                    "500",
+                    "609"
+                ]
+            ]
+        }
+    ],
+    "general_query_list": [
+        {
+            "query": "What was the general discussion of the meeting?",
+            "answer": "The meeting discussed various topics such as data collection and updates on the German parser. They discussed XML modifications and future thoughts on the ontology. Additionally, object representations will include an EVA vector. This can be incorporated in the database entry for a particular building or inherited from the ontology of the building type. The actual number of the inputs can create a combinatorial explosion when setting the probabilities. In any case, further to fulfilling the basic requirements (translating the parser and the generator into english), the project is entirely open-ended in terms of focus of research."
+        }
+    ],
+    "specific_query_list": [
+        {
+            "query": "What was the general discussion of the meeting?",
+            "answer": "The translation of SmartKom to english is in its final stages. The variety of linguistic conventions seem to develop around an ego/allo-centric and a proximal/distal paradigm. From an engineering perspective, the belief-net for the AVE task should be completed within a few weeks. Since the whole system is going to be re-designed, there are major decisions to be taken regarding the parser and the ontology, as well as what can be re-used from past EML projects. In parallel, another team is working on formalisation and notation. Finally, more ideas are expected to come from students and their research.",
+            "relevant_text_span": [
+                [
+                    "5",
+                    "27"
+                ]
+            ]
+        },
+        {
+            "query": "What were the problems encountered with SmartKom system?",
+            "answer": "The translation of SmartKom to english is in its final stages. The synthesis module will be the last one to do, after the english syntax trees are completed. The system is still buggy and unstable, but it will soon be ready for a demonstration.",
+            "relevant_text_span": [
+                [
+                    "5",
+                    "14"
+                ]
+            ]
+        },
+        {
+            "query": "What demos would the system be involved in?",
+            "answer": "The final english SmartKom demo will be presented to the whole institute once the system is de-bugged and stabilised.",
+            "relevant_text_span": [
+                [
+                    "132",
+                    "145"
+                ]
+            ]
+        },
+        {
+            "query": "What would happen after the demo?",
+            "answer": "After the demo, the focus of research can switch towards purely scientific goals, including issues on ontology, deep semantic constructions, execution engines etc. Moreover, a new system will be designed for the project and at least some parts of it should be built.",
+            "relevant_text_span": [
+                [
+                    "133",
+                    "152"
+                ]
+            ]
+        }
+    ],
+    "meeting_transcripts": [
+        {
+            "speaker": "Grad B",
+            "content": ""
+        },
+        {
+            "speaker": "Grad D",
+            "content": "How many batteries do you go through ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Thank you ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Alright ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Sure ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Good . Yeah . OK so , let 's get started . Nancy said she 's coming and that means she will be . Um . My suggestion is that Robert and Johno sort of give us a report on last week 's adventures uh to start . So everybody knows there were these guys f uh from Heidelber - uh , uh , actually from uh DFKI uh , part of the German SmartKom project , who were here for the week and , I think got a lot done ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah , I think so too . Um . The {disfmarker} we got to the point where we can now speak into the SmartKom system , and it 'll go all the way through and then say something like \" Roman numeral one , am Smarticus . \" It actually says , \" Roemisch einz , am Smarticus , \""
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "which means it 's just using a German sythesis module for English sentences ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So uh ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It doesn't know \" I \" ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um , the uh"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh , Am Spartacus . \""
+        },
+        {
+            "speaker": "Grad D",
+            "content": "\" I am Sm - I am Smarticus \" is what it 's saying ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Verstehe . OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "I gue"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "The uh sythesis is just a question of um , hopefully it 's just a question of exchanging a couple of files , once we have them . And , um , it 's not going to be a problem because we decided to stick to the so - called concept to speech approach . So I 'm {disfmarker} I 'm {disfmarker} I 'm going backwards now , so \" synthesis \" is where you sort of make this {disfmarker} uh , make these sounds , and \" concept to speech \" is feeding into this synthesis module giving it what needs to be said , and the whole syntactic structure so it can pronounce things better , presumably . Then , just with text to speech ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And , uh , Johno learned how to write XML tags . Uh , and did write the tree adjoining grammar for some {disfmarker} some sentences . No , right ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah , for a couple {disfmarker}"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So . Bu - Uh , i The way the uh , the dialogue manager works is it dumps out what it wants to know , or what it wants to tell the person , to a {disfmarker} er in XML and there 's a conversion system for different uh , to go from XML to something else . And th so , the knowledge base for the system , that generates the syntasti syntactic structures for the ge generation is uh , in a LISP - like {disfmarker} the knowledge base is in a LISP - like form . And then the thing that actually builds these syntactic structures is something based on Prolog . So , you have a {disfmarker} basically , a goal and it , you know , says \" OK , well I 'm gonna try to do the Greet - the - person goal ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "so it just starts {disfmarker} uh , it binds some variables and it just decides to , you know , do some subscold . Basically , it just means \" build the tree . \""
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "And then it passes the tree onto , uh , the ge the generation module ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But I think that the point is that out of the twelve possible utterances that the German system can do , we 've already written the {disfmarker} the syntax trees for three or four ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "We yeah . So , the syntax trees are very simple . It 's like most of the sentences in one tree ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "and instead of , you know , breaking down to , like , small units and building back up , they basically took the sentences , and basically cut them in half , or you know , into thirds or something like that , and made trees out of those . And so uh , uh Tilman wrote a little tool that you could take LISP notation and generate an XML , uh , tree . Uh , S what do ca structure from the {disfmarker} from the LISP . And so basically you just say , you know , \" noun goes to \" , you know , Er , nah , I don't re I 've never been good at those . So there 's like the VP goes to N and those things in LISP , and it will generate for you ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK . N , N , V yeah , OK . Alright ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And because we 're sticking to that structure , the synthesis module doesn't need to be changed . So all that f fancy stuff , and the Texas speech version of it , which is actually the simpler version , is gonna be done in October which is much too late for us . So . This way we {disfmarker} we worked around that . The , uh {disfmarker} the system , um {disfmarker} I can show you the system . I actually want , at least , maybe , you should be able to start it on your own . If you wanna play around with it , in th in the future . Right now it 's brittle and you need to ch start it up and then make ts twenty changes on {disfmarker} on {disfmarker} on {disfmarker} on seventeen modules before they actually can stomach it , anything . And send in a {disfmarker} a {disfmarker} a couple of side queries on some dummy center set - up program so that it actually works because it 's designed for this seevit thing , where you have the gestural recognition running with this s Siemens virtual touch screen , which we don't have here ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And so we 're doing it via mouse , but the whole system was designed to work with this thing and it was {disfmarker} It was a lot of engineering stuff . No science in there whatsoever , but it 's working now , and um , that 's the good news . So everything else actually did prove to be language independent except for the parsing and the generation ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Why {disfmarker} I had {disfmarker} I did need to chan generate different trees than the German ones , mainly because you know like uh , the gerund in {disfmarker} in German is automatically taken care of with just a regular verb ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "You have to switch it on ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "so I 'd uh have to add \" am walking , \""
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "or I 'd have to add a little stem for the \" am \" , when I build the {disfmarker} built the tree ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK . Yeah , I noticed that um , that some of the examples they had , had you know , non - English word orders and so on , you know . And then all that good stuff . So ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Alright ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Like ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So it might be worth , Keith , you looking at this ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "um"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I {disfmarker} I still don't {disfmarker} I still don't really understand e like {disfmarker}"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Well Tilman s"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I mean we sort of say , um {disfmarker} You know , I {disfmarker} I still don't exactly understand sort of the information flow uh in {disfmarker} in this thing , or what the modules are and so on . So , you know , like just that such - and - such module uh um decides that it wants to achieve the goal of greeting the user , and then magically it sort of s"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I mean , how does it know which syntactic structure to pull out , and all that ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I thi Yeah . So . I think it 's not worth going over in the group ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "R uh Sure ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "but sort of when you get free and you have the time uh either Robert or Johno or I can walk you through it ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah , soon . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And you can ask all the questions about how this all fits together ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "That 's fine ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It 's eee {comment} messy but once you understand it you understand it . It 's {disfmarker} it 's {disfmarker} There 's nothing really complicated about it ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "No ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "And I remember one thing that {disfmarker} that came up in the talk last Wednesday . Um , was this , I {disfmarker} I think he talked about the idea of like , um {disfmarker} He was talking about these lexicalized uh , uh , tree adjoining grammars where you sort of {disfmarker} for each word you , um {disfmarker}"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "OK , you know how to do it ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "For each lexical item , the lexical entry says what all the uh trees are that it can appear in . And of course , that 's not v That 's the opposite of constructional . That 's , you know , that 's {disfmarker} that 's HPSG or whatever ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "You know ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . Now , we 're {disfmarker} we 're not committed for our research to {pause} do any of those things ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So uh we are committed for our funding ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ? to {pause} uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Make our stuff fit to that ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , to {disfmarker} n no , to just get the dem get the demos they need ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ? So between us all we have t to get th the demos they need . If it turns out we can also give them lots more than that by , you know , tapping into other things we do , that 's great ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "You should probably move the microphone closer to your face ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But i it turns out not to be in an any of the contracts"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "There 's like a little {disfmarker} The twisty thing , you can move it with ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "and , s deliberately . So , the reason I 'd like you to understand uh what 's going on in this demo system is not because it 's important to the research . It 's just for closure . So that if we come up with a question of \" could we fit this deeper stuff in there ? \" or something . You know what the hell we we 're talking about fitting in ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So it 's just , uh in the sam same actually with the rest of us we just need to really understand what 's there . Is there anything we can make use of ? Uh , is there anything we can give back , beyond th the sort of minimum requirements ? But none of that has a short time fuse ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So th the demo the demo requirements for this Fall are sort of taken care of as of later this week or something . And then {disfmarker} So , it 's probably fifteen months or something until there 's another serious demo requirement ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "That doesn't mean we don't think about it for fifteen months ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "but it means we can not think about it for six months ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right , yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So . The plan for this summer uh , really is to step back from the applied project ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "keep the d keep the context open , but actually go after the basic issues ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Hmm . Oh OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And , so The idea is there 's this uh , other subgroup that 's worrying about formalizing the nota getting a notation . But sort of in parallel with that , uh , the hope is tha in particularly you will work on constructions in English Ge - and German for this domain ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "but y not worry about parsing them or fitting them into SmartKom or any of the other {disfmarker} anything lik any other constraints for the time being ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . OK . Got it ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It 's hard enough to get it semantically and syntactically right and then {disfmarker} and get the constructions in their form and stuff ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And , I don I don't want you f feeling that you have to somehow meet all these other constraints ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right , OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Um . And similarly with the parsing , uh we 're gonna worry about parsing uh , the general case you know , construction parser for general constructions . And , if we need a cut - down version for something , or whatever , we 'll worry about that later ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So I 'd like to , for the summer turn into science mode ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And I assume that 's also , uh , your plan as well ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "So I mean , the {disfmarker} the point is that like the meetings um so far that I 've been at have been {disfmarker} sort of been geared towards this demo ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "and then that 's going to go away pretty soon ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But {disfmarker} but we we 're swit"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "And then we 'll sort of shift gears a Fairly substantially ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "huh ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's got . What I {disfmarker} what I think is {disfmarker} is a good idea that I can {disfmarker} can show to anyone who 's interested , we can even make a {disfmarker} sort of an internal demo , and I {disfmarker} I show you what I do ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I speak into it and you hear it talk ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and I can sort of walk f through the information . So , this is like in half hour or forty - five minutes . Just fun ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And so you {disfmarker} when somebody on the streets com comes up to you and asks you what is SmartKom so you can , sort of , give a sensible answer ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , c sh we could set that up as actually an institute wide thing ? Just give a talk in the big room , and {disfmarker} and so peo people know what 's going on ? when you 're ready ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Absolutely ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah I mean , that 's the kind of thing {disfmarker} That 's the level at which you know we can just li invite everybody and say \" this is a project that we 've been working on and here 's a demo version of it \" and stuff like that ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK . Well d we {disfmarker} we do wanna have all the bugs out b where you have to sort of pipe in extra XML messages from left and right before you 're {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Indeed ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . OK . Makes sense ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But any so that {disfmarker} e e It 's clear , then , I think . Actually , roughly starting uh let 's say , nex next meeting , cuz this meeting we have one other thing to tie up besides the trip report ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But uh starting next meeting I think we want to flip into this mode where {disfmarker} Uh . I mean there are a lot of issues , what 's the ontology look like ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "you know what do the constructions look like , what 's the execution engine look like , mmm lots of things ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But , more focused on uh an idealized version than just getting the demo out . Now before we do that , let 's get back in {disfmarker} Oh ! But , it 's still , I think , useful for you to understand the demo version enough , so that you can {disfmarker} can see what {disfmarker} what it is that {disfmarker} that uh it might eventually get retro - fitted into or something ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . OK , right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And Johno 's already done that , uh , looked at the dem uh the {disfmarker} looked at the SmartKom stuff ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Wa uh {disfmarker} To some de uh what {disfmarker} what part of th the SmartKom stuff ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Well , the parser , and that stuff ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Oh yeah {disfmarker} yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . Anyway . So , the trip {disfmarker} the report on these {disfmarker} the last we we sort of interrupted you guys telling us about what happened last week ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . It 's alright ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um . {vocalsound} Well it was just amazing to {disfmarker} to see uh how {disfmarker} how instable the whole thing is ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Maybe you 're done , then ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and if you just take the {disfmarker} And I g I got the feeling that we are {pause} the only ones right now who have a running system . I don't know what the guys in Kaiserslautern have running because e the version {disfmarker} that is , the full version that 's on the server d does not work . And you need to do a lot of stuff to make it work . And so it 's {disfmarker} And even Tilman and Ralf sort of said \" yeah there never was a really working version that uh did it without th all the shortcuts that they built in for the uh October @ @ version \" . So we 're actually maybe ahead of the System Gruppe by now , the system {disfmarker} the integration group . And it was , uh {disfmarker} It was fun to some extent , but the uh the outcome that is sort of of scientific interest is that I think both Ralf and Tilman {disfmarker} um , I know that they enjoyed it here , and they r they {disfmarker} they liked , uh , a lot of the stuff they saw here , what {disfmarker} what we have been thinking about , and they 're more than willing to {disfmarker} to um , cooperate , by all means . And um , part of my responsibility is uh to use our internal \" group - ware \" server at EML , make that open to all of us and them , so that whatever we discuss in terms of parsing and {disfmarker} and generating and constructions w we {disfmarker} we sort of uh put it in there and they put what they do in there and maybe we can even um , get some overlap , get some synergy out of that . And um , the , uh {disfmarker} If I find someone at {disfmarker} in EML that is interested in that , um I {disfmarker} I may even think that we could look {disfmarker} take constructions and {disfmarker} and generate from them because the tree adjoining grammars that {disfmarker} that Tilman is using is as you said nothing but a mathematical formalism . And you can just do anything with it , whether it 's syntactic trees , H P S G - like stuff , or whether it 's construction . So if you ever get to the generation side of constructing things and there might be something of interest there , but in the moment we 're of course definitely focused on the understanding , um , pipeline ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Anyth - any other {vocalsound} {comment} uh repo visit reports sort of stories ? uh we {disfmarker} so we now know I think , what the landscape is like ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And so we just push on and {disfmarker} and uh , do what we need to do . And one of the things we need to do is the um , and this I think is relatively tight {disfmarker} tightly constrained , is to finish up this belief - net stuff . So . Uh . And I was going to switch to start talking about that unless there 're m other more general questions . OK so here 's where we are on the belief - net stuff as far as I understand it . Um . Going back I guess two weeks ago uh Robert had laid out this belief - net , missing only the connections . Right ? That is {disfmarker} {comment} So , he 'd put all th all the dots down , and we went through this , and , I think , more or less convinced ourselves that at least the vast majority of the nodes that we needed for the demo level we were thinking of , were in there . Yeah {comment} we may run across one or two more . But of course the connections weren't . So , uh Bhaskara and I went off and looked at some technical questions about were certain operations sort of legitimate belief - net computations and was there some known problem with them or had someone already uh , solved you know how to do this and stuff . And so Bhaskara tracked that down . The answer seems to be uh , \" no , no one has done it , but yes it 's a perfectly reasonable thing to do if that 's what you set out to do \" . And , so the current state of things is that , again , starting now , um we 'd like to actually get a running belief - net for this particular subdomain done in the next few weeks . So Bhaskara is switching projects as of the first of June , and uh , he 's gonna leave us an inheritance , which is a uh {disfmarker} hopefully a belief - net that does these things . And there 're two aspects to it , one of which is , you know , technical , getting the coding right , and making it run , and uh stuff like that . And the other is the actual semantics . OK ? What all {disfmarker} you know , what are the considerations and how and what are the ways in which they relate . So he doe h he doesn't need help from this group on the technical aspects or if he does uh we 'll do that separately ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But in terms of what are the decisions and stuff like that , that 's something that we all have to work out . Is {disfmarker} is that right ? I mean that 's {disfmarker} that 's both you guys ' understanding of where we are ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Absolutely ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So , I guess , um {disfmarker} Is there like a latest version of the belief - net {disfmarker} of the proposed belief - net ? Like {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "We had um decided {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "like {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um . Well , no , we didn't decide . We wanted to look into maybe getting it , the visualization , a bit clearer , but I think if we do it , um , sort of a paper version of all the nodes and then the connections between them , that should suffice ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm . Yeah , that should be fine ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah I mean , that 's a separate problem ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , I {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "We do in the long run wanna do better visualization and all that stuff ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "That 's separable , yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "I did look into that , uh in terms of , you know , exploding the nodes out and down ag"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yep . Right ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "JavaBayes does not support that . I can imagine a way of hacking at the code to do that . It 'd probably take two weeks or so to actually go through and do it ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Not {disfmarker} not at this point ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "and I went through all the other packages on Murph - Kevin Murphy 's page ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "and I couldn't find the necessary mix of free and uh with the GUI and , with this thing that we want ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Well , we can p If it 's {disfmarker} If we can pay {disfmarker} Yeah . If you know it 's paying a thousand dollars or something we can do that . OK ? So {disfmarker} so don't view free as {disfmarker} as a absolute constraint ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "OK . OK , so then I 'll go back and look at the ones on the list that {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . And you can ask Kevin ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah , the one that uh people seem to use is uh Hugin or whatever ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Hugin , yeah that 's free ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "How exp I don't think it 's {disfmarker} Is it free ? Because I 've seen it advertised in places so I {disfmarker} it seems to {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh , it may be free to academics . Like I {disfmarker} I don't know . I have a co {comment} I have a copy {comment} that I l I downloaded ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , at one point it was free ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh but yo I noticed people do use Hugin so um ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "How do you spell that ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "HUGIN ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Why"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And Bhaskara can give you a pointer . So then , in any case , um {disfmarker} But paying a lit You know , if i if it 's uh {disfmarker} Probably for university , it 's {disfmarker} it 's gonna be real cheap anyway . But um , you know , if it 's fifty thousand dollars we aren't gonna do it . I 'm mean , we have no need for that ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I {disfmarker} I also s would suggest not to d spend two weeks in {disfmarker} in {disfmarker} in changing the {disfmarker} the JavaBayes code ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "No ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "he 's not gonna do that ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I {disfmarker} I will send you a pointer to a Java applet that does that , it 's sort of a fish - eye . You {disfmarker} you have a node , and you click on it , and it shows you all the connections ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and then if you click on something else that moves away , that goes into the middle . And maybe there is an easy way of interfacing those two . If that doesn't work , it 's not a problem we {disfmarker} we need to solve right now . What I 'm {disfmarker} what my job is , I will , um , give you the input in terms of {disfmarker} of the internal structure . Maybe node by node , or something like this ? Or should I collect it all"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Doesn't matter ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Um , just any like {disfmarker} like sort of rough representation of the entire belief - net is probably best ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK . And um you 're gonna be around ? t again , always Tuesdays and Thursdays afternoon - ish ? As usual ? Or will that change ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah {disfmarker} I mean , yeah , I can {disfmarker} like I c Um . This week I guess um , kind of {disfmarker} I have a lot of projects and stuff but after that I will generally be more free . So yes , I might {disfmarker} I can be around . And g I mean , generally if you email me also I can be around on other days ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah and this is not a crisis that {disfmarker} I mean , you do , e everybody who 's a student should , you know do their work , get their c courses all in good shape and {disfmarker} and {disfmarker} and {disfmarker} and then we 'll dig {disfmarker} d dig down on this ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah , that 's {disfmarker} Yeah . OK . No , that 's good . That means I have I h I can spend this week doing it . So ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "How do you go about this process of deciding what these connections are ? I know that there 's an issue of how to weight the different things too , and stuff . Right ? I mean do you just sort of guess and see if it sort of {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . Well there {disfmarker} there {disfmarker} there There 're two different things you do ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "One is you design and the other is you learn . OK ? So uh what we 're gonna do initially is {disfmarker} is do design , and , i if you will , guess ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . Uh that is you know use your best knowledge of {disfmarker} of the domain to uh , hypothesize what the dependencies are and stuff ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "If it 's done right , and if you have data then , there are techniques for learning the numbers given the structure"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "and there are even techniques for learning the structure , although that takes a lot more data , and it 's not as @ @ and so forth and so on . So uh but for the limited amount of stuff we have for this particular exercise I think we 'll just design it ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Alright ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . Fo - Hopefully as time passes we 'll get more and more data from Heidelberg and from people actually using it and stuff ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So but this is the {pause} {vocalsound} {comment} {pause} long run ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But to solve our problems ag uh a mediocre design will do I think in the beginning ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah , that 's right . Yeah , oh , and by the way , speaking of data , um , are there I could swore {disfmarker} uh , I could swear I saw it sitting on someone 's desk at some point , but is there a {disfmarker} um a transcript of any of the , sort of , initial interactions of people with the {disfmarker} with the system ? Cuz you know , I 'm still sort of itching to {disfmarker} to look at what {disfmarker} look at the stuff , and see what people are saying ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm . Yeah . Yeah make yourself a note . So and {disfmarker} and , of course Keith would like the German as well as the English , so whatever you guys can get ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "The German . Oh yeah , of course , German . Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , the y your native language , right ? You remember that one ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK . That 's important , yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So he 'll get you some data ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "u OK . Yeah , I mean I {disfmarker} I sort of um found the uh , uh the audio of some of those , and um , it kind of sounded like I didn't want to trudge through that , you know ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "It was just {disfmarker} Strange , but ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "We probably will not get those to describe because they were trial runs ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh yeah , OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um , but uh that 's th but we have data in English and German already ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK , yeah , I mean ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So . {disfmarker} Transcribed . I will send you that . OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK , so while we 're still at this sort of top level , anything else that we oughta talk about today ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Ho - how was your thingy ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh , um , I just wanted to , uh , s like mention as an issue , um , you know last meeting I wasn't here because I went to a linguistics colloquium on the fictive motion stuff ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "and that was pretty interesting and you know , I mean , seems to me that that will fairly obviously be of relevance to uh {disfmarker} to what we 're doing here because you know people are likely to give descriptions like you know , \" What 's that thing uh right where you start to go up the hill , \" or something like that , you know , meaning a few feet up the hill or whatever from some reference point and all that stuff so I mean , I 'm sure in terms of you know , people trying to state locations or , you know , all that kind of stuff , this is gonna be very relevant . So , um , now that was {disfmarker} the talk was about English versus Japanese , um , which obviously the Japanese doesn't affect us directly , except that , um , some of the construction {disfmarker} he 'd {disfmarker} what he talked about was that you know in English we say things like th you know , \" your bike is parked across the street \" and we use these prepositional phrases , you know , \" well , if you were to move across the street you would be at the bike \" , but um in {disfmarker} in Japanese the {disfmarker} the more conventionalized tendency is to use a {disfmarker} sort of a description of \" where one has crossed to the river , there is a tree \" . Um , and you know , you can actually say things like , um , \" there 's a tree where one has crossed the river , but no one has ever crossed the river \" , or something like that . So the idea is that this really is you know that 's supposed show that 's it 's really fictive and so on . But um {disfmarker} But the point is that that kind of construction is also used in English , you know , like \" right where you start to go up the hill \" , or \" just when you get off the train \" , or something like that to {disfmarker} uh , to indicate where something is ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "So we 'll have to think about {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So {disfmarker} how much is that used in German ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um . The uh {disfmarker} Well {disfmarker} I wa I was on a uh {disfmarker} on a {disfmarker} on a different sidetrack ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I mean , the {disfmarker} the Deep Map project which um is undergoing some renovation at {disfmarker} at the moment , but this is a {disfmarker} a three language project : German , English , Japanese ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And um , we have a uh , uh {disfmarker} I have taken care that we have the {disfmarker} the Japanese generation and stuff . And so I looked into uh spatial description . So we can generate spatial descriptions , how to get from A to B . And {disfmarker} and information on objects , in German , English , and Japanese ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And there is a huge uh project on spatial descriptions uh {disfmarker} differences in spatial descriptions . Well , if yo if you 're interested in that , so how {disfmarker} how , I mean it does sort of go d all the way down to the conceptual level to some extent ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So . Um ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , where is this huge project ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's KLEIST . It 's the uh Bielefeld generation of uh spatial descriptions and whatever ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": ""
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Well , that may be another thing that Keith wants to look at ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But um , I {disfmarker} I think we should leave Japanese constructions maybe outside of the scope for {disfmarker} for now ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "but um definitely it 's interesting to look at {disfmarker} at cross the bordered there ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Are {disfmarker} are you going to p pay any attention to the relative position {disfmarker} of {disfmarker} of the direction relative {disfmarker} relative to the speaker ? For example , there are some differences between Hebrew and English . We can say um \" park in front of the car \" as you come beh you drive behind the car . In Hebrew it means \" park behind the car \" , because to follow the car is defined as it faces you ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm . Intrinsic , yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "While in English , front of the car is the absolute front of the car ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right , so the canonical direction of motion determines where the front is ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right . Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So , i i i is German uh closer to {disfmarker} to E uh , uh , uh , uh {disfmarker} to E I mean uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I don't think it {disfmarker} it 's related to syntax , though , so it may be entirely different ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um , as a matter of fact {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "No , it 's not ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um . Did you ever get to look at the {disfmarker} the rou paper that I sent you on the {disfmarker} on that problem in English and German ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I think {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Carroll , ninety - three . Um . I {disfmarker} There is a {disfmarker} a study on the differences between English and German on exactly that problem ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So it 's {disfmarker} they actually say \" the monkey in front of the car , where 's the monkey ? \""
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And , um , they found statistically very significant differences in English and German , so I {disfmarker} I {disfmarker} I {disfmarker} It might be , since there are only a finite number of ways of doing it , that {disfmarker} that German might be more like Hebrew in that respect ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "The solution they proposed was that it was due to syntactic factors ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "That {disfmarker} but it wasn't {disfmarker} was {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That syntactic facto factors do {disfmarker} do play a role there , wh whether you 're more likely , you know , to develop uh , choices that lead you towards using uh intrinsic versus extrinsic reference frames ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right . Mm - hmm . Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I mean , it seems to me that you can get both in {disfmarker} in English depending o"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "You know , like , \" in front of the car \" could you know {disfmarker} Like , here 's the car sideways to me in between me and the car or something 's in front of the car , or whatever . I could see that ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Absolutely ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "but {disfmarker} But anyway , so you know , I mean , this was {disfmarker} this was a {disfmarker} a very good talk on those kinds of issues and so on . So uh ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I can also give you uh , a pointer to a paper of mine which is the {disfmarker} the ultimate taxonomy of reference frames ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Alright ! Cool !"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I 'm the only person in the world who actually knows how it works ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Not really ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Great . No , I 've not seen that ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "What do you mean . Um . \" reference frames \" ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's called a {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "uh uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's {disfmarker} it 's spatial reference frames . You actually have only {disfmarker} Um . If you wanna have a {disfmarker} This is usually um {disfmarker} I should {disfmarker} there should be an \" L \" , though . Well actually you have {disfmarker} only have two choices . You can either do a two - point or a three - point which is you You 're familiar with th with the \" origo \" ? where that 's the center {disfmarker} \" Origo \" is the center of the f frame of reference ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And then you have the reference object and the object to be localized ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ? In some cases the origo is the same as the reference object ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So that would be \" origin \" in English ,"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "This was like {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "The origin ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "right ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "\" Origo \" is a Terminus technikus . in that sense , that 's even used in the English literature . \" Origo . \""
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh , OK . I never heard it ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Alright ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And um , so , this video tape is in front of me ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I 'm the origo and I 'm also the reference object ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Those are two - point ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And three - point relations is if something has an intrinsic front side like this chair then your f shoe is behind the chair ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And , reference object and {disfmarker} Um . No , from {disfmarker} from my point of view your shoe is left of the chair ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right . You {disfmarker} you can actually say things like , um , \" it 's behind the tree from me \" or something like that , I think , in {disfmarker} in {disfmarker} in certain circumstances in English , right ? As sort of \" from where I 'm standing it would appear that \" {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . Yeah . So ,"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Looks a little bit like Reichenbach for time ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , it sounds like it , doesn't it ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "It 's a lot like it ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And then {disfmarker} and then here you {disfmarker}"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Um ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "On this scale , you have it either be ego or allocentric ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And that 's {comment} {disfmarker} that 's basically it . So . Egocentric two - point , egocentric three - point , or you can have allocentric ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So , \" as seen from the church , the town hall is right of that um , fire station \" . aa - huh {comment} It 's hardly ever used but it 's w"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I 'd love to see it if you {disfmarker} if you have a copy kind of . Uh ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . I see this is {disfmarker} this is getting into Ami 's thing ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Here"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "He 's {disfmarker} he 's very interested in that ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Me too ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh . Yeah . Well , why don't you just put it on the web page ? There 's this EDU {disfmarker} Right ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah it 's {disfmarker} or {disfmarker} or just {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Or a link to it ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's also all on my {disfmarker} my home page at EML . It 's called \" An Anatomy of a Spatial Description \" ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Just"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But I 'll send that link ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK , great ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Maybe just put a link on . Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "By the way , there {disfmarker} something that I didn't know until about a week ago or so , is apparently , there are separate brain areas for things within reach , and things that are out of reach ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Huh ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So there 's {disfmarker} there 's uh all this linguistic stuff about you know , near and far , or yon and {disfmarker} and so forth ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So this is all {disfmarker} This is {disfmarker} There 's this linguistic facts . But apparently , the {disfmarker} Uh . Here 's the way the findings go . That , you know they do MRI , and {disfmarker} and if you 're uh {disfmarker} got something within reach then there 's one of your areas lights up , and if something 's out of reach uh a different one . But here 's the {disfmarker} the amazing result , um , they say . You get someone with a {disfmarker} with a deficit so that they have a perfectly normal ability at distance things . So the s typical task is subdivision . So there 's a {disfmarker} a line on the wall over there , and you give them a laser pointer , and you say , \" Where 's the midpoint ? \" And they do fine . If you give them the line , and they have to touch it , they can't . There 's just that part of the brain isn't functioning , so they can't do that . Here 's the real experiment . The same thing on the wall , you give them a laser , \" where is it ? \" ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "they do it . Give them a stick , long stick , and say \" do it \" , they can't do it . So there 's a remapping of distant space into nearby space ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right . So they doubled {disfmarker} the {disfmarker} the end {disfmarker} the end of this {disfmarker}"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Because it 's within reach now ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It 's not within reach and you use the Within - Reach uh , mechanism ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Oh . Wow ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Circuits ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So I 'll d I 'll dig you up this reference ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "That 's cool ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And so this doe This is , uh {disfmarker} First of all , it explains something that I 've always wondered about and I 'll do this {disfmarker} this test on you guys as well . So . Uh . How - I have had an experience , not often , but a certain number of times , when , for example , I 'm working with a tool , a screwdriver or something , for a long time , I start feeling the tip directly . Not indirectly , but you actually can feel the tip ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And people who are uh accomplished violinists and stuff like that , claim they also have this kind of thing where you get a direct sensation of , physical sensation , of the end affector ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . What 's going on at the end of the tool ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "The ext the {disfmarker} the {disfmarker} The extension ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Huh ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "What 's going on at the end of the tool , or whatever ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , within {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Huh ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "The extension of {disfmarker} of your hand , right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , right . Have you hav y h had this ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "The {disfmarker} I {disfmarker} I think so . I mean i i it 's not exactly the th same thing , but {disfmarker} but s it {disfmarker} it {disfmarker} it 's getting close to that ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "W what does it feel like ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh i it feels like your {disfmarker} as if your uh neurons had extended themselves out to this tool , and you 're feeling forces on it and so forth and {disfmarker} and you deal directly with it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I once {disfmarker} I {disfmarker} I was playing you know with those um uh devices that allow you to manipulate objects when it 's dangerous to get close ? So you can insert your hand something"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right , yeah {disfmarker} yeah {disfmarker} yeah . Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "and there 's a correspondence between {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So I played with it . After a while , you don't feel the difference anymore . I {disfmarker} I mean it 's kind of {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Very {disfmarker} kind of {disfmarker} you stop back and suddenly it goes away and you have to kind of work again to recapture it , but yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right , Yeah , so anyway , so {disfmarker} So this was the first actual experimental evidence I 'd seen that was consistent with this anecdotal stuff ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "That 's cool ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And of course it makes a lovely def uh story about why languages uh , make this distinction . Of course there are behavioral differences too . Things you can reach are really quite different than things you can't ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But there seems to be an actu really deep embodied neural difference . And i this is , um {disfmarker} So . In addition to the e"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "This is more proximal - distal ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah uh exactly . So in addition to e ego and allocentric uh which appear all over the place , you also apparently have this proximal - distal thing which is very deeply uh embedded . S"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Well , Dan Montello sort of , he {disfmarker} he does the uh uh {disfmarker} th the cognitive map world , down in Santa Barbara . And he {disfmarker} he always talks about these {disfmarker} He {disfmarker} he already {disfmarker} well {disfmarker} i probably most likely without knowing this {disfmarker} this evidence uh is talking about these small scale spaces that you can manipulate versus large scale environmental spaces ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . Well there 's {disfmarker} there 's uh been a lot of behavioral things o on this , but that was the first neur neuro - physiological thing I saw . Anyway yeah , so we 'll {disfmarker} we 'll look at this . And . So , all of these issues now {disfmarker} are now starting to come up . So , now {disfmarker} we 're now done with demos . We 're starting to do science , right ? And so these issues about uh , reference , and {disfmarker} spatial {comment} reference , discourse reference , uh - uh - uh - uh {comment} all this sort of stuff , uh , deixis which is part of what you were talking about ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "um {disfmarker} So , all of this stuff is coming up essentially starting now . So we gotta do all this . So there 's that . And then there 's also a set of system things that come up . So \" OK , we 're not using their system . That means we need our system . \""
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It {disfmarker} it follows . And so , uh , in addition to the business about just getting the linguistics right , and the formalism and stuff , we 're actually gonna build something and uh , Johno is point person on the parser , analyzer , whatever that is , and we 're gonna start on that in parallel with the um , the grammar stuff ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Alright ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But to do that we 're gonna need to make some decisions like ontology , so , um {disfmarker} And so this is another thing where we 're gonna , you know , have to get involved and make s relatively early I think , make some decisions on uh , \" is there an ontology API that {disfmarker} that \" {disfmarker} There 's a sort of standard way of getting things from ontologies and we build the parser and stuff around that , or is there a particular ontology that we 're gonna standardize on , and if so {disfmarker} For example , is there something that we can use there . i Does uh either the uh SmartKom project or one of the projects at EML have something that we can just p pull out , for that . Uh , so there are gonna be some {disfmarker} some {disfmarker} some things like that , which are not science but system . But we aren't gonna ignore those cuz we 're {disfmarker} we 're not only going {disfmarker} The plan is not only to lay out this thing , but to actually uh build some of it . And how much we build , and {disfmarker} and so forth ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh . Part of it , if it works right , is wh It looks like we 're now in a position that the construction analyzer that we want for this applied project can be the same as the construction analyzer that Nancy needs for the child language modeling . So . It 's always been out of phase but it now seems that um , there 's a good shot at that . So we 've talked about it , and the hope is that we can make these things the same thing ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "and of course it 's only w In both cases it 's only one piece of a bigger system ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But it would be nice if that piece were exactly the same piece ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It was just this uh construction analyzer . And so we think {disfmarker} we think we have a shot at {disfmarker} at that ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So . The for So . To {disfmarker} to come full circle on that , this formalization task , OK ? is trying to get the formalism into {disfmarker} into a shape where it can actually uh"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . Be of use to someone who 's trying to do this , right ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "d Well , yeah , where it actually is {disfmarker} is {disfmarker} covers the whole range of things . And the {disfmarker} the {disfmarker} the {disfmarker} the thing that got Mark into the worst trouble is he had a very ambitious thing he was trying to do , and he insisted on trying to do it with a limited set of mechanisms . It turned out , inherently not to cover the space ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And it just {disfmarker} it was just terribly frustrating for him ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "and he seemed fully committed to both sides of this i i irreconcilable thing ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I see . Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And . Uh . Johno is much more pragmatic ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK . Good to know ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh . Huh ? Is {disfmarker} This is true , is it not ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . So there 's you know sort of , yeah , deep , really deep , emotional commitment to a certain theory being uh , complete ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "You don't have a hidden purist streak ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Oh no ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "We - well it hasn't it {disfmarker} it certainly hasn't been observed , in any case ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "OK . Just checking ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "No sir ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Alright ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Um . Now , you do , but that 's OK . Uh . So . For {disfmarker} for {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Cuz I don't have to implement anything ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Exactly right . Exactly ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "I have a problem , then . It 's {disfmarker} So . Whether I do depends on whether I 'm talking to him or him probably ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah , right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . Why {disfmarker} a actually , uh , the thing is , you {disfmarker} you do but , th the thing you have to im implement is so small that {disfmarker} Uh ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Which meeting I 'm in . It 's OK to be purist within that context ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Within that , yeah ,"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Yes ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "and uh , it 's {disfmarker} a and still , I think , you know , get something done ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "good ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Cool !"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But to try to do something upscale and purist Particularly if {disfmarker} if um what you 're purist about doesn't actually work , {vocalsound} is real hard ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Yay ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm . Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . And then the other thing is while we 're doing this uh Robert 's gonna pick a piece of this space ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "It 's possible yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK , uh , for his absentee thesis . I think you all know that {disfmarker} that you can just , in Germany {disfmarker} almost just send in your thesis ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Just a drive up . Ca - chuk !"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Um"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "There you go ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "The - th There {disfmarker} there 's a drive - in thesis uh sh {vocalsound} joint over in Saarbruecken ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Exactly . Drive through , yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It costs a lot . The {disfmarker} the amount {disfmarker} You put in your credit card and {disfmarker} {vocalsound} as well . But , uh , {disfmarker} But anyway , so , uh , that 's um , also gotta be worked out , hopefully over the next few weeks , so that {disfmarker} that it becomes clear uh , what piece uh , Robert wants to jump into . And , while we 're at this level , uh , there 's at least one new doctoral student in computer science who will be joining the project , either next week or the first of August , depending on the blandishments of Microsoft ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , de Uh . And her name is Eva ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "It really is . Nobody believed th th that {disfmarker}"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Yeah , I thought it had to be a joke , of your part , you know"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "like {disfmarker} {comment} \" Johno made it up , I 'm sure . \""
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Is this person someone who 's in first - year this year ,"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "No , first year coming ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "or"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So , she 's {disfmarker} she 's now out here she 's moved , and she 'll be a student as of then ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And probably she 'll pick up from you on the belief - net stuff , so sh she 'll be chasing you down and stuff like that ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Document ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh , against all traditions . And actually I talked today to a uh undergraduate who wants to do an honors thesis on this . Uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Someone from the class ?"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "No , interestingly enough ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "We always get these people who are not in the class , who {disfmarker}"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Some of th some of them , yeah ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "It 's interesting ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So anyway , uh , but uh she 's another one of these ones with a three point nine average and so forth and so on ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Uh , so , um , I 've give I 've given her some things to read . So we 'll see how this goes . Oh there 's yet another one of the incoming first {disfmarker} {comment} incoming first - year graduate students who 's expressed interest , so we 'll see how that goes . Um , anyway , so , I think as far as this group goes , um , it 's certainly worth continuing for the next few weeks to get closure on the uh belief - net and the ideas that are involved in that , and what are th what are the concepts . We 'll see whether it 's gonna make sense to have this be separate from the other bigger effort with the formalization stuff or not , I 'm not sure . It partly depends on w what your thesis turns out to be and how that goes . S so , we 'll see . And then , Ami , you can decide , you know , how much time you wanna put into it and uh , it it 's beginning to take shap shape ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "so uh and ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I think you will find that if you want to look technically at some of the {disfmarker} your traditional questions in this light , uh Keith , who 's buil building constructions , will be quite happy to uh see what , you know , you envision as the issues and the problems and um , how they might uh get reflected in constructions ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Sure ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "I suspect that 's right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I {disfmarker} I may have to go to Switzerland for {disfmarker} in June or beginning of July for between two weeks and four weeks , but uh , after that or before that ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK , fine . And , um , if it 's useful we can probably arrange for you to drop by and visit either at Heidelberg or at the German AI center , while you 're in {disfmarker} in the neighborhood ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right . Yeah be uh actu actually I 'm invited to do some consulting with a bank in Geneva which has an affiliation with a research institute in Geneva , which I forgot the name of ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . Yep . E o do y"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Well , we we 're connected to uh {disfmarker} There 's a {disfmarker} there 's a {disfmarker} a very significant connection between {disfmarker} We 'll {disfmarker} we 'll go through this ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "ICSI and EPFL , which is the , uh {disfmarker} It 's the {disfmarker} Fr Ge - Germany 's got two big technical institutes . There 's one in {disfmarker} in Zurich ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "E T and then there 's one , the French speaking one , in Lausanne ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh , so in Switzerland ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ? which is uh E P"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Great ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "F L . So find out who they are associated with in Geneva ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Probably we 're connected to them ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Great . I 'll let you know . S I 'll send you email ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . Yeah , and so anyway we c uh {disfmarker} We can m undoubtedly get Ami uh to give a talk at uh EML or something like that . While he 's in {disfmarker} in uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm . Uh . I {disfmarker} I think the one you {disfmarker} you gave here a couple of weeks ago would be of interest there , too ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Sure , yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "A lot of interest . Actually , either place , DFKI or uh {disfmarker} Yeah , so , and {disfmarker} and if there is a book , that you 'll be building up some audience for it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah . Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "And you 'll get feedback from these guys ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Great , yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Cuz they 've actually {disfmarker} these DFKI guys have done as much as anyone over the last decade in trying to build them . So we 'll set that up ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Cool ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . So , uh , unless we wanna start digging into the {disfmarker} uh the belief - net and the decisions now , which would be fine , it 's probably {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I {disfmarker} I tho It 's probably better if I come next week with the um version O point nine of the structure ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK . So , how about if you two guys between now and next week come up with something that is partially proposal , and partially questions , saying \" here 's what we think we understand , here are the things we think we don't understand \" . And that we as a group will try to {disfmarker} to finish it . What I 'd like to do is shoot f for finishing all this next Monday ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Sure ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK ? Uh , \" these are the decisions \" {disfmarker} I don't think we 're gonna get lots more information . It 's a design problem ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "You know . We {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . And let 's come up with a first cut at what this should look like . And then finish it up ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Does that so make sense ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And um , the {disfmarker} the sem semester will be over next week but then you have projects for one more week to come ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "No , I {disfmarker} I think I 'll be done {disfmarker} everything by this uh {disfmarker} by the end of this week ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Same with you ? No ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Nnn . This {disfmarker} Well , I 've {disfmarker} I have projects , but then the {disfmarker} my prof professor of one of my classes also wa has a final that he 's giving us . And he 's giving us five days to do it which means it going to be hard ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah . Oh . is it a take - home final ? Who 's doing this ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah . Aikin , Alex , yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Yeah , figured . That would have been i my guess ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . Um , But anyway , yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Pretty soon ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "OK , so I guess that 's"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So , the seventeenth will definitely be the last day , like it or not for me ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Right . right . So let 's do this , and then we we well there 's gonna be some separate co these guys are talking , uh we have a group on the formalization , uh Nancy and Johno and I are gonna talk about parsers . So there 're various kinds of uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Of course , nothing gets done even in a meeting of seven people ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "right ? So , um , two or three people is the size in which actual work gets done ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So we 'll do that . Great . Oh , the other thing we wanna do is catch up with uh , Ellen and see what she 's doing because the um image schemas are going to be um , an important pa"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . Quite relevant , yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "We {disfmarker} we want those ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah , oh yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "right ? And we want them formalized and stuff like that ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "So let me {disfmarker} let me make a note to do that ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK . Yeah , I 'm actually probably going to be in contact with her uh pretty soon anyway because of various of us students were going to have a reading group about precisely that sort of thing over the summer ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Oh right ! Right right right !"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "so ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "That 's great ! Yeah , I {disfmarker} I {disfmarker} Shweta mentioned that , although she said it 's a secret ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Hi"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right , no faculty !"
+        },
+        {
+            "speaker": "Professor C",
+            "content": "Th - the faculty aren't {disfmarker} faculty aren't supposed to know ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Wednesday 's much better for me , yeah ."
+        },
+        {
+            "speaker": "Professor C",
+            "content": "But um , I 'm sufficiently clueless that I count as a {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah , right . It 's as if we didn't tell anyone at all ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Bhaskara ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "right ."
+        }
+    ]
+}

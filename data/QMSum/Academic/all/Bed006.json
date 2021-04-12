@@ -1,0 +1,4354 @@
+{
+    "topic_list": [
+        {
+            "topic": "Introducing Fey and discussing participant recruitment",
+            "relevant_text_span": [
+                [
+                    "23",
+                    "160"
+                ]
+            ]
+        },
+        {
+            "topic": "Capturing intention of subjects",
+            "relevant_text_span": [
+                [
+                    "162",
+                    "261"
+                ]
+            ]
+        },
+        {
+            "topic": "Language generation model and representing actions",
+            "relevant_text_span": [
+                [
+                    "262",
+                    "396"
+                ]
+            ]
+        },
+        {
+            "topic": "Natural language understanding and fitting the action schema into the source path goal schema",
+            "relevant_text_span": [
+                [
+                    "405",
+                    "783"
+                ]
+            ]
+        },
+        {
+            "topic": "Designing new SPG schema based on a more flexible organization",
+            "relevant_text_span": [
+                [
+                    "787",
+                    "872"
+                ]
+            ]
+        },
+        {
+            "topic": "New meeting time and final words on schemas",
+            "relevant_text_span": [
+                [
+                    "876",
+                    "1049"
+                ]
+            ]
+        }
+    ],
+    "general_query_list": [
+        {
+            "query": "Summarize the meeting",
+            "answer": "Meeting participants began by going over the logistics of recruiting participants, particularly through departmental mailing lists. They then moved onto discussing a new role, the instructor, who would help experimental participants figure out their intentions. This would eliminate a pre-written set of goals for the participants. Participants also discussed how the schema would incorporate other information, like choosing movies, and how more complex actions, like that of purchasing goods, could be incorporated into the source-path-goal schema. Finally, the participants concluded that an SPG schema of a different kind, one that can transfer previously acquired information, may be more helpful. The meeting concluded with the discussion of a new meeting time."
+        }
+    ],
+    "specific_query_list": [
+        {
+            "query": "Summarize the discussion about capturing the intention of subjects",
+            "answer": "The new system for collecting subject intention focused on allowing subjects to come up with the intent themselves. Instead of giving them a list of goals, the subjects would, with the help of an instructor, figure out what they want to do in the environment. The earlier interaction with the instructor would give them a sense of how specific their goals in the environment could be. Another idea was to use pictures for people to help determine their intention, but the manufacturing of pictures seemed to be a very intensive project.",
+            "relevant_text_span": [
+                [
+                    "162",
+                    "261"
+                ]
+            ]
+        },
+        {
+            "query": "What did Grad C think about capturing subject intention?",
+            "answer": "Grad C introduced the topic and explained that the new idea was to allow subjects to generate high level tasks, like going shopping, by themselves. Subjects would also be provided a high level schematic which would give them basic features of the environment. Though, the schematic would not contain detailed information, like a street map, which would be reserved for interactions with the wizard. An instructor would be hired to help subjects navigate the high level tasks.",
+            "relevant_text_span": [
+                [
+                    "162",
+                    "169"
+                ],
+                [
+                    "213",
+                    "227"
+                ]
+            ]
+        },
+        {
+            "query": "What did Grad G think about capturing the subject intention?",
+            "answer": "Grad G learned that the materials would be based on real materials about Heidelberg and that the instructor would allow subjects to get a feel for the system's capabilities. Grad G also learned that the interactions would be more natural.",
+            "relevant_text_span": [
+                [
+                    "165",
+                    "220"
+                ]
+            ]
+        },
+        {
+            "query": "Summarize the discussion about designing the new SPG schema based on a more flexible organization",
+            "answer": "The team wanted to figure out how roles would be connected to actions. The thought that their current XML schema forced the model to look up, requiring the whole body of the model. The new idea they came up with was to create a parallel intention oriented specification in addition to the pure schema, which would allow for a more flexible schema.",
+            "relevant_text_span": [
+                [
+                    "787",
+                    "872"
+                ]
+            ]
+        },
+        {
+            "query": "What did Grad C think about the SPG schema?",
+            "answer": "Grad C thought an approach in which the model had to refer to parents seemed inefficient. The model would constantly have to go back. Grad C wanted to completely redo it, even if it meant throwing away what the team had developed thus far.",
+            "relevant_text_span": [
+                [
+                    "810",
+                    "833"
+                ]
+            ]
+        }
+    ],
+    "meeting_transcripts": [
+        {
+            "speaker": "Grad G",
+            "content": "Time ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Thanks ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Are you Fey ?"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "I am Fey , yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "What day is today ?"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Hi ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Hi . I think we 've met before , like , I remember talking to you about Aspect or something like that at some point or other ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "A couple times yeah ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "It 's the uh twenty {disfmarker} nineteenth ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Nineteenth ?"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "That 's right , yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "And you were my GSI briefly , until I dropped the class ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": ""
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right , right ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh that 's right ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "But ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Well ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK , wh wh"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "No offense ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Like ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK . Some in some introductions are in order ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh , OK sorry ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Getting ahead of myself ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So . Um . For those who don't know {disfmarker} Everyone knows me , this is great . Um , apart from that , sort of the old gang , Johno and Bhaskara have been with us from {disfmarker} from day one"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yay !"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hi ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and um they 're engaged in {disfmarker} in various activities , some of which you will hear about today . Ami is um our counselor and spiritual guidance and um also interested in problems concerning reference of the more complex type ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Well ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh wow ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and um he sits in as a interested participant and helper . Is that a good characterization ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "u That 's pretty good , I think ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I don't know ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah . Thanks ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK . Keith is not technically one of us yet ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Not yet ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "ha - ha . but um it 's too late for him now ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "\" One of us . \""
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah right . I 've got the headset on after all ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um . Officially I guess he will be joining us in the summer ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "yes ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um hopefully it is by {disfmarker} by means of Keith that we will be able to get a b a better formal and a better semantic um idea of what a construction is and um how we can make it work for us . Additionally his interest um surpasses um English because it also entails German , an extra capability of speaking and writing and understanding and reading that language . And um , is there anyone who doesn't know Nancy ? Do you {disfmarker} do you know Nancy ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Me ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I know Nancy ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I made that joke already , Nancy , sadly ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "What ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "The \" I don't know myself \" joke ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "You did ? When ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Uh before you came in ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Man !"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "About me or you ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "About me ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK . {vocalsound} OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You could do it about you ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Well I didn't know . I didn't mean to be humor copying , but OK , sorry . Yes , I know myself . It 's OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "It 's a {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um Fey is with us as of six days ago officially ?"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Officially ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Officially ,"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "but in reality already um much much longer and um um next to some {disfmarker} some more or less bureaucratic uh stuff with the {disfmarker} the data collection she 's also the wizard in the data collection Um ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Of Oz ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "It 's very exciting ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "we 're sticking with the term \" wizard \" ,"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and um"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Not witch - like ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Wizardette ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Wizard ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Wizardess ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sorceress , I think ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Wizard ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "wizard uh by by popular vote"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "um"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Didn't take a vote ? OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK , um , why don't we get started on that subject anyways . Um , so we 're about to collect data and um the uh s the following things have happened since we last met . When will we three meet again ? And um"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "More than three of us ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "what happened is that um , \" A \" , {comment} there was some confusion between you and Jerry with the {disfmarker} that leading to your talking to Catherine Snow , and he was uh he {disfmarker} he agreed completely that some something confusing happened . Um his idea was to get sort of the l the lists of mayors of the department , the students . It {disfmarker} it 's exactly how you interpreted it , sort of s"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "The list of majors in the department ?"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "M m Majors ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Ma - majors , majors ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Majors ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "\" Mayors \" ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "OK , mayor {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Majors ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Something I don't know about these"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "The department has many mayors ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Majors and um just sending the {disfmarker} the little write - up that we did on to those email lists"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "OK . OK . Yeah , yeah , yeah . But {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "uh {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "So it was really Carol Snow who was confused , not me and not Jerry ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep , yep , yep . OK . So . So , that is uh {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "That 's good . So I should still do that ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "And using the thing that you wrote up ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Wonderful . And um we have a little description of asking peop subjects to contact Fey for you know recruiting them for our thing and um there was some confusion as to the consent form , which is basically that {disfmarker} that what what you just signed"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and since we have one already um {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Did Jerry talk to you about maybe using our class ? the students in the undergrad class that he 's teaching ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um well he said um we {disfmarker} definitely \" yes \" ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "e"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "however there is always more people in a {disfmarker} in a facul uh in a department than are just taking his class or anybody else 's class at the moment"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and one should sort of reach out and try and get them all ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , but th I guess it 's that um people in his class cover a different set so {disfmarker} than the c is the CogSci department that you were talking about ?"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "I guess . See"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "uh reaching out to ?"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "that 's what I suggested to him , that people like {disfmarker} like Jerry and George and et cetera just {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Cuz we have you know people from other areas"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "advertise in their classes as well ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Yeah or even I could {disfmarker} you know I could do the actual {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Cuz I mean I {disfmarker} I know how to contact our students ,"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "That 's generally the way it 's done ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "so if there 's something that you 're sending out you can also s um send me a copy ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "me or Bhaskara could {disfmarker} either of us could post it to uh is it {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "A mailing list ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "if it 's a general solicitation that you know is just contact you then we can totally pro post it to the news group"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm . Yeah ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "so ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Do it . Yeah ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "That 's {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , so you 'll send it or something so ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "As a matter of fact , if you {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "I can send it ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "if {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "I 'll send it ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "You can send it to me ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Now , i"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK . Don't worry , we {disfmarker} this doesn't concern you anymore , Robert ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "How {disfmarker} however I suggest that if you {disfmarker} if you look at your email carefully you may think {disfmarker} you may find that you already have it ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "It 's fine . Oops . Already ? Really ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Maybe ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Probab"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oops ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK . W we 'll see ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I don't remember getting anything ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Anyhow , um the uh Yeah , not only Also we will talk about Linguistics and of course Computer Science ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um and then , secondly , we had , you may remember , um the problem with the re - phrasing , that subject always re - phrase sort of the task that uh we gave them ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and so we had a meeting on Friday talking about how to avoid that , and it proved finally fruitful in the sense that we came up with a new scenario for how to get the {disfmarker} the subject m to really have intentions and sort of to act upon those , and um there the idea is now that next actually we {disfmarker} we need to hire one more person to actually do that job because it {disfmarker} it 's getting more complicated . So if you know anyone interested in {disfmarker} in what i 'm about to describe , tell that person to {disfmarker} to write a mail to me or Jerry soon , fast . Um {vocalsound} the idea now is to sort of come up with a high level of sort of abstract tasks \" go shopping \" um \" take in uh a batch of art \" um \" visit {disfmarker} do some sightseeing \" blah - blah - blah - blah - blah , sort of analogous to what Fey has started in {disfmarker} in {disfmarker} in compiling {disfmarker} compiling here and already {disfmarker} she has already gone to the trouble of {disfmarker} of anchoring it with specific um o {comment} um entities and real world places you will find in Heidelberg . And um . So out of these f s these high level categories the subject can pick a couple , such as if {disfmarker} if there is a cop uh a category in emptying your roll of film , the person can then decide \" OK , I wanna do that at this place \" , sort of make up their own itinerary a and {disfmarker} and tasks and the person is not allowed to take sort of this h high level category list with them , but uh the person is able to take notes on a map that we will give him and the map will be a tourist 's sort of schematic representation with {disfmarker} with symbols for the objects . And so , the person can maybe make a mental note that \" ah yeah I wanted to go shopping here \" and \" I wanted to maybe take a picture of that \" and \" maybe um eat here \" and then goes in and solves the task with the system , IE {comment} Fey , and um and we 're gonna try out that {disfmarker} Any questions ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "so um y you 'll have those say somewhere what their intention was {disfmarker} so you still have the {disfmarker} the nice thing about having data where you know what the actual intention was ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm . Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "But they will um {disfmarker} There 's nothing that says you know \" these are the things you want to do \" so they 'll say \" well these are the things I want to do \" and {disfmarker} Right , so they 'll have a little bit more natural interaction ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hopefully ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "So they 'll be given this map , which means that they won't have to like ask the system for in for like high level information about where things are ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah it 's a schematic tourist map . So it 'll be uh i it 'll still require the {disfmarker} that information and An"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "It w it doesn't have like streets on it that would allow them to figure out their way {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "N not {disfmarker} not {disfmarker} not really the street network . Nuh ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So you 're just saying like what part of town the things are in or whatever ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah a and um the map is more a means for them to have the buildings and their names and maybe some ma ma major streets and their names"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and we want to maybe ask them , if you have {disfmarker} get it sort of isolated street the {disfmarker} the , whatever , \" River Street \" , and they know that {disfmarker} they have decided that , yes , that 's where they want to do this kind of action um that they have it with them and they can actually read them or sort of have the label for the object because it 's too hard to memorize all these st strange German names . And then we 're going to have another {disfmarker} we 're gonna have w another trial run IE the first with that new setup tomorrow at two and we have a real interesting subject which is Ron Kay for who {disfmarker} those who know him , he 's the founder of ICI . So he 'll {disfmarker} he 's around seven seventy years old , or something ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I didn't know he was the founder . That 's {disfmarker} OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And he also approached me and he offered to help {vocalsound} um our project and he was more thinking about some high level thinking tasks and {vocalsound} I said \" sure we need help you can come in as a subject \" and he said \" OK \" . So that 's what 's gonna happen , tomorrow , data ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Using this new {disfmarker} new um plan ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "New {disfmarker} new set up ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . Which I 'll hopefully sort of scrape together t But , thanks to Fey , we already have sort of a nice blueprint and I can work with that . Questions ? Comments on that ? If not , we can move on . No ? No more questions ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I 'm not sure I totally understand this"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So what 's the s this is what you made , Fey ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hmm ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "but {disfmarker} I 'm not sure I totally understand everything that 's being talked about"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Like so {disfmarker} So it 's just based on like the materials you had about Heidelberg ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um are you familiar with {disfmarker} with the {disfmarker} with the very rough setup of the data ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "but I {disfmarker} I imagine I 'll c just catch on ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Based on the web site , yeah , at the {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh OK there 's a web site"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "experiment ?"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and then you could like um figure out what the cate"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "It 's a tourist information web site ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Uh , this is where they 're supposed to {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "so ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Talk to a machine and it breaks down and then the human comes on ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The question is just sort of how do we get the tasks in their head that they have an intention of doing something and have a need to ask the system for something without giving them sort of a clear wording or phrasing of the task ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK . OK . OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Because what will happen then is that people repeat {disfmarker} repeat , {comment} or as much as they can , of that phrasing ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Hmm . Um , are you worried about being able to identify {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Um . The {disfmarker} The goals that we 've d you guys have been talking about are this {disfmarker} these you know identifying which of three modes um their question uh concerns ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So it 's like the Enter versus View {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , we {disfmarker} we {disfmarker} we will sort of get a protocol of the prior interaction ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "right ? That 's where the instructor , the person we are going to hire , um and the subjects sit down together with these high level things"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh - huh . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and so th the q first question for the subject is , \" so these are things , you know , we thought a tourist can do . Is there anything that interests you ? \""
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And the person can say \" yeah , sure sh this is something I would do . I would go shopping \" . Yeah ? and then we can sort of {disfmarker} this s instructor can say \" well , uh then you {disfmarker} you may want to find out how to get over here"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "because this is where the shopping district is \" ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So the interaction beforehand will give them hints about how specific or how whatever though the kinds of questions that are going to ask during the actual session ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "No . Just sort of {disfmarker} OK , what {disfmarker} what {disfmarker} what would you like to buy and then um OK there you wanna buy a whatever cuckoos clocks"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK and the there is a store there ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So the task then for that person is t finding out how to get there , right ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "That 's sort of what 's left ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And we know that the intention is to enter because we know that the person wants to buy a cuckoos clock ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , that 's what I mean so like those tasks are all gonna be um unambiguous about which of the three modes ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hopefully ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right . OK . So ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Well , so the idea is to try to get the actual phrasing that they might use and try to interfere as little as possible with their choice of words ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hopefully ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "t {vocalsound} {vocalsound} {vocalsound} {vocalsound} {vocalsound} {vocalsound} {vocalsound} {vocalsound} {vocalsound} {vocalsound} {vocalsound} {vocalsound} That they 'll be here ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yes . In a sense that 's exactly the {disfmarker} the {disfmarker} the idea ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "uh uh"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "which is never possible in a {disfmarker} in a s in a lab situation ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Well , u u the one experiment th that {disfmarker} that {disfmarker} that I 've read somewhere , it was {disfmarker} they u used pictures ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "nuh ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So to {disfmarker} to uh actually um uh specify the {disfmarker} the tasks ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Uh , but you know i i"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . We had exactly that on our list of possible way things so we {disfmarker} uh I even made a sort of a silly thing how that could work , how you control you are here you {disfmarker} you want to know how to get someplace , and this is the place and it 's a museum and you want to do some and {disfmarker} and {disfmarker} and there 's a person looking at pictures . So , you know , this is exactly getting someplace with the intention of entering and looking at pictures ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "However , not only was {disfmarker} the common census were {disfmarker} among all participants of Friday 's meeting was it 's gonna be very laborious to {disfmarker} to make these drawings for each different things ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "all the different actions , if at all possible , and also people will get caught up in the pictures . So all of a sudden we 'll get descriptions of pictures in there ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And people talking about pictures and pictorial representations"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and {disfmarker} um"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I would s I would still be willing to try it ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "I mean , I I 'm {disfmarker} I 'm not saying it 's necessary but {disfmarker} but uh i uh uh i {vocalsound} you might be able to combine you know text uh and {disfmarker} and some sort of picture and also uh I think it {disfmarker} it will be a good idea to show them the text and kind of chew the task and then take the test away {disfmarker} the {disfmarker} the {disfmarker} the {disfmarker} the {disfmarker} the text away"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm . Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "so that they are not uh guided by {disfmarker} by by what you wrote ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "We will {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "but can come up with their {disfmarker} with their own {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , they will have no more linguistic matter in front of them when they enter this room ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK . Then I suggest we move on to the {disfmarker} to we have um uh the EDU Project , let me make one more general remark , has sort of two {disfmarker} two side uh um actions , its um action items that we 're do dealing with , one is modifying the SmartKom parser and the other one is modifying the SmartKom natural language generation module . And um this is not too complicated but I 'm just mentioning it {disfmarker} put it in the framework because this is something we will talk about now . Um , I have some news from the generation , do you have news from the parser ?"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Um , not {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "By that look I {disfmarker}"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Yes , uh , I would really p It would be better if I talked about it on Friday ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "If that 's OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , wonderful . Um , did you run into problems or did you run into not h having time ?"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Yeah . But not {disfmarker} not any time part ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK , so that 's good . That 's better than running into problems ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um I {disfmarker} I do have some good news for the natural language generation however . And the good news is I guess it 's done . Uh , meaning that Tilman Becker , who does the German one , actually took out some time and already did it in English for us . And so the version he 's sending us is already producing the English that 's needed to get by in version one point one ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "So I take it that was similar to the {disfmarker} what {disfmarker} what we did for the parsing ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . I {disfmarker} I {disfmarker} it {disfmarker} even though the generator is a little bit more complex and it would have been , not changing one hundred words but maybe four hundred words ,"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "but it would have been"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "but this {disfmarker} this is I guess good news , and the uh {disfmarker} the time and especially Bhaskara and uh {disfmarker} and um {disfmarker} Oh do I have it here ? No . The time is now pretty much fixed . It 's the last week of April until the fourth of May so it 's twenty - sixth through fourth . That they 'll be here . So it 's {disfmarker} it 's extremely important that the two of you are also present in this town during that time ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Wait , what {disfmarker} what are the days ? April twenty - sixth to the {disfmarker} May fourth ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , something like that ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I 'll probably be here ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's {disfmarker}"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "You will be here ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "There is a d Isn't finals coming up then pretty much after that ?"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Finals was that ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah w it doesn't really have much meaning to grad students but final projects might ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Yeah actually , that 's true ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "That {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Anyway , so this is {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Well I 'll be here working on something . Guaranteed , it 's just uh will I be here , you know , in uh {disfmarker} I 'll be here too actually but {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "No it 's just um you know they 're coming for us so that we can bug them"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Ye"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and ask them more questions and sit down together and write sensible code and they can give some nice talks and stuff . But uh"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "But it 's not like we need to be with them twenty - four hours a day s for the seven days that they 're here ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "just make a {disfmarker} Not {disfmarker} not unless you really really want to ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "They 're very dependent"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Not unless you really want to . And they 're both nice guys so you may {disfmarker} may want to . OK , that much from the parser and generator side , unless there are more questions on that ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So , no sample generator output yet ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "No . It {disfmarker} Just a mail that , you know , he 's sending me the {disfmarker} the {disfmarker} the stuff soon"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK . This is being sent , mm - hmm . OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and I was completely flabbergasted here"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and I {disfmarker} and that 's also it 's {disfmarker} it 's going to produce the concept - to - speech uh blah - blah - blah information for {disfmarker} necessary for one point one in English {disfmarker} based on the English , you know , in English . So . I was like \" OK ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "We 're done ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "we 're done ! \""
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So that was like one of the first l You know , the first task was getting it working for English . So that 's basically over now . Is that right ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So the basic requirement fulfilled ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um , the basic requirement is fulfilled almost . When Andreas Stolcke and {disfmarker} and his gang ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "when they have um changed the language model of the recognizer and the dictionary , then we can actually a put it all together"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm . So the speech recognizer also works . Uh - huh . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and you can speak into it and ask for TV and movie information"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Toll ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and then when if {disfmarker} if something actually happens and some answers come out , then we 're done ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm . If {disfmarker} and they 're kind of correct ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So it 's not done basically ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hmm ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "And they kind of are {disfmarker} are correct ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Right . Perhaps if the answers have something to do with the questions for example ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "It 's not just like anything . And they 're mostly in English . So ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Then um {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Are they {disfmarker} is it using the database ? the German TV movie ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK . So {vocalsound} all the actual data might be German names ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um well actually th um"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Or are they all like American TV programs ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "um well {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I want to see \" Die Dukes Von Hazard \""
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The {disfmarker} OK , so you don't know how the German dialogue {disfmarker} uh the German {disfmarker} the demo dialogue actually works . It works {disfmarker} the first thing is what 's , you know , showing on TV , and then the person is presented with what 's running on TV in Germany on that day , on that evening"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm , mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and so you take one look at it and then you say \" well that 's really nothing {disfmarker} there 's nothing for me there \" \" what 's running in the cinemas ? \" So maybe there 's something better happening there ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And then you get {disfmarker} you 're shown what movies play which films , and it 's gonna be of course all the Heidelberg movies and what films they are actually showing ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And most of them are going to be Hollywood movies . So , \" American Beauty \" is \" American Beauty \" ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "right ? Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "But they 're shown like on a screen ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "N"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "It 's a {disfmarker} I mean so would the generator , like the English language sentence of it is {disfmarker} \" these are the follow you know the following films are being shown \" or something like that ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , but it in that sense it doesn't make {disfmarker} In that case uh it doesn't really make sense to read them out loud ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "S Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "if you 're displaying them ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So it 'll just display {disfmarker} OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But uh it 'll tell you that this is what 's showing in Heidelberg and there you go ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So we don't have to worry about um {disfmarker} Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And the presentation agent will go \" Hhh ! \" {comment} Nuh ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Like that {disfmarker} the avatar ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um . And then you pick {disfmarker} pick a movie and {disfmarker} and {disfmarker} and it show shows you the times and you pick a time and you pick seats and all of this . So ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Pretty straightforward ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But it 's {disfmarker} so this time we {disfmarker} we are at an advantage because it was a problem for the German system to incorporate all these English movie titles ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Nuh ? But in English , that 's not really a problem ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "unless we get some {disfmarker} some topical German movies that have just come out and that are in their database . So the person may select \" Huehner Rennen \" or whatever ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "\" Chicken Run \" ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK . Then uh on to the modeling . Right ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah , yeah , I guess ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um then modeling , there it is ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK . What 's the next thing ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "e"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "This is very rough but this is sort of what um Johno and I managed to come up with . The idea here is that {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "This is the uh s the schema of the XML here , not an example or something like that ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah this is not an XML this is sort of towards an {disfmarker} a schema ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "nuh ? definition . The idea is , so , imagine we have a library of schema such as the Source - Path - Goal and then we have forced uh motion , we have cost action ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "we have a whole library of schemas ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And they 're gonna be , you know , fleshed out in {disfmarker} in their real ugly detail , Source - Path - Goal , and there 's gonna be s a lot of stuff on the Goal and blah - blah - blah , that a goal can be and so forth . What we think is {disfmarker} And all the names could {disfmarker} should be taken \" cum grano salis \" . So . This is a {disfmarker} the fact that we 're calling this \" action schema \" right now should not entail that we are going to continue calling this \" action schema \" . But what that means {vocalsound} is we have here first of all on the {disfmarker} in the {disfmarker} in the first iteration a stupid list of Source - Path - Goal actions"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Actions that can be categorized with {disfmarker} or that are related to Source - Path - Goal ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "wi to that schema"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and we will have you know forced motion and cost action actions ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "And then those actions can be in multiple categories at the same time if necessary ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So a push may be in {disfmarker} in {disfmarker} in both you know push uh in this or this uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Forced motion and caused action for instance ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Exactly . Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Also , these things may or may not get their own structure in the future . So this is something that , you know , may also be a res As a result of your work in the future , we may find out that , you know , there 're really s these subtle differences between um even within the domain of entering in the light of a Source - Path - Goal schema , that we need to put in {disfmarker} fill in additional structure up there . But it gives us a nice handle . So with this we can basically um you know s slaughter the cow any anyway we want . Uh . It {disfmarker} it is {disfmarker} It was sort of a {disfmarker} it gave us some headache , how do we avoid writing down that we have sort of the Enter Source - Path - Goal that this {disfmarker} But this sort of gets the job done in that respect and maybe it is even conceptually somewhat adequate in a sense that um we 're talking about two different things . We 're talking more on the sort of intention level , up there , and more on the {disfmarker} this is the {disfmarker} your basic bone um schema , down there ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Uh one question , Robert . When you point at the screen is it your shadow that I 'm supposed to look at ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . It 's the shadow ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK . Whereas I keep looking where your hand is , and it doesn't {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , that wouldn't have helped you at all ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Basically , what this is {disfmarker} is that there 's an interface between what we are doing and the action planner"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Spit right here ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "and right now the way the interface is \" action go \" and then they have the {disfmarker} what the person claimed was the source and the person claimed as the goal passed on ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "And the problem is , is that the current system does not distinguish between goes of type \" going into \" , goes of type \" want to go to a place where I can take a picture of \" , et cetera ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So this is sort of what it looks like now , some simple \" Go \" action from it {disfmarker} from an object named \" Peter 's Kirche \" of the type \" Church \" to an object named \" Powder - Tower \" of the type \" Tower \" . Right ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "This is the uh {disfmarker} what the action planner uses ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right . Currently ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "This is {disfmarker} OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Currently ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "And is that {disfmarker} and tha that 's changeable ? or not ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , well {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Like are we adapting to it ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "No ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Or {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "We {disfmarker} This is the output , sort of , of the natural language understanding ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh , yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "right ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "the input into the action planning , as it is now ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And what we are going to do , we going to {disfmarker} and you can see here , and again for Johno please {disfmarker} please focus the shadow ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "um we 're gon uh uh here you have the action and the domain object and w and on {disfmarker} on {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "What did you think he was doing ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I just {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , sorry ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "A laser pointer would be most appropriate here I think ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah I {disfmarker} I um have {disfmarker} I have no {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Eee ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Robert likes to be abstract and that 's what I just thought he was doing ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "You look up here ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sort of between here and here ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "so as you can see this is on one level and we are going to add another um \" Struct \" , if you want , IE a rich action description on that level ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So in the future {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So it 's just an additional information {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Exactly . In the future though , the content of a hypothesis will not only be an object and an {disfmarker} an action and a domain object but an action , a domain object , and a rich action description ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ? that doesn't hurt the current way . Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Which {disfmarker} which we 're abbreviating as \" RAD \" ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "which is {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Good ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Rad !"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "So um you had like an action schema and a Source - Path - Goal schema ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Hmm . Hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "right ? So how does this Source - Path - Goal schema fit into the uh action schema ? Like is it one of the tags there ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah can you go back to that one ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "So the Source - Path - Goal schema in this case , I 've {disfmarker} if I understand how we described {disfmarker} we set this up , um cuz we 've been arguing about it all week , but uh we 'll hold the {disfmarker} the {disfmarker} Well in this case it will hold the {disfmarker} {vocalsound} I mean the {disfmarker} the features I guess . I 'm not {disfmarker} it 's hard for me to exactly s So basically that will store the {disfmarker} the object that is w the Source will store the object that we 're going from , the Goal will store the {disfmarker} the f"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So the fillers of the role source ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "we 'll fill those in fill those roles in , right ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "The S Action - schemas basically have extra {disfmarker} See we {disfmarker} so those are {disfmarker} schemas exist because in case we need extra information instead of just making it an attribute and which {disfmarker} which is just one thing we {disfmarker} we decided to make it 's own entity so that we could explode it out later on in case there is some structure that {disfmarker} that we need to exploit ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , so th sorry I just don't kn um um um {disfmarker} This is just uh XML mo notational but um the fact that it 's action schema and then sort of slash action schema that 's a whole entit"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "That 's a block , yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "That 's a block , whereas source is just an attribute ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "No , no , no ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Is that {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Source is just not spelled out here . Source meaning {disfmarker} Source will be uh will have a name , a type , maybe a dimensionality ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh , OK , OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "maybe canonical uh orientation {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh - huh , uh - huh . OK could it {disfmarker} it could also be blocked out then as {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah , the {disfmarker} So {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "s Source it will be , you know we 'll f we know a lot about sources so we 'll put all of that in Source ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But it 's independent whether we are using the SPG schema in an Enter , View , or Approach mode , right ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "This is just properties of the SPG {comment} schema . We can talk about Paths being the fastest , the quickest , the nicest and so forth , uh or {disfmarker} or {disfmarker} and the Trajector should be coming in there as well ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And then G the same about Goals ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK . So I guess the question is when you actually fill one of these out , it 'll be under action schema ? Those are {disfmarker} It 's gonna be one {disfmarker} y you 'll pick one of those for {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK these are {disfmarker} this is just a layout of the possible that could go {disfmarker} play that role ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right , so the {disfmarker} the {disfmarker} the roles will be filled in with the schema"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hmm ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , go it . Uh - huh ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "and then what actual a action is chosen is {disfmarker} will be in the {disfmarker} in the action schema section ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK . OK . S S OK , so one question . This was {disfmarker} in this case it 's all um clear , sort of obvious , but you can think of the Enter , View and Approach as each having their roles , right ? the {disfmarker} I mean it 's {disfmarker} it 's implicit that the person that 's moving is doing entering viewing and approaching , but you know the usual thing is we have bindings between sort of {disfmarker} they 're sort of like action specific roles and the more general Source - Path - Goal specific roles . So are we worrying about that or not for now ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yes , yes . Since you bring it up now , we will worry about it ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Tell us more about it ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "What do you {disfmarker} what do you {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "What 's that ? Oh I guess it {disfmarker} I {disfmarker} I may be just um reading this and interpreting it into my head in the way that I 've always viewed things"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and {vocalsound} that {disfmarker} that may or may not be what you guys intended . But if it is , then the top block is sort of like um , you know , you have to list exactly what X - schema or in this action schema , there 'll be a certain one , that has its own s structure and maybe it has stuff about that specific to entering or viewing or approaching , but those could include roles like the thing that you 're viewing , the thing that you 're entering , the thing that you 're"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So very specific role names are \" viewed thing \" , \" entered thing \" {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "whatever , you know , that {disfmarker} which are {disfmarker} think {disfmarker} think of enter , view and approach as frames"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and they have frame - specific parameters and {disfmarker} and roles"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and you can also describe them in a general way as Source - Path - Goal schema and maybe there 's other image schemas that you could you know add after this that you know , how do they work in terms of you know a force dynamics"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm . Mm - hmm , Mm - hmm , Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "or how do they work in f terms of other things . So all of those have um basically f either specific {disfmarker} frame specific roles or more general frame specific roles that might have binding . So the question is are um {disfmarker} how to represent when things are linked in a certain way . So we know for Enter that there 's Container potentially involved"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and it 's not {disfmarker} uh I don't know if you wanna have in the same level as the action schema SPG schema it {disfmarker} it 's somewhere in there that you need to represent that there is some container and the interior of it corresponds to some part of the Source - Path - Goal um you know goal {disfmarker} uh goal I guess in this case ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So uh is there an easy way in this notation to show when there 's identity basically between things"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and I di don't know if that 's something we need to invent or you know just {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "The {disfmarker} wa wasn't there supposed to be a link in the"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I don't know if this answers your question , I was just staring at this while you were talking , sorry ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "It 's OK ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Uh a link between the action schema , a field in the s in the schema for the image schemas that would link us to which action schema we were supposed to use so we could {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . Um , well that 's {disfmarker} that 's one {disfmarker} one thing is that we can link up , think also that um we can have one or m as many as we want links from {disfmarker} from the schema up to the s action um description of it ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But the notion I got from Nancy 's idea was that we may f find sort of concepts floating around i in the a action description of the action f \" Enter \" frame up there that are , e when you talk about the real world , actually identical to the goal of the {disfmarker} the S Source - Path - Goal schema ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Exactly . Right , right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and do we have means of {disfmarker} of telling it within that a and the answer is absolutely ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The way {disfmarker} we absolutely have those means that are even part of the M - three - L A API ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . Oh great . s Uh - huh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "meaning we can reference . So meaning {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Great . That 's exactly what is necessary ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah . St"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um . This referencing thing however is of temporary nature because sooner or later the W - three - C will be finished with their X - path , uh , um , specification and then it 's going to be even much nicer . Then we have real means of pointing at an individual instantiation of one of our elements here"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and link it to another one , and this not only within a document but also via documents ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and {disfmarker} and all in a v very easy e homogenous framework ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So you know {disfmarker} happen to know how {disfmarker} what {disfmarker} what \" sooner or later \" means like in practice ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "That 's but it 's soon ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Or estimated . OK , OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So it 's g it 's {disfmarker} the spec is there and it 's gonna part of the M - three - L AP {disfmarker} API filed by the end of this year so that this means we can start using it basically now . But this is a technical detail ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm . So a pointer {disfmarker} a way to really say pointers ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Basically references from the roles in the schema {disfmarker} the bottom schemas to the action schemas is wha uh I 'm assuming ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . OK , yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . Yeah , I mean personally , I 'm looking even more forward to the day when we 're going to have X forms , which l is a form of notation where it allows you to say that if the SPG action up there is Enter , then the goal type can never be a statue ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK . Uh - huh . Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So you have constraints that are dependent on the c actual s specific filler , uh , of some attribute ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm , yeah . W Yeah e exactly . Um , you know this , of course , does not make sense in light of the Statue of Liberty ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "however {vocalsound} it is uh you know sort of {disfmarker} these sort of things are imaginable ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Tsk . Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ?"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "S So um , like are you gonna have similar schemas for FM"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Or the Gateway Arch in St ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Louis . So ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "like forced motion and caused action and stuff like you have for SPG ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "And if so like can {disfmarker} are you able to enforce that you know if {disfmarker} if it 's {disfmarker} if it 's SPG action then you have that schema , if it 's a forced motion then you have the other schema present in the {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um we have absolute {disfmarker} No . We have absolutely no means of enforcing that , so it would be considered valid if we have an SPG action \" Enter \" and no SPG schema , but a forced action schema . Could happen ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Whi - which is not bad , because I mean , that there 's multiple sens I mean that particular case , there 's mult there {disfmarker} there 's a forced side of {disfmarker} of that verb as well ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hmm . It {disfmarker} maybe it means we had nothing to say about the Source - Path - Goal ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "What 's also nice , and for a i for me in my mind it 's {disfmarker} it 's crucially necessary , is that we can have multiple schemas and multiple action schemas in parallel ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um we started thinking about going through our bakery questions , so when I say \" is there a bakery here ? \" you know I do ultimately want our module to be able to first of all f tell the rest of the system \" hey this person actually wants to go there \" and \" B \" , {comment} that person actually wants to buy something to eat there . Nuh ? And if these are two different schemas , IE the Source - Path - Goal schema of getting there and then the buying snacks schema , nuh ? {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Would they both be listed here in {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK . Under so o under action schema there 's a list that can include both {disfmarker} both things ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "ye Yeah , they they would {disfmarker} both schemas would appear , so what is the uh is {disfmarker} is there a \" buying s snacks \" schema ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Snack action ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "That 's interesting ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "What is the uh {disfmarker} {vocalsound} have"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "What ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "the buying snack schema ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "See ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Buying {disfmarker} {vocalsound} buying his food {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I 'm sure there 's a commercial event schema in there somewhere ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oop . I {vocalsound} d f"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , a \" commercial event \" or something ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah I {disfmarker} I {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ? So uh {disfmarker} {vocalsound} so we would {disfmarker} we would instantiate the SPG schema with a Source - Path - Goal blah - blah - blah"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I see ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and the buying event you know at which {disfmarker} however that looks like , the place f thing to buy ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh - huh . Uh - huh . Interesting . Would you say that the {disfmarker} like {disfmarker} I mean you could have a flat structure and just say these are two independent things , but there 's also this sort of like causal , well , so one is really facilitating the other and it 's part of a compound action of some kind , which has structure ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . Now it 's technically possible that you can fit schema within schema , and schema within schemata {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "uh I {disfmarker} I think that 's nicer for a lot of reasons but might be a pain so uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "um Well , for me it seems that uh {disfmarker} r Yes ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I mean there are truly times when you have two totally independent goals that they might express at once , but in this case it 's really like there 's a purpo means that you know f for achieving some other purpose ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , if I 'm {disfmarker} if I 'm recipient of such a message and I get a Source - Path - Goal where the goal is a bakery and then I get a commercial action which takes place in a bakery , right ? and {disfmarker} and {disfmarker} and they {disfmarker} they are obviously , via identifiers , identified to be the same thing here ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh - huh . Yeah . See that {disfmarker} that bothers me that they 're the same thing ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "No , no , just the {disfmarker} Yeah ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah because they 're two different things one of which is l you could think of one a sub you know pru whatever pre - condition for the second ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , yeah !"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right . Yeah , yeah . So . So . OK . So there 's like levels of granularity . So uh there 's {disfmarker} there 's um a single event of which they are both a part . And they 're {disfmarker} independently they {disfmarker} they are events which have very different characters as far as Source - Path - Goal whatever ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm , yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So when you identify Source - Path - Goal and whatever , there 's gonna to be a desire , whatever , eating , hunger , whatever other frames you have involved , they have to match up in {disfmarker} in nice ways . So it seems like each of them has its own internal structure and mapping to these schemas"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "you know from the other {disfmarker} But you know that 's just {disfmarker} That 's just me ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , I think we 're gonna hit a lot of interesting problems"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Like {disfmarker} {vocalsound} I {disfmarker} I {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and as I prefaced it this is the result of one week of arguing {vocalsound} about it"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm . Between you guys"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "uh"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and um {disfmarker} and so {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah I mean I {disfmarker} I still am not entirely sure that I really fully grasp the syntax of this ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Well it 's not {disfmarker} it 's not actually a very {disfmarker} actually , it doesn't actually {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um it occur {disfmarker} it occurs to me that I mean ne"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "You know , like what {disfmarker} Right . Or the intended interpretation of this ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "um well I should have {disfmarker} we should have added an ano an XML example ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "or some XML examples"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "yeah that would be {disfmarker} that would be nice ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and {disfmarker} and this is on {disfmarker} on a {disfmarker} on {disfmarker} on my list of things until next {disfmarker} next week ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's also a question of the recursiveness and {disfmarker} and a hier hierarchy um in there ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Do we want the schemas just blump blump blump blump ? I mean it 's {disfmarker} if we can actually you know get it so that we can , out of one utterance , activate more than one schema , I mean , then we 're already pretty good ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "right ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Well {disfmarker} well you have to be careful with that uh uh thing because uh {vocalsound} I mean many actions presuppose some {disfmarker} um almost {vocalsound} infinitely many other actions . So if you go to a bakery {pause} you have a general intention of uh not being hungry ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . Mayb - yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You have a specific intentions to cross the traffic light to get there ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "You have a further specific intentions to left {disfmarker} to lift your right foot"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hmm ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "and so uh uh I mean y you really have to focus on on {disfmarker} on"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "and decide the level of {disfmarker} of abstraction that {disfmarker} that you aim at it kind of zero in on that ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "and more or less ignore the rest , unless there is some implications that {disfmarker} that you want to constant draw from {disfmarker} from sub - tasks um that are relevant uh I mean but very difficult ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "M Th The other thing that I just thought of is that you could want to go to the bakery because you 're supposed to meet your friend there or som"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "you know so you {disfmarker} like being able to infer the second thing is very useful and probably often right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Well the {disfmarker} the {disfmarker} the utterance was \" is there a bakery around here ? \" ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "But having them separate {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "not \" I want to go to a bakery . \""
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Well maybe their friend said they were going to meet them in a bakery around the area ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "And I 'm , yeah {disfmarker} I 'm {disfmarker} I 'm inventing contexts which are maybe unlikely ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Sure it {disfmarker} OK . Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "but yeah I mean like {disfmarker} but it 's still the case that um you could {disfmarker} you could override that default by giving extra information"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm , yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "which is to me a reason why you would keep the inference of that separate from the knowledge of \" OK they really want to know if there 's a bakery around here \" ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "which is direct ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well there {disfmarker} there {disfmarker} there should never be a hard coded uh {vocalsound} shortcut from {pause} the bakery question to the uh double schema thing ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "how uh {disfmarker} And , as a matter of fact , when I have traveled with my friends we make these {disfmarker} exactly these kinds of appointments ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "We o o"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . Exactly . It 's {disfmarker} I met someone at the bakery you know in the Victoria Station t you know {vocalsound} train station London before ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm . Yep ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Well . I have a question about the slot of the SPG action ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "yeah . It 's like {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So {vocalsound} the Enter - View - Approach the {disfmarker} the {disfmarker} the EVA um , those are fixed slots in this particular action . Every action of this kind will have a choice . Or {disfmarker} or {disfmarker} or {disfmarker} or will it just um uh {disfmarker} is it change {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Every SPG {disfmarker} every SPG action either is an Enter or a View or an Approach ,"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right , right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "right ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So {disfmarker} so I {disfmarker} I mean for {disfmarker} for each particular action that you may want to characterize you would have some number of slots that define uh uh uh you know in some way what this action is all about ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "It can be either A , B or C . Um . So is it a fixed number or {disfmarker} or do you leave it open {disfmarker} it could be between one and fifteen uh {disfmarker} it 's {disfmarker} it 's {disfmarker} it 's flexible ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um , the uh {disfmarker} Well , it sort of depends on {disfmarker} on if you actually write down the {disfmarker} the schema then you have to say it 's either one of them or it can be none , or it can be any of them . However the uh {disfmarker} it seems to be sensible to me to r to view them as mutually exclusive um maybe even not ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "J Do you mean within the Source - Path - Goal actions ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "uh {vocalsound} ye uh uh b I uh I {disfmarker} u I understand"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Those three ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "uh but {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um how {disfmarker} how where is the end ? So that 's {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "No , no . There {disfmarker} a a actually by I think my question is simpler than that , um {vocalsound} is {disfmarker} OK , so you have an SPG action and {disfmarker} and it has three different um uh aspects um because you can either enter a building or view it or {disfmarker} or approach it and touch it or something . Um now you define uh another action , it 's {disfmarker} it 's called um uh s S P G - one"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Forced action or forced motion . Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "action  a different action . Um and this {disfmarker} uh action - two would have various variable possibilities of interpreting what you would like to do . And {disfmarker} i in {disfmarker} in a way similar to either Enter - View - Approach you may want to send a letter , read a letter , or dictate a letter , let 's say . So , h"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Oh the {disfmarker} OK uh maybe I 'd {disfmarker} The uh {disfmarker} These actions {disfmarker} I don't know if I 'm gonna answer your question or not with this , but the categories inside of action schemas , so , SPG action is a category . Real although I think what we 're specifying here is this is a category where the actions \" enter , view and approach \" would fall into because they have a related Source - Path - Goal schema in our tourist domain . Cuz viewing in a tourist domain is going up to it and {disfmarker} or actually going from one place to another to take a picture , in this {disfmarker} in a {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right . Oh , s so it 's sort of automatic derived fr from the structure that {disfmarker} that is built elsewhere ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "derived I don't know if I u"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "This is a cate this a category structure here ,"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "right ? Action schema . What are some types of action schemas ? Well one of the types of action schemas is Source - Path - Goal action . And what are some types of that ? And an Enter , a View , an Approach ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Those are all Source - Path - Goal actions ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Inside of Enter there will be roles that can be filled basically . So if I want to go from outside to inside {vocalsound} then you 'd have the roles that need to filled , where you 'd have a Source - Path - Goal set of roles . So you 'd the Source would be outside and Path is to the door or whatever , right ?"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "So if you wanted to have a new type of action you 'd create a new type of category . Then this category would {disfmarker} we would put it {disfmarker} or not necessarily {disfmarker} We would put a new action in the m uh in the categories that {disfmarker} in which it has the um {disfmarker} Well , every action has a set of related schemas like Source - Path - Goal or force , whatever , right ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "So we would put \" write a letter \" in the categories uh that {disfmarker} in which it had {disfmarker} it w had uh schemas u"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "There could be a communication event action or something like that"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Exactly ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Schemas uh that of that type ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and you could write it ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "And then later , you know , there {disfmarker} the {disfmarker} we have a communication event action where we 'd define it down there as {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Hmm . So there 's a bit a redundancy , right ? in {disfmarker} in which the things that go into a particular {disfmarker} You have categories at the top under action schema and the things that go under a particular category are um supposed to have a corresponding schema definition for that type . So I guess what 's the function of having it up there too ? I mean I guess I 'm wondering whether {disfmarker} You could just have under action schema you could just sort of say whatever you know it 's gonna be Enter , View or Approach or whatever number of things"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and pos partly because you need to know somewhere that those things fall into some categories . And it may be multiple categories as you say which is um the reason why it gets a little messy"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "um but if it has {disfmarker} if it 's supposed to be categorized in category X then the corresponding schema X will be among the structures that {disfmarker} that follow ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right . Well , this is one of things we were arguing about ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "That 's like {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "th this is {disfmarker} this r"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , sorry ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "this is {disfmarker} this is more {disfmarker} this is probably the way that th that 's the way that seemed more intuitive to Johno I guess"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "You didn't tell me to {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "also for a while {disfmarker} for"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh - huh . But now you guys have seen the light ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "No , no , no . Uh we have not {disfmarker} we have not seen the light ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "No ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "The {disfmarker} the reason {disfmarker} One reason we 're doing it this way is in case there 's extra structure that 's in the Enter action that 's not captured by the schemas ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I it 's easy to go back and forth isn't it ? Uh - huh . I agree . Right . Right ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "right ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Which is why I would think you would say Enter and then just say all the things that are relevant specifically to Enter . And then the things that are abstract will be in the abstract things as well . And that 's why the bindings become useful ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right , but {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Ri - You 'd like {disfmarker} so you 're saying you could practically turn this structure inside out ? or something , or {disfmarker} ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Um Ye - I see what you mean by that ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "No basically w"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "but I {disfmarker} I don't if I would {disfmarker} I would need to have t have that ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Get {disfmarker} get rid of the sort of SPG slash something uh or the sub - actions category ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "because what does that tell us ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh - huh . Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um and I agree that you know this is something we need to discuss ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I in fact what you could say is for Enter ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "you could say \" here , list all the kinds of schemas that {disfmarker} on the category that {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "List all the parent categories ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "you know i list all the parent categories \" . It 's just like a frame hierarchy ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "right ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "like you have these blended frames . So you would say enter and you 'd say my parent frames are such - and - such , h and then those are the ones that actually you then actually define and say how the roles bind to your specific roles which will probably be f richer and fuller and have other stuff in there ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . This sounds like a paper I 've read around here recently in terms of {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah it could {vocalsound} be not a coincidence . Like I said , I 'm sure I 'm just hitting everything with a hammer that I developed ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "but I mean you know uh it 's {disfmarker} I 'm just telling you what I think , you just hit the button and it 's like {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And , I guess fr uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah I mean but there 's a good question here . Like , I mean uh do you {disfmarker} When do you need {disfmarker} Damn this headset ! When you this uh , eh {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Metacomment ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . {comment} That 's all recorded . Um . Why do you {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "\" Damn this project . \" No just kidding ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I don't know . Like {disfmarker} How do I {disfmarker} how do I come at this question ? Um . I just don't see why you would {disfmarker} I mean does th Who uses this uh {disfmarker} this data structure ? You know ? Like , do you say \" alright I 'm going to uh {disfmarker} {pause} do an SPG action \" . And then you know somebody ne either the computer or the user says \" alright , well , I know I want to do a Source - Path - Goal action so what are my choices among that ? \" And \" oh , OK , so I can do an Enter - View - Approach \" . It 's not like that , right ? It 's more like you say \" I want to , uh {disfmarker} {pause} I want to do an Enter . \""
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Well only one of {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And then you 're more interested in knowing what the parent categories are of that . Right ? So that the um {disfmarker} the uh sort of representation that you were just talking about seems more relevant to the kinds of things you would have to do ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I 'd {disfmarker} I"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I think I 'd {disfmarker} I 'm not sure if I understand your question . Only one of those things are gonna be lit up when we pass this on . So only Enter will be {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "if we {disfmarker} if our {disfmarker} if our module decided that Enter is the case , View and Approach will not be there ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK . OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well {vocalsound} uh it 's {disfmarker} it sort of came into my mind that sometimes even two could be on , and would be interesting ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "um nevertheless um"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mayb - Well maybe I 'm not understanding where this comes from and where this goes to ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Well in that case , we can't {disfmarker} we can't w if {disfmarker} if {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "l let 's {disfmarker} let 's not {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "well the thing is if that 's the case we {disfmarker} our {disfmarker} I don't think our system can handle that currently ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "What are we doing with this ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "No , not at all . But {disfmarker} U s {vocalsound} t So {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "In principle ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "\" Approach and then enter . \""
+        },
+        {
+            "speaker": "Grad C",
+            "content": "the {disfmarker} I think the {disfmarker} in some sense we {disfmarker} we ex get the task done extremely well"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Run like this uh {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "because this is exactly the discussion we need {disfmarker} need ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Period . No more qualifiers than that . So ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "No , this is the useful ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and um and {disfmarker} and I th I hope"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "you know , don don't worry ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "um uh let 's make a {disfmarker} a {disfmarker} a {disfmarker} a sharper claim . We will not end this discussion anytime soon ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah , I can guarantee that ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And it 's gonna get more and more complex the {disfmarker} the l complexer and larger our domains get ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Sigh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And I think um we will have all of our points in writing pretty soon . So this is nice about being being recorded also . The um {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "That 's true ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "The r uh the {disfmarker} in terms of why is {disfmarker} it 's laid out like this versus some other {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "the people {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "um that 's kind of a contentious point between the two of us but {vocalsound} this is one wa so this is a way to link uh the way these roles are filled out to the action ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "In my view ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Because if we know that Enter is a t is an SPG action ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "right ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "we know to look for an SPG schema and put the appropriate {disfmarker} fill in the appropriate roles later on ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm . Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "And you could have also indicated that by saying \" Enter , what are the kinds of action I am ? \""
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm , yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right ? So there 's just like sort of reverse organization , right ? So like unless @ @ {disfmarker} Are there reasons why one is better than the other I mean that come from other sources ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Again {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yes because nobod no the modules don't {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . uh"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "This is {disfmarker} this is a schema that defines XML messages that are passed from one module to another ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "mainly meaning from the natural language understanding , or from the deep language understanding to the action planner ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Now the {disfmarker} the reason for {disfmarker} for not using this approach is because you always will have to go back , each module will try {disfmarker} have to go back to look up which uh you know entity can have which uh , you know , entity can have which parents , and then {disfmarker} So you always need the whole body of {disfmarker} of y your model um to figure out what belongs to what . Or you always send it along with it ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "nuh ? So you always send up \" here I am {disfmarker} I am this person , and I can have these parents \" in every message ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "which e"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , so it 's just like a pain to have to send it ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It may or may not be a just a pain it 's {disfmarker} it 's {disfmarker} I 'm completely willing to {disfmarker} to {disfmarker} to throw all of this away"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , I understand ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and completely redo it ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Well {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "you know and {disfmarker} and {disfmarker} and it after some iterations we may just do that ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I {disfmarker} I would just like to ask um like , if it could happen for next time , I mean , just beca cuz I 'm new"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and I don't really just {disfmarker} I just don't know what to make of this and what this is for , and stuff like that , you know , so if someone could make an example of what would actually be in it ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "like first of all what modules are talking to each other using this ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , we {disfmarker} I will promise for the next time to have fleshed out N {comment} XML examples for a {disfmarker} a run through and {disfmarker} and see how this {disfmarker} this then translates ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "right ? And {disfmarker} OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and how this can come about ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Be great ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "nuh ? including the sort of \" miracle occurs here \" um part ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um is there more to be said ? I think um {disfmarker} In principle what I {disfmarker} I think that this approach does , and e e whether or not we take the Enter - View and we all throw up {disfmarker} up the ladder um wha how do how does Professor Peter call that ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The uh hhh , {comment} silence su sublimination ? Throwing somebody up the stairs ? Have you never read the Peter 's Principle anyone here ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Nope ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Oh , uh"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "People reach their level of uh max their level of {disfmarker} at which they 're incompetent or whatever ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Maximum incompetence"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah . Right , right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and then you can throw them up the stairs"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Alright ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh !"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "um . Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Promote them , yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK , so we can promote Enter - View all {disfmarker} all up a bit and and get rid of the uh blah - blah - X - blah uh asterisk sub - action item altogether . No {disfmarker} no problem with that"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and we {disfmarker} w we {disfmarker} we will play around with all of them but the principal distinction between having the {disfmarker} the pure schema and their instantiations on the one hand , and adding some whatever , more intention oriented specification um on parallel to that {disfmarker} that {disfmarker} this approach seems to be uh workable to me . I don't know . If you all share that opinion then that made my day much happier ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "This is a simple way to basically link uh roles to actions ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh yeah wait {disfmarker} R Yeah , yeah . That 's fine ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "That 's the {disfmarker} that was the intent of {disfmarker} of it , basically ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Sure . Sure ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Uh that 's true ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Although um roles {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "So I {disfmarker} I do I 'm {disfmarker} I 'm not {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I 'm {disfmarker} I 'm never happy when he uses the word \" roles \" ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah I {disfmarker} I {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I 'm {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . I was going to {disfmarker}"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "I b I mean ROLLS so"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Bread rolls ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh you meant pastries , then ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah , pastries is what I 'm talking about ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Pastry oh ba oh the bak bakery example ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Bakery . Bakery ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "This is the bakery example . Got it . Alright ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I see . Right . OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Help !"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I guess I 'll agree to that , then ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK . That 's all I have for today . Oh no , there 's one more issue . Bhaskara brought that one up . Meeting time rescheduling ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I n Didn't you say something about Friday ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "or {disfmarker} ? Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So it looks like you have not been partaking , the Monday at three o ' clock time has turned out to be not good anymore . So people have been thinking about an alternative time and the one we came up with is Friday two - thirty ? three ? What was it ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "You have class until two , right ? so if we don't want him {disfmarker} if we don't want him to run over here"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Two - th Two - thirty - ish or three or Friday at three or something around that time ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So do I . Yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "two thirty - ish or three is {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Yeah . Yeah . e"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um how {disfmarker} how are your {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "That would be good ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "uh Friday uh Yeah , that 's fine ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And I know that you have until three {disfmarker} You 're busy ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Uh {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So three is {disfmarker} sounds good ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I 'll be free by then ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I could do that . Yeah I mean earlier on Friday is better but three {disfmarker} you know I mean {disfmarker} if it were a three or a three thirty time then I would take the three or whatever ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "but yeah sure three is fine ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , and you can always make it shortly after three probably ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I mean ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Yeah , and I don't need to be here particularly deeply ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Often , no , but uh ,"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "whenever ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "But yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You are more than welcome if you think that this kind of discussion gets you anywhere in {disfmarker} in your life then uh you 're free to c"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "It 's fascinating ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "\" That 's the right answer . \""
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "I 'm just glad that I don't have to work it out"
+        },
+        {
+            "speaker": "Grad C",
+            "content": ""
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "because ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Hmm ?"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "I 'm just glad that don't have to work it out myself , that I 'm not involved at all in the working out of it because ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Uh but you 're a linguist ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You should {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Oh yeah . That 's why I 'm glad that I 'm not involved in working it out ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "So it 's at Friday at three ? there that 's"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And um"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So already again this week ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "How diligent do we feel ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "huh ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . Do feel that we have done our chores for this week or {disfmarker}"
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Yeah . So I mean clearly there 's {disfmarker} I can talk about the um the parser changes on Friday at least ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK , Bhaskara will do the big show on Friday ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "so ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "And you guys will argue some more ?"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "And between now and then yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . Between now and then ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and have some ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "We will {disfmarker} r"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Promise ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "probably ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "We will . Don't worry ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "And we 'll get the summary like , this {disfmarker} the c you know , short version , like {disfmarker}"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "An - and I would like to second Keith 's request ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "S"
+        },
+        {
+            "speaker": "PhD A",
+            "content": "An example wo would be nice t to have kind of a detailed example ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yes . I 've {disfmarker} I 've {disfmarker} I 've {disfmarker} I guess I 'm on record for promising that now ."
+        },
+        {
+            "speaker": "PhD A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So um {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Like have it {disfmarker} we 'll have it in writing . So . or , better , speech . So ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "This is it and um"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "The other good thing about it is Jerry can be on here on Friday and he can weigh in as well ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . and um if you can get that binding point also maybe with a nice example that would be helpful for Johno and me ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh yeah uh OK . let 's uh yeah they 're {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Give us {disfmarker}"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "No problem ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I think you 've got one on hand ,"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "huh ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I have several in my head , yeah . Always thinking about binding ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well the {disfmarker} the {disfmarker} the binding is technically no problem but it 's {disfmarker} it {disfmarker} for me it seems to be conceptually important that we find out if we can s if {disfmarker} if there {disfmarker} if there are things in there that are sort of a general nature , we should distill them out and put them where the schemas are ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "If there are things that you know are intention - specific , then we should put them up somewhere , a"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So , in general they 'll be bindings across both intentions and the actions ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yep . That 's wonderful ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So {disfmarker} Yeah . So it 's gen it 's general across all of these things"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "it 's like {disfmarker} I mean Shastri would say you know binding is like {vocalsound} an essential cognitive uh process . So . {vocalsound} Um ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So I don't think it will be isolated to one or the two , but you can definitely figure out where {disfmarker} Yeah , sometimes things belong and {disfmarker} So actually I 'm not sure {disfmarker} I would be curious to see how separate the intention part and the action part are in the system . Like I know the whole thing is like intention lattice , or something like that ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "right ? So is the ri right now are the ideas the rich {disfmarker} rich the RAD or whatever is one you know potential block inside intention . It 's still {disfmarker} it 's still mainly intention hypothesis"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and then that 's just one way to describe the {disfmarker} the action part of it ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "It 's an a attempt to refine it basically ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's {disfmarker} And yeah ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , great uh - huh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "it 's an {disfmarker} an {disfmarker} it 's {disfmarker} it 's sort of {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Not just that you want to go from here to here , it 's that the action is what you intend"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and this action consists of all com complicated modules and image schemas and whatever ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . And {disfmarker} and there will be a {disfmarker} a {disfmarker} a relatively high level of redundancy"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "So ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "in the sense that um ultimately one {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm . which is , yeah , It 's fine"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "so th so that if we want to get really cocky we we will say \" well if you really look at it , you just need our RAD . \" You can throw the rest away , right ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Because you 're not gonna get anymore information out of the action a as you find it there in the domain object ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Right . Right . Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "But then again um in this case , the domain object may contain information that we don't really care about either . So ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "H But w we 'll see that then , and how {disfmarker} how it sort of evolves ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I mean if {disfmarker} if people really like our {disfmarker} our RAD , I mean w what might happen is that they will get rid of that action thing completely , you know , and leave it up for us to get the parser input um"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mmm . We know the things that make use of this thing so that we can just change them so that they make use of RAD ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "You don't have to use the acronym ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I can't believe we 're using this term . So I 'm like RAD ! Like every time I say it , it 's horrible . OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I see what you mean ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "RAD 's a great term ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Is the {disfmarker} But what is the \" why \" ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's rad , even !"
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Why ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Why ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It happened to c be what it stands for ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "It just happened to be the acronym ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . That 's {disfmarker} doesn't make it a great term . It 's just like those jokes where you have to work on both levels ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "ye no but i"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Just think of it as {disfmarker} as \" wheel \" in German ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "but if you {disfmarker} if you {disfmarker} if you work in th in that XML community it is a great acronym"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Do you see what I mean ? Like"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "because it e evokes whatever RDF {disfmarker}"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "RDF is the biggest thing right ? That 's the rich {disfmarker} sort of \" Resource Description Framework \""
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh \" rich de \""
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "and um {disfmarker} and also {disfmarker} So , description , having the word d term \" description \" in there is wonderful ,"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "uh \" rich \" is also great , rwww ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Who doesn't like to be a"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Everybody likes action ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh ."
+        },
+        {
+            "speaker": "Grad B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Yeah . OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Plus it 's hip . The kids 'll like it ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "But what if it 's not an action ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's {disfmarker} it 's rad ,"
+        },
+        {
+            "speaker": "Undergrad D",
+            "content": "Yeah all the kids 'll love it ."
+        },
+        {
+            "speaker": "Grad F",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "And intentions will be \" RID \" ? Like , \" OK \" . Um are the {disfmarker} are the sample data that you guys showed sometime ago {disfmarker} like the things {disfmarker} maybe {disfmarker} maybe you 're gonna run a trial tomorrow . I mean , I 'm just wondering whether the ac some the actual sentences from this domain will be available . Cuz it 'd be nice for me to like look if I 'm thinking about examples I 'm mostly looking at child language which you know will have some overlap but not total with the kinds of things that you guys are getting . So you showed some in this {disfmarker} here before"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "and maybe you 've posted it before but where would I look if I want to see ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Oh I {disfmarker} You want audio ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "You know ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "or do you want transcript ?"
+        },
+        {
+            "speaker": "Grad G",
+            "content": "No just {disfmarker} just transcript ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , well just transcript is just not available because nobody has transcribed it yet ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Sorry ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Um I can e I can uh I 'll transcribe it though ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Oh , OK . I take that back then ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It 's no problem ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK , well don't {disfmarker} don't make it a high priority {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I {disfmarker} In fact if you just tell me like you know like two examples"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "I mean , y The {disfmarker} the {disfmarker} the representational problems are {disfmarker} I 'm sure , will be there ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "like enough for me to think about . So ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK , so Friday , whoever wants and comes , and can ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "This Friday ."
+        },
+        {
+            "speaker": "Grad G",
+            "content": "Here . OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The big parser show . Now you can all turn off your {disfmarker}"
+        }
+    ]
+}

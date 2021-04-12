@@ -1,0 +1,3195 @@
+{
+    "topic_list": [
+        {
+            "topic": "Discussion about future meetings",
+            "relevant_text_span": [
+                [
+                    "0",
+                    "154"
+                ]
+            ]
+        },
+        {
+            "topic": "Recording equipment and location",
+            "relevant_text_span": [
+                [
+                    "155",
+                    "368"
+                ]
+            ]
+        },
+        {
+            "topic": "Disk storage",
+            "relevant_text_span": [
+                [
+                    "368",
+                    "468"
+                ]
+            ]
+        },
+        {
+            "topic": "Handling speech overlap",
+            "relevant_text_span": [
+                [
+                    "469",
+                    "1024"
+                ]
+            ]
+        },
+        {
+            "topic": "Speaker anonymity",
+            "relevant_text_span": [
+                [
+                    "1025",
+                    "1367"
+                ]
+            ]
+        }
+    ],
+    "general_query_list": [
+        {
+            "query": "What was the overall discussion of the meeting?",
+            "answer": "In this meeting, the speakers addressed issues that related to their meeting annotation progress. They talked about the types and variability of the future meetings. This led to them speaking about how to use their recording equipment if they got groups outside of their own departments to record meetings. Additionally, they discussed how to handle the storage of meetings on disk. They eventually address how to handle speech overlap and speaker anonymity, which were two crucial issues."
+        }
+    ],
+    "specific_query_list": [
+        {
+            "query": "Discussion about future meeting",
+            "answer": "PHD F wanted the group to record different meetings with the same group to help in tasks such as summarization, the Professor D however, wanted random meeting participants to have diversity that would be instrumental in acoustical research.",
+            "relevant_text_span": [
+                [
+                    "0",
+                    "154"
+                ]
+            ]
+        },
+        {
+            "query": "What was said on getting fluent English speakers?",
+            "answer": "Postdoc E was championing the need to get proficient English speakers so as to allow for a stable language model. This did not mean limiting the type of accents that the speakers had but rather ensuring the speakers could proficiently follow the English grammar when they expressed themselves.",
+            "relevant_text_span": [
+                [
+                    "65",
+                    "102"
+                ]
+            ]
+        },
+        {
+            "query": "What were the options that were discussed on the location of the recording equipment?",
+            "answer": "Mode would invovle the mode of transportation while the endpoint would be the final destiniation. The team did not clarify what the endpoint would be in some of the edge cases such as crossing the bridge.",
+            "relevant_text_span": [
+                [
+                    "157",
+                    "160"
+                ]
+            ]
+        },
+        {
+            "query": "What did the group say on portable equipment?",
+            "answer": "The group wanted to introduce portable equipment so as to get more meetings from different groups. However, this was challenged by the complexity of setting up the recording equipment.",
+            "relevant_text_span": [
+                [
+                    "162",
+                    "233"
+                ]
+            ]
+        },
+        {
+            "query": "What were Grad B\u2019s updates on meeting disk storage? ",
+            "answer": "Grad B said that archiving of the data by creating a clone had been done, though it took eleven hours. However, Grad B commented that accessing the data would be much faster. This archiving had freed ten gigabytes of free space. Additionally, two copies would be made: one offisite, another onsite.",
+            "relevant_text_span": [
+                [
+                    "370",
+                    "412"
+                ]
+            ]
+        },
+        {
+            "query": "What were other ways to get more space?",
+            "answer": "Professor D said they would be getting another disk rack that would bring in four thirty-six gigabyte disks, increasing the space. Additionally, the directories of Aurora data, Carmen\u2019s Data and SPINE were likely to be moved.",
+            "relevant_text_span": [
+                [
+                    "421",
+                    "437"
+                ]
+            ]
+        }
+    ],
+    "meeting_transcripts": [
+        {
+            "speaker": "Grad A",
+            "content": "Alright , so I 'm - I should read all of these numbers ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Piece of paper ? I could borrow ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Oh yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK , so uh i um I don't know whether Ami 's coming or not um but I think we oughta just get started ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Nancy is uh currently in Berkeley but not here ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Nancy 's still stick ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Don't know . Anyway"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Oh , so there you go . Anyway , so my idea f for today and we can uh decide that that isn't the right thing to do was to at {disfmarker} spend at least part of the time trying to eh build the influence links , you know which sets of things are uh relevant to which decisions and actually I had uh specific s suggestion to start first with the path ones . The database ones being in some sense less interesting to us although probably have to be done and so to do that so there 's {disfmarker} and the idea was we were gonna do two things"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Is your mike on ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Ah . Oh right , well . Yeah . We were gonna do two things one of which is just lay out the influence structure of what we think influences what"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "That 's funny ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "and then as a uh separate but related task uh particularly Bhaskara and I were going to try to decide what kinds of belief nodes are needed in order to um do what we {disfmarker} what we need to do . Once so but du we should sort of have all of the uh basic design of what influences what done before we decide exactly how to compute it . So I didn't {disfmarker} did you get a chance to look at all {disfmarker} yet ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , I looked at some of that stuff ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Great . OK so let 's start with the uh belief - nets , the general influence stuff and then we 'll {disfmarker} then we 'll also at some point break and talk about the techy stuff ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Well I think one could go there 's I think we can di discuss everything . First of all this I added , I knew from sort of basically this has to be there right ? Um"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Oh are you gonna go there or not ? Yeah , so one i"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Given {disfmarker} given uh uh not transverse the castle , the decision is does the person want to go there or is it just"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right , true . Does have to be there . And I 'm sure we 'll find more as we go that"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And Hmm ? So Go - there in the first place or not is definitely uh one of the basic ones . We can start with that . Interesting effect . Um Is this basically true or false or maybe we 'll get"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well {disfmarker}"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Which one ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "what ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "\" Go there \" ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "m right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "so there is this question about"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Here we we actually get just probabilities ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "right for each down here ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "When we 're {disfmarker} yeah when we 're done . So {disfmarker} so"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "the {disfmarker} the reason it might not be true or false is that we did have this idea of when so it 's , you know uh current @ @ and so forth and so on or not at all ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "right ? And so that a decision would be do we want that so you could {disfmarker} two different things you could do , you could have all those values for Go - there or you could have Go - there be binary and given that you 're going there when ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "When . How ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah and so forth ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Why ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So I 'll let"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "we 'll see ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I mean it seems that you could um uh it seems that those things would be logically independent like you would wanna have them separate or binary , Go - there and then the {disfmarker} the possibilities of how to go there because {disfmarker}"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK , that 's {disfmarker} let 's start that way ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "because , you know it might be easy to figure out that this person is going to need more film eventually from their utterance but it 's much more complex to query when would be the most appropriate time ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm . Hmm . OK . And so I 've tried to come up with some initial things one could observe so who is the user ? Everything that has user comes from the user model everything that has situation comes from the situation model - A . We should be be clear . But when it comes to sort of writing down when you {disfmarker} when you do these things is it here ? You sort of have to a write the values this can take ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And here I was really uh in some s sometimes I was really sort of standing in front of a wall feeling very stupid because um {disfmarker} this case it 's pretty simple , but as we will see the other ones um for example if it 's a running budget so what are the discrete values of a running budget ? So maybe my understanding there is too impoverished ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "No uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "How can I write here that this is something , a number that cr keeps on changing ? But OK . Thus is understandable ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Think so ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So here for example ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "You 've s have you seen this before at all Keith , these belief - net things ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Uh , no , but I think I 'm following it . So far ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So here is the {disfmarker} the {disfmarker} we had that the user 's budget may influence the outcome of decisions ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "There we wanted to keep sort of a running total of things ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Is this like a number that represents how much money they have left to spend ? OK , h well I mean how is it different from user finance ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um the finance is sort of here thought of as {disfmarker} as the financial policy a person carries out in his life , he {disfmarker} is he cheap , average , or spendy ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Alright ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And um I didn't come uh maybe a user I don't know , I didn't want to write greediness , but"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah . Hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Or cheapness ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Welcome ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "User thrift ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Welcome ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Thrift , that 's good ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Great ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "There it is ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah . So Keith w what 's behind this is actually a program that will once you fill all this in actually s solve your belief - nets for you and stuff ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So this is not just a display , this is actually a GUI to a simulator that will if we tell it all the right things we 'll wind up with a functioning belief - net at the other end ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK . OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And it 's so simple even I can use it ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Wow , that is simple ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK , so here was OK , I can think of uh people being cheap , average , or spendy or we can even have a {disfmarker} a finer scale moderately cheap ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Doesn't matter ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "doesn't matter . Agree there but here um I wasn't sure what to write in ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Let 's {disfmarker} go ahead ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Well , I mean you 've written in {disfmarker} you 've written in what uh seems to be required like what else is {disfmarker} is do you want ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "If that 's permissible then I 'm happy ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well yeah . So here 's {disfmarker} here 's what 's permissible is that you can arrange so that the um the value of that is gonna have to be updated and n it 's not a belief update , right ? It 's {disfmarker} you took some actions , you spent money and stuff , so the update of that is gonna have to be essentially external to the belief - net . Right ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "And then what you 're going to need is uh for the things that it influences . Well let 's {disfmarker} first of all let 's see if it does influence anything . And if it does influence anything then you 're gonna need something that converts from the {disfmarker} the number here to something that 's relevant to the decision there . So it could be ra they create different ranges that are relevant for different decisions or whatever {disfmarker} but for the moment this is just a node that is conditioned externally and might influence various things ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm . Yeah {disfmarker} this is where um OK anyways let 's forget it ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well that 's fine . Well anyway , go ahead ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK , and so this , oh that"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "The other thing is that um every time that 's updated beliefs will have to be propagated but then the question is do you {disfmarker} do we wanna propagate beliefs every single time it 's updated or only when we need to ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah , that 's a good question . And uh does it have a lazy mode ? I don't remember ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Uh Well , I mean , in Srini 's thing there was this thing {disfmarker} there was this um option like proper inferences which suggests that uh doesn't happen , automatically ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Oh right . Yeah . S probably does . Yeah someone has to track that down , but I {disfmarker} but uh And {disfmarker} and {disfmarker} and I think {disfmarker} actually uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I just accidentally Oops ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "one of the we w items for the uh user home base uh should be uh essentially non - local . I they 're only there for the day and they don't have a place that they 're staying ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Well"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh just uh accidentally erased this , I {disfmarker} I just had values here such as uh um is he s we had in our list we had \" Is he staying in our hotel ? \" , \" Is he staying with friends ? \" , and so forth"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "uh so we 're OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So it 's clear where w w w where we are right now . So my suggestion is we just pick uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Something down here ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "one , you know one uh particular one of the uh well let 's do the first {disfmarker} first one let 's do the one that we sort of already think we did so w that was the {disfmarker} of the endpoint ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm . And um Oops ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Is hmm"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Ah ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So it 's true or false ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "No , that 's {disfmarker} that 's a"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK . No no no , EVA ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Missed that one ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "What 's the difference between mode and endpoint ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "I thought mode , yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "although that"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um mode was um"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well , that 's"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Mode of transportation ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "OK . Also true or false ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "No , he has he hasn't filled them in yet , is what 's true ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Did I or didn't I ?  Ah . Probably nothing done yet , oh I just did it on the upper ones , OK . Makes sense . OK , so this was EVA . Maybe we can think of more things , cross"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Climb , rob ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "climb , emerge"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "No no no , these are ju that 's just a point ,"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Uh"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Well some of those are subsumed by approach ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "this is ju"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Would it be an endpoint if you were crossing over it ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "The Charles Bridge , you know ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah , would be a f for a given segment . You know , you {disfmarker} y you go {disfmarker} first go the town square"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well I eh"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "No , I mean , if you go to re you know if you go to Prague or whatever one of your {disfmarker} your key points that you have to do is cross the Charles Bridge and doesn't really matter which way you cross which {disfmarker} where you end up at the end but the part {disfmarker} the good part is walking over it , so ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "That 's subtle , but true . Anyway so let 's just leave it three {disfmarker} with three for now"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm , mmm . Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "and let 's see if we can get it linked up just to get ourselves started ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK , we"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "You 'll see it {disfmarker} you 'll see something comes up immediately , that the reason I wanna do this ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "w well the uh user was uh definitely more likely to enter if he 's a local"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right . Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "more likely to view if he 's a tourist um and then of course we had the fact that given the fact that he 's thrifty and there will be admission then we get all these cross um"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "We did , but the three things w that {disfmarker} that it contributed to this in fact , the other two aren't up there . so one was the ontology"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "We 'll d what type of building is it ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "And the {disfmarker} and the third thing we talked about was something from the discourse ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "What he has mentioned before ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK , so this is w Right , so what w I {disfmarker} what we seem to need here , this is why it starts getting into the technical stuff"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "mm - hmm"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "the way we had been designing this , there were three intermediate nodes uh which were the endpoint decision as seen from the uh user model as seen from the ontology and as seen from the discourse . So each of those the way we had it designed , now we can change the design , but the design we had was there was a decision with the same three outcomes uh based on the th those three separate considerations"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "mm - hmm"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "so if we wanted to do that would have to put in uh three intermediate nodes"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Uh we can load it up it you know very simple ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "So"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "and then what you and I have to talk about is , OK if we 're doing that and they get combined somehow uh how do they get combined ? But the {disfmarker} they 're {disfmarker} they 're undoubtedly gonna be more things to worry about ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So this was adjusted for this one mode thing ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Oh yes ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So that 's w w in our uh in {disfmarker} in Johno 's sort of pictogram everything that could contribute to whether a person wants to enter , view , or approach something ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Oh , it was called mode , so this {disfmarker} this is m mode here means the same as endpoint ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Is now this endpoint ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK , why don't we ch can we change that ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "We can just rename that , yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Alright . You know , but that was actually , yeah unfortunately that was a um kind of an intermediate versio that 's I don't think what we would currently do ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Can I ask about \" slurred \" and \" angry \" as inputs to this ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "That 's a"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "What {disfmarker} why ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Like they 're either true or false"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "The prosody ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "and they uh oh I see ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "If the {disfmarker} if the person talking is angry or slurs their speech they might be tired or , you know"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm . OK . Drunk ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Therefore"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "And , you know , possibly uh"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Less likely to enter ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "some ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "uh I was thinking less likely to view"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah . But that 's - that seems to , yeah . So {disfmarker} so my advice to do is {disfmarker} is get this down to what we think is actually likely to {disfmarker} to be a {disfmarker} a strong influence ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "But yeah , that was what he had in mind ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So let 's think about this {disfmarker} this question of how do we wanna handle {disfmarker} so there 're two separate things . One is {disfmarker} uh at least two . One is how do we want to handle the notion of the ontology now what we talked about , and this is another technical thing Bhaskara , is uh can we arrange so that I think we can so that the belief - net itself has properties and the properties are filled in uh from on ontology items . So the {disfmarker} let 's take the case of the uh this endpoint thing , the notion was that if you had a few key properties like is this a tourist site , you know some kind of landmark is it a place of business uh is it something you physically could enter"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK , et cetera . So that there 'd be certain properties that would fit into the decision node and then again as part of the ou outer controlling conditioning of this thing those would be set , so that some somehow someone would find this word , look it up in the ontology , pull out these properties , put it into the belief - net , and then the decision would flow ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Now"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Seems to me that we 've sort of e em embedded a lot , em embedded a lot of these uh things we had in there previously in {disfmarker} in {disfmarker} in some of the other final decisions done here , for example if we would know that this thing is exhibiting something um"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right . Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "if it 's exhibiting itself it is a landmark ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "meaning more likely to be viewed"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "if it is exhibiting pictures or sculptures and stuff like this , then it 's more likely to be entered ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "I uh that 's {disfmarker} I think that 's completely right and um I think that 's good , right ? So what {disfmarker} what that says is that we might be able to uh take and in particular so {disfmarker} so the ones we talked about were uh exhibiting and selling"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Accessibility ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "no , accessibility meant"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "If it 's closed one probably won't enter . Or if it 's not accessible to a tourist ever the likelihood of that person actually wanting to enter it ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "given that he knows it , of course ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Alright . So let me suggest this . Uh w could you move those up about halfway . Uh The ones that you th And selling I guess ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah , all {disfmarker} all of these if it 's fixing things selling things , or servicing things"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right . So here {disfmarker} here 's what it looks like to me . is that you want an intermediate structure which i uh is essentially the or of uh for this purpose of {disfmarker} of uh selling , f fixing , or servicing . So that it uh that is , for certain purposes , it becomes important but for this kind of purpose uh one of these places is quite like the other . Does that seem right ? So we di"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Basic you 're basically just merging those for just the sake of endpoint decision ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "if we Yes ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So if {disfmarker} well it may be more than endpoint decisions , so the idea would be that you might wanna merge those three"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "These three ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah . Eh ser s uh selling , fixing , and servicing ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "What ex um and so either those is true f or false ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Uh Uh well it {disfmarker} it {disfmarker} i here 's where it gets a little tricky ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Uh from the belief - net point of view it is from another point of view of course it 's interest it 's {disfmarker} it 's important to know what it 's selling or servicing and so forth ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So for this decision it 's just uh true or false"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "OK . Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "and in th this is a case where the or seems just what you want ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "That {disfmarker} that if any of those things is true then it 's the kind of place that you uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um more likely to enter ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "are more likely to enter ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So you just wanna have them all pointing to a summary thing ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "You could , yeah . Yeah , so let 's do that . No no , no eh to {disfmarker} to an inter no , an intermediate node ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "T"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "That 's the p part of the idea , is"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um is {disfmarker} is that the object type node ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "I d"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So are they the {disfmarker} is it the kind of object that sells , fixes , or services things ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well , o open up object type and let 's see what its values are ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh I just created it , it has none so far ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Oh , well OK first of all it 's not objects , we called them entities , right ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . And then we have sort of the um"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Let 's say I put commercial ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah , I w I was just gonna commercial action inside where people p"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well couldn't I do {disfmarker} let 's do commercial uh landmark and"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And where was the accessible , yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well accessible I think is different cuz that 's tempor that {disfmarker} that varies temporally ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "whereas this is a"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "What would a hotel fall under ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "I would call that a service , but {disfmarker} but I don't know ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well I mean in terms of entity type ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Say w w well it 's co I would s a a again for this purpose I think it 's commercial . Someplace you want to go in to do some kind of business ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Um what does the underscore - T at the end of each of those things signify ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um things . So places that service things sell things or fix things and pe places that e exhibit things ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Uh - huh . OK . OK . That also points to entity type I guess ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "So we 're deriving um this {disfmarker} the {disfmarker} this feature of whether the {disfmarker} the main action at this place happens inside or outside or what we 're deriving that from what kind of activity is done there ? Couldn't you have it as just a primitive feature of the entity ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well you could , that 's a {disfmarker} that 's a choice ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So uh"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I mean it seems like that 's much more reliable cuz you could have outdoor places that sell things and you know indoor places that do something else"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah , the problem with it is that it sort of putting in a feature just for one decision ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "and Hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "now w we may wind up having to do that this i anyway , this i"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "at a mental level that 's what we we 're gonna have to sort out ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So , you know what does this look like , what are {disfmarker} what are uh intermediate things that are worth computing , what are the features we need in order to make all these decisions"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "and what 's the best way to organize this so that um it 's clean and {disfmarker} and consistent and all that sort of stuff ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK . I 'm just thinking about how people , human beings who know about places and places to go and so on would store this and it would probably {disfmarker} you wouldn't just sort of remember that they sell stuff and then deduce from that that it must be going on inside or something ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Well I think an entity maybe should be regard as a vector of several possible things , it can either em do s do sell things , fix things , service things , exhibit things , it can be a landmark at the same time as doing these things ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "it 's not either or mmm certainly a place can be a hotel and a famous site ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Many come to mind . Things can be generally um a landmark and be accessible . IE a {disfmarker} a castle or can be a landmark a or not accessible , some statue"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "you know can go inside ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK . Anyway so let me suggest you do something else . Uh which is to get rid {disfmarker} get rid of that l long link between who {disfmarker} the user and the endpoint ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Could we just move it like this ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "No no , I don't want the link there at all ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh , OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Because what we 're gonna want is an intermediate thing which is uh the endpoint decisi the endpoint decision based o on the user models , so what we {disfmarker} we {disfmarker} what we talked about is three separate endpoint decisions , so let 's make a new node"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Just as a suggestion maybe you could \" save as \" to keep your old one nice and clean and so you can mess with this one ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mmm . The old one was not that not that important , I think but"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK , well , not a big deal then ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Let 's do it then ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well the {disfmarker} Isn't there a \" save as \" inside of java base ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But I can just take this"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "copy it somewhere else . This was user something"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well this was"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "or"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "uh let 's p put it this {disfmarker} let 's do endpoint underbar - U ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "end point ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "i endpoint , e end poi this is sa"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Ah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "it 's the endpoint"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Gotcha , yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "let 's say underbar - U , so that 's the endpoint decision uh as seen through the"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "As related from the user model ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right . So let 's {disfmarker} let 's actually yeah so lin you can link that up to the"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Should I rename this {pause} too ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "uh yeah , so that , I guess that 's endpoint uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": " It 's underscore - E ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "underscore - E for entity , and we may change all this , but . Right . And"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK , shouldn't I be able to move them all ? No . Or {disfmarker} ? Can I ? Where ? What ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Oh I d eh I don't know . Actually , I guess the easiest thing would move {disfmarker} mo move the endpoint , well , go ahead . Just do whatever ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Wasn't this possible ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I think you have to be in move mode before"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Uh - huh . OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Good . Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So now we 're looking for user related things that um"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah . And uh maybe th maybe it 's just one who is the user , I don't know , maybe {disfmarker} maybe there 's more ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Huh ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Well if he 's usi if he 's in a car right now what was that people with Harry drove the car into the cafe"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Never mind . Uh anyway , this is crude . Now but the {disfmarker} now so {disfmarker} so {disfmarker} but then the question is uh so {disfmarker} and {disfmarker} and we assume that some of these properties would come indirectly through an ontology , but then we had this third idea of input from the discourse ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Well let 's {disfmarker} should we finish this ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Sure ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I mean but surely the user interests"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "The user thrift , the user budget ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "yeah , yeah"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well , maybe , I again , I d well , OK , put em in but what we 're gonna wanna do is actually uh"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well is {disfmarker}"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Here this was one of my problems we have the user interest is a {disfmarker} is a vector of five hundred values , so um That 's from the user model ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Oh you mean level of interest ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "mm - hmm , no not levels of interest but things you can be interested in ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Well {disfmarker}"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "somebody else has built this user model ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Oh I see ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Gothic churches versus Baroque townhouses versus"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "right . So why is it oh it , so it 's like a vector of five hundred one 's or zero 's ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yea - n is that"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Like for each thing are we {disfmarker} are you interested in it or not ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "yeah uh I {disfmarker} I think"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "I see ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK . So uh you cou and so here let me give you two ways to handle that . Alright ? One is um you could ignore it . But the other thing you could do is have an {disfmarker} and this will give you the flavor of the {disfmarker} of what you could have a node that 's {disfmarker} that was a measure of the match between the object 's feature , you know , the match between the object the entity , I 'm sorry and the user ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm . Uh ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So you could have a k a \" fit \" node and again that would have to be computed by someone else"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "but uh so that uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Just as a mental note uh"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah , that 's all ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm . And {disfmarker} and should we say that this interests eh affects the likelihood of {disfmarker} of entering ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah . I mean , we could ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . And also if it 's an expensive place to enter , this may also"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Budget ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "User schedule . \" Do I have time to go in and climb all the way to the top of the Koelner Dome {comment} or do I just have to {disfmarker} \" \" time to take a picture of the outside ? \""
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Schedule ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It seems like everything in a user model a affects {disfmarker}"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well that 's what we don't wanna do , see that {disfmarker} se cuz then we get into huge combinatorics and stuff like that"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "an"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Cuz if the , I mean , and if the user is tired , the user state ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Well"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "right , it would affect stuff , but I can't see why e anything w everything in the model wouldn't be"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well , but"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well , that {disfmarker} that 's {disfmarker} we can't do that , so we we 're gonna have to"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "but this is a good discussion , we 're gonna have to somehow figure out uh some way to encapsulate that uh so if there 's some general notion of for example the uh relation to the time to do this to the amount of time the guy has or something like that is {disfmarker} is the uh compatibility with his current state , so that 's what you 'd have to do , you 'd have to get it down to something which uh was itself relatively compact , so it could be compatibility with his current state which would include his money and his time and {disfmarker} and his energy"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , just seems like it 'd push the problem back a level ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "It does ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , but"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "No but , it 's more than that , like the {disfmarker} the more sort of you break it up like because if you have everything pointing to one node it 's like exponential whereas if you like keep breaking it up more and more it 's not exponential anymore ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So it yeah , there are two advantages . That 's tha there 's one technical one"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sh - sh yeah , {disfmarker}"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "and the other is it {disfmarker} it gets used"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "S so we 'd basically be doing subgrouping ? Subgrouping , basically into mo"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "so basically make it more tree like going backwards ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right . But it {disfmarker} there 's two advantages , one is the technical one that you don't wind up with such big exponential uh CBT 's ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Bhaskara ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "the other is it can be {disfmarker} it presumably can be used for multiple decisions ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So that if you have this idea of the compatibility with the requirements of an action to the state of the user one could well imagine that that was u"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "not only is it sim is it cleaner to compute it separately but it could be that it 's used in multiple places . Anyway th so in general this is the design , this is really design problem ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK , you 've got a signal , a d set of decisions um how do we do this ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "What do I have under user state anyhow cuz I named that already something . Oh that 's tired , fresh , yeah . Maybe should be renamed into physical state ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Or fat user fatigue even ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That 's with a \" G \" ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": " Whatever ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Then we can make a user state ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "What 's th what we 're talking about is compatibility . Uh or something , I don't know , but ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I guess the {disfmarker} the question uh is It 's hard for me to imagine how everything wouldn't just contribute to user state again . Or user compatibility ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Oh but the thing is that we uh uh we had some things that uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That don't ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "that don't"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "The user interests and the user who {disfmarker} who {disfmarker} who the user is are completely apart from the fact whether he is tired broke"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Sure , but other {disfmarker} I thought though the node we 're creating right now is user compatibility to the current action , right ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "the right"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Seems like everything in the user model would contribute to whether or not the user was compatible with something ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Uh maybe not . I mean the {disfmarker} that 's the {disfmarker} the issue is um would Even if it was true in some abstract general sense it might not be true in terms of the information we actually had and can make use of . And anyway we 're gonna have to find some way to cl uh get this sufficiently simple to make it feasible ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Maybe um if we look at the {disfmarker} if we split it up again into sort of um if we look at the uh the endpoint again we {disfmarker} we said that for each of these things there are certain preconditions so you can only enter a place if you are not too tired to do so and also eh have the money to do so if it costs something so if you can afford it and perform it is preconditions . Viewing usually is cheap or free ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Is that always true ? I don't know ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , with the way we 're defining it I think yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "W w but that eh viewing it without ent yeah view w with our definition of view it 's free cuz you"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And so is approaching ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Well what about the Grand Canyon , right ? No , never mind . I mean are there {disfmarker} are there large things that you would have to pay to get up close to like , I mean never mind , not in the current {disfmarker}"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "No we have to enter the park ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Eh almost by definition um paying involves entering ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "ge going through some"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK . Right , sure ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right . Uh So let me suggest we switch to another one , I mean clearly there 's more work to be done on this"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "but I think it 's gonna be more instructive to {disfmarker} to think about uh other decisions that we need to make in path land . And what they 're gonna look like ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So you can save this one as and open up the old one , right and {disfmarker} and then everything would be clean . You could do it again ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Why , I think it 's worth saving this one but I think I 'd {disfmarker} I 'd like to keep this one"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "cuz I wanna see if {disfmarker} if we 're gonna reuse any of this stuff ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um so this might be What next ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well you tell me , so in terms of the uh planner what 's {disfmarker} what 's a good one to do ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Well let 's {disfmarker} th this go there or not I think is a good one ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Is a very basic one . So what makes things more likely that {disfmarker}"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well the fir see the first thing is , getting back to thing we left out of the other is the actual discourse ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So Keith this is gonna get into your world because uh we 're gonna want to know you know , which constructions indicate various of these properties"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "s and so I {disfmarker} I don't yet know how to do this , I guess we 're gonna wind up pulling out uh discourse properties like we have object properties and we don't know what they are yet ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So that {disfmarker} that the Go - there decision will have a node from uh discourse , and I guess why don't we just stick a discourse thing up there to be as a placeholder for"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "We {disfmarker} we also had discourse features of course for the endpoint ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Of {disfmarker} of course ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Identified that"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and so again re that 's completely correct , we have the user model , the situation model here , we don't have the discourse model here yet . Much the same way as we didn't {disfmarker} we don't have the ontology here ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well the ontology we sort of said we would pull these various kinds of properties from the ontology like exhibiting , selling , and so forth ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Really ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So in some sense it 's {disfmarker} it 's there ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "But the discourse we don't have it represented at all yet ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . Um This be specific for second year ? Um And {disfmarker} and we probably will have uh something like a discourse for endpoint ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "But if we do it 'll have the three values ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "It 'll have the EVA values if {disfmarker} if we have it ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah . Yeah . OK just for starters and here discourse um"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "For Go - there , probably is true and false , let 's say . That 's what we talked about ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "um well , I think um we 're looking at the {disfmarker} the little data that we have , so people say how do I get to the castle and this usually means they wanna go there ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "So this should sort of push it in one direction"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "however people also sometimes say how do I get there in order to find out how to get there without wanting to go there ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And sometimes um people say where is it"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "because they wanna know where it is but in most cases they probably"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah , but that doesn't change the fact that you 're {disfmarker} you want these two values ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Oh yeah , true . So this is sort of some external thing that takes all the discourse stuff and then says here it 's either {pause} yep , yay , A , or nay . Yeah . OK ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "And they 'll be a y uh , a user Go - there and maybe that 's all , I don't know ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Situation Go - there , I mean , because it 's {disfmarker} whether it 's open or not ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "OK , good ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "That definitely interes"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "But that now that kind of um what 's the word"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "um the {disfmarker} that interacts with the uh EVA thing if they just wanna view it then it 's fine to go there when it 's closed whereas if they want to um"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "so"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right , so that 's {disfmarker} that 's where it starts getting to be uh uh essentially more interesting , so what uh Bhaskara says which is completely right is if you know that they 're only going to view it then it doesn't matter whether it 's closed or not"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "in terms of uh uh you know , whether {disfmarker} whether you wanna go there ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "The time of day ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "right I {disfmarker} well , right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It does matter though if there 's like a strike or riot or something ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Absolutely there are other situational things that do matter ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right . So yeah , that 's what I said just having one situational node may not be enough because this {disfmarker} that node by itself wouldn't distinguish"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well i i it can have di various values . Yeah , but we eh you {disfmarker} you 're right it might not be enough ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , I mean , see I 'm {disfmarker} I 'm thinking that any node that begins with \" Go - there \" is either gonna be true or false ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Well , what {disfmarker} Whoops ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Ah . I see that could be ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Also , that node , I mean the Go - there s S node would just be fed by separate ones for"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "you know , there 's different things , the strikes and the"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Could be . Yeah . N"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Like situation traffic and so on ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah , the time of day ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah . Yeah . So {disfmarker} so now the other thing that Bhaskara eh pointed out is what this says is that uh there sh should be a link , and this is where things are gonna get very messy from the endpoint uh decision"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "I guess the final"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "maybe the t they 're final re and , I guess the very bottom endpoint decision uh to the Go - there node . And I {disfmarker} don't worry about layout ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "I mean then we 'll go {disfmarker} we 'll go nuts but"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Maybe we could um have intermediate node that just the Endpoint and the Go - there S node sort of fed into ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Could be , yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right . Because that 's what we , I mean that 's why this situation comes up ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah . Well the Go - there , actually the Endpoint node could feed {disfmarker} feed into the Go - there S That 's right ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "so the Endpoint node ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "make that up t t to the Go - there then"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "and again we 'll have to do layout at some point , but something like that . Now it 's gonna be important not to have loops by the way . Uh really important in {disfmarker} in the belief worl net world not to have loops"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I was just gonna"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "uh"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yes ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "How long does it take you to {disfmarker} to compute uh"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "No it 's much worse than that . It {disfmarker} if i loo it {disfmarker} it {disfmarker} it {disfmarker} it {disfmarker} it 's not def i it 's not well defined if you 're there are loops ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "It {disfmarker} things don't converge , yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "uh R recursive action ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "you just you have to there are all sorts of ways of breaking it up so that there isn't uh OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Uh but this isn't , this is {disfmarker} this line is just coming from over here ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah , no it 's not a loop yet , I 'm just saying we {disfmarker} we , in no , in"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah . Well , but the good thing is we {disfmarker} we could have loopy belief propagation which {vocalsound} we all love ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right . OK , so anyway , so that 's another decision . Uh what 's {disfmarker} what 's another decision you like ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK , these have no parents yet , but I guess that sort of doesn't matter . Right ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well , the idea is that you go there , you go comes from something about the user from something about the situation and the uh the discourse is {disfmarker} is a mystery ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "I mean this is sort of This comes from traffic and so forth , yeah . Sh - Should we just make some"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Sure , if you want ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "um if there 's parking maybe Mmm Oh who cares . OK . And if he has seen it already or not and so forth ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "OK . Um and discourse is something that sort of should we make a Keith note here ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Sure ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That sort of comes from Keith ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Just sort of so we don't forget . Oops . Have to get used to this . OK , whoops ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Um actually {disfmarker}"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "And then also the discourse endpoint , I {disfmarker} I guess endpoint sub - D is {disfmarker} if you wanna make it consistent ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Wh - ah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Um actually is this the {disfmarker} the right way to have it where um go there from the user and go there from the situation just sort of don't know about each other but they both feed the go there decision because isn't the , I mean"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "I think so . S"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "uh , hmm OK . But that still allows for the possibility of the {disfmarker} of the user model affecting our decision about whether a strike is the sort of thing which is going to keep this user away from {disfmarker}"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Maybe not , a Right ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "That {disfmarker} all that {disfmarker} that kind of decision making happens at the Go - there node ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Uh y you {disfmarker} yeah you {disfmarker} i you {disfmarker} if you needed to do that ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Uh . If you needed it to do that ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "But uh OK I was just thinking I guess maybe I 'm conflating that user node with possible {disfmarker} possible asking of the user"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "you know hey there 's a strike on , uh does that affect whether or not you wanna go or something"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Ah . Good point , I don't {disfmarker} I don't know how we 're going to {disfmarker} t uh"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "or Yeah , so that might not come out of a user model but , you know , directly out of interaction ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right . Uh I gu yes my curr you know , don't yeah yeah yeah that 's enough ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Uh My current idea on that would be that each of these decision nodes has questions associated with it ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "And the question wouldn't itself be one of these conditional things"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "you know , given that you know there 's a strike do you still wanna go ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "But uh if you told him a bunch of stuff , then you would ask him do you wanna go ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm . OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "But I think trying to formulate the conditional question , that sounds too much ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right , right . Yeah . Right , sure , OK ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "To me ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Alright , but let me {disfmarker} let {disfmarker} let 's stay with this a minute"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "because I want to do a little bit of organization . Before we get more into details . The organization is going to be that uh the flavor of what 's going on is going to be that uh as we s e sort of going to this detail indeed Keith is going to {disfmarker} to worry about the various constructions that people might use"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "and Johno has committed himself to being the parser wizard ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Alright ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "so what 's going to happen is that eventually like by the time he graduates , OK uh they 'll be some sort of system which is able to take the discourse in context and have outputs that can feed the rest of belief - net . I j wa I {disfmarker} I assume everybody knows that , I just wanna you know , get closure that that 'll be the game then ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "so the semantics that you 'll get out of the discourse will be of values that go into the various discourse - based decision nodes . And now some of those will get fancier like mode of transportation and stuff so it isn't by any means uh necessarily a simple thing that you want out . So uh if there is an and there is mode of transportation"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And it there 's a sort of also a split if you loo if you blow this up and look at it in more detail there 's something that comes from the discourse in terms of what was actually just said what 's the utterance go giving us"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and then what 's the discourse history give us ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah , well that , well , we 'll have to decide uh how much of th where that goes ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That 's uh two things then ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "an and it 's not clear yet . I mean it could be those are two separate things , it could be that the discourse gadget itself integrates em as {disfmarker} which would be my guess that you 'd have to do see in order to do reference and stuff like that um you 've gotta have both the current discourse and the context to say I wanna go back there ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "wow , what does that mean and uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Now . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Alright . So"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But is th is this picture that 's emerging here just my wish that you have noticed already for symmetry or is it that we get for each {disfmarker} each decision on the very bottom we sort of get the sub - E , sub - D , sub - U and maybe a sub - O {disfmarker} \" O \" for \" ontology \" um meta node"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "I don't know ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "but it might just"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "It could be ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "could be"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "This is {disfmarker} this is getting into the thing I wanna talk about next ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "so this"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "which is s if that 's true uh how do we wanna combine those ? O or when it 's true ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "but this eh w wou wou would be nice though that , you know , we only have at most four at the moment um arrows going f to each of the uh bottom decisions ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And four you {disfmarker} we can handle ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "No ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's too much ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well i i it see i if it 's fou if it 's four things and each of them has four values it turns out to be a big CPT , it 's not s completely impossi I mean it 's {disfmarker} it 's not beyond what the system could solve but it 's probably beyond what we could actually uh write down . or learn ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Right , true ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Uh but , you know it 's four to the fourth . It 's pretty big . Uh ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Two fifty - six ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "is that what that"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah , I mean it 's and I don't think it 's gonna g e I don't think it 'll get worse than that by the way , so le that 's a {disfmarker} that 's a good"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Mmm yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "But {disfmarker} but four {disfmarker} didn't we decide that all of these had true or false ? So is {disfmarker} it 's four"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Uh for go there , but not f but not for {disfmarker} the other one 's three values for endpoint already ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , I mean you need actually three to the five because uh well I mean if {disfmarker} if it has four inputs and then it itself has three values"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "so I mean it can get big fast ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um for endpoint ? No it 's {disfmarker} it 's sh"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "EV - it 's the EVA ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "yeah , down here , but this one only has two ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "No ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "No it still has three ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Since ta they will still have three ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "EVA ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Each {disfmarker} so you 're uh uh from each point of view you 're making the same decision ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm . Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So from the point of view of the ob of the entity"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Want to view that , yeah yeah . C sl"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "yeah"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "This {disfmarker} and also , I mean , the other places where , like for example consider endpoint view , it has inputs coming from user budget , user thrift"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "so even"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Those are not necessarily binary . S so we 're {disfmarker} we 're gonna have to use some t care in the knowledge engineering to not have this explode . And in fact I think it doesn't in the sense that um Read it , you know actually with the underlying semantics and stuff I think it isn't like you have two hundred and fifty - six different uh ways of {disfmarker} of thinking about whether this user wants to go to some place . Alright . So we {disfmarker} we just have to figure out what the regularities are and and code them . But um What I was gonna suggest next is maybe we wanna work on this a little longer but I do want to also talk about the thing that we started into now of uh well it 's all fine to say all these arrows come into the si same place what rule of combination is used there ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "So th yes they {disfmarker} so these things all affect it ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "how do they affect it ? And belief - nets have their own beliefs about uh what are good ways to do that . So is it {disfmarker} it 's {disfmarker} it 's clearer n clear enough what the issue is ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "right ? So do we wanna switch that now or we wanna do some more of this ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "R basically w we just need to sort of in order to get some closure on this figure out how we 're gonna get this picture sort of uh completely messy ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Well , here {disfmarker} he here 's one of the things that {disfmarker} that I th you sh you {disfmarker} no , I don't know how easy it is to do this in the interface but you {disfmarker} it would be great if you could actually just display at a given time uh all the things that you pick up , you click on \" endpoint \" , OK and everything else fades"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "and you just see the links that are relevant to that . And I does anybody remember the GUI on this ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Uh d I would almost say the other way to do that would be to open u or make you know N - many belief - nets and then open them every time you wanted to look at a different one"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "vers cuz uh"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "It 's probably pretty easy do it {disfmarker} to do it in HTML , just {disfmarker}"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah , but"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Uh"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "HTML ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah I have each of these thing each of the end belief - nets be {disfmarker} be a page and then you click on the thing and then li consider that it 's respective ,"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yeah the {disfmarker} well the b"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "but"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "anyway so uh it clear that even with this if we put in all the arrows nobody is gonna be able to read the diagram ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Alright , so e we have to figure out some eh eh uh basically display hack or something to do this because anyway I {disfmarker} I {disfmarker} let me consi suggest that 's a s not a first - order consideration , we have two first - order considerations which is what are the uh influences A , A , and B how do they get combined mathematically , how do we display them is an issue , but um"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "I don't , yeah I just don't think this has been designed to support something like that ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah . Yeah , I {disfmarker} I mean , it might soon , if this is gonna be used in a serious way like java base then it might soon be necessary to uh start modifying it for our purposes ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Right . Yeah , and Um I {disfmarker} that seems like a perfectly feasible thing to get into , but um we have to know what we want first . OK , so why don't you tell us a little bit about decision nodes and what {disfmarker} what the choices might be for these ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So Ah , sorry . I guess that 's"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "You can technically wear that as you 're talking ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , it 's right , I guess I can do that ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Darn ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Put it in your , yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "I guess this board works fine . So um recall the basic problem which is that um you have a belief - net and you have like a lot of different nodes all contributing to one node . Right ? So as we discussed specifying this kind of thing is a big pain and it 's so will take a long time to write down because for example if these S have three possibilities each and this has three possibilities then you know you have two hundred and forty - three possibilities which is already a lot of numbers to write down . So what um helps us in our situation is that these all have values in the same set , right ? These are all like saying EV or A , right ? So it 's not just a generalized situation like I mean basically we wanna just take a combination of {disfmarker} we wanna view each of these as experts ea who are each of them is making a decision based on some factors and we wanna sort of combine their decisions and create you know , um sorta weighted combination ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Hmm . ROVER , the ROVER decision ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "The what decision ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "ROVER . All of their outputs combined to make a decision ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah . Yeah . So the problem is to specify the uh so the conditional property of this given all those , right ? That 's the way belief - nets are defined , like each node given its parents , right ? So um that 's what we want , we want for example P of um let 's call this guy Y and let 's call these X - one , X - two XN , right . So we want probability that Y equals , you know , for example um E given that these guys are I 'll just refer to this as like X um hat or something , uh the co like all of them ? Given that for example the data says you know , A , V , A , E , or something right ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Yep ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So we would like to do this kind of combination ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Alright , so um Is that uh I {disfmarker} yeah , I just wanna make sure everybody is with us before he goes on ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "I think so , yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "It 's {disfmarker} it 's cl e is {disfmarker} is it clear what he wants to compute ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right . So , right . So Basically um {vocalsound} what we don't wanna do is to for every single combination of E and V and A and every single letter E , s give a number"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "because that 's obviously not desirable . What we wanna do is find some principled way of um saying what each of these is and we want it to be a valid probability distribution , so we want it to um add up to one , right ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So those are the two things that we uh need . So what uh I guess , what Jerry suggested earlier was basically that we , you know view these guys as voting and we just take the uh we essentially take um averages , right ? So for example here two people have voted for A , one has voted for V , and one has voted for E , so we could say that the probabilities are , you know , probability of being E is one over four , because one person voted for E out of four and similarly , probability of so this is probability of E s and then probability of A given all that is um two out of four and probability of V is one out of four . Right ? So that 's step {disfmarker} that 's the uh yeah that 's the {disfmarker} that 's the basic uh thing . Now"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Um Yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Is that all OK ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "And that one outcome , that 's"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "What ?"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "it 's X {disfmarker} X - one voted for A X - two voted for V"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "and so forth ?"
+        },
+        {
+            "speaker": "Professor B",
+            "content": "Y right . Yep ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "S so this assumes symmetry and equal weights and all this sort of things , which may or may not be a good assumption ,"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That 's the outcome ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm . Right ."
+        },
+        {
+            "speaker": "Professor B",
+            "content": "so that"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah . Yeah . So step two is um right . So we 've assumed equal weights whereas it might turn out that you know , some w be that for example , what the um the actual the uh verbal content of what the person said , like what uh what might be uh somehow more uh important than the uh"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "X - one matters more i than X - two or"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right . Sure , so we don't wanna like give them all equal weight so currently we 've been giving them all weight one fourth so we could replace this by uh W - one , W - two , W - three , and W - four"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "right ? And in order for this to be a valid probability distribution for each um X - hat , we just need that the W 's sum to one . So they can be for example , you know you {disfmarker} you could have point one , point three , point two , and point four , say ."
+        },
+        {
+            "speaker": "Grad E",
+            "content": "That 's one ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "And that 'd be one . So that um also seems to work fine . And uh"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So I jus just to make sure I understand this , so in this case um we would still compute the average ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "You 'd compute the weighted average , so the probability of E would be uh"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK , so {disfmarker} so it 'd be so in this case the probability that Y equals A would be uh {comment} W one times {disfmarker}"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Point three ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "or A or {disfmarker} let 's see , one full quarter times point one"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Not one quarter ,"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "No ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "so these numbers have been replaced with point one , point three , point two , and point four . So you can view these as gone ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Probability of"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah . Yeah . OK . So , alright . So this is uh step two . So the next possibility is that um we 've given just a single weight to each expert , right , whereas it might be the case that um in certain situations one of the experts is more uh reliable and in certain situations the other expert is more reliable . So the way this is handled is by what 's called a mixture of experts , so what you can have is you augment these diagrams like this so you have a new thing called \" H \" , OK ? This is a hidden variable . And what this is is it gets its input from X - one , X - two , X - three , and X - four , and what it does is it decides which of the experts is to be trusted in this particular situation . Right ? And then these guys all come here . OK . So this is sightly uh more complicated . So what 's going on is that um this H node looks at these four values of those guys and it decides in given these values which of these isn't likely to be more reliable or most reliable . So H produces some you know , it produces a number , either one , two , three , or four , in our situation , right ? Now this guy he looks at the value of H say it 's two , and then he just selects the uh thing . That 's all there is to say , I guess about it . Right , so you can have a mixture that"
+        },
+        {
+            "speaker": "Grad E",
+            "content": "Mm - hmm ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "So {disfmarker} so the function of the thing that comes out of H is very different from the function of the other inputs . It 's driving how the other four are interpreted . OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah . Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So H passes a vector on to the next node ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "It could ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "It could ? A vector of the weights as the se"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , it could"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "oh ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Sorry ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Well a vector with three zero 's and one one , right ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Oh it 's basically to tell the bottom node which one of the situations that it 's in or which one of the weighting systems"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right , so I mean the way you desc"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "W I was just , if you wanted to pay attention to more than one you could pass a w a weighting s system though too , couldn't you ? OK ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Um Does H have to have another input to tell it alpha , beta , whatever , or is the {disfmarker} that 's determined by what the experts are saying , like the type of situ OK . Hmm . OK . OK . I mean It {disfmarker} it just seems that like without that {disfmarker} that outside input that you 've got a situation where , you know , like if {disfmarker} if uh X - one says no , you know , a low value coming out of X - on or i if X - one says no then ignore X - one , you know , I mean that seems like that 'd be weird ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , well could be things like if X - two and X - three say yes then i ignore X - one also ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "right ? Oh , OK . OK . Alright , right ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Oh The situations that H has , are they built into the net or OK , so they {disfmarker} they could either be hand coded or learned or OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Based on training data , OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah . Yes ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "So you specify one of these things for every one of those possi possible situations . Oh yeah ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah . Um Well , I mean to learn them we need data , where are we gonna get data ? Well I mean we need data with people intentions , right ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Right , right ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Which is slightly tricky . Right ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Uh - huh ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Mm - hmm . But what 's the data about like , are we able to get these nodes from the data ?"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Like how thrifty the user is , or do we have access to that ? Mm - hmm . Oh right . Oh good . OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "Mm - hmm . Mm - hmm . OK ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Yeah , but that 's my question , like how do we {disfmarker} I mean , how do we have data about something like um um endpoint sub - E , or endpoint sub uh {pause} you know s S ?"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Well , basically you would say , based on {disfmarker} in this dialogue that we have which one of the things that they said eh whether it was the entity relations or whatever was the thing that determined what mode it was ,"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Mmm . Mmm ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "right ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "So this is what we wanna learn . Yep . Right . Hmm . Yeah . I don't think , well you have a {disfmarker} can you bring up the function thing ? Um w where is the thing that allows you to sort of"
+        },
+        {
+            "speaker": "Grad C",
+            "content": "That 's on the added variable , isn't it ?"
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Oh function properties , is that it ? Hmm , I guess not . Yeah , that 's"
+        },
+        {
+            "speaker": "Grad A",
+            "content": "No ."
+        },
+        {
+            "speaker": "Grad D",
+            "content": "Right . OK . And um it so e either it 'll allow us to do everything which I think is unlikely , I think more likely it 'll allow us to do very few of these things and in that case we 'll have to um just write up little things that allow you to um create such CPU 's on your own in the java base format . Yeah . Yeah . Yeah , I was assuming that 's what we 'd always do because yeah I was assuming that 's what we 'd always do , it 's Right . Yeah ."
+        },
+        {
+            "speaker": "Grad C",
+            "content": "Ah . Well in terms of java base I think it 's basically what you see is what you get in I don't yeah , I would be surprised if it supports anything more than what we have right here ."
+        },
+        {
+            "speaker": "Grad A",
+            "content": "So Yeah . Yeah . By the way um uh just talking about uh about that general end of things uh is there gonna be data soon from what people say when they 're interacting with the system and so on ? Like , I mean , what kind of questions are being given {disfmarker} being asked ? Cuz {disfmarker} OK . Yeah yeah . OK . OK . Fey , you mean . OK . OK . O OK . OK . I 'm just wondering , because in terms of , you know , I mean uh w the figure {disfmarker} I was thinking about this figure that we talked about , fifty constructions or whatever that 's uh that 's a whole lot of constructions and um you know , I mean one might be f fairly pleased with getting a really good analysis of five maybe ten in a summer so , I mean I know we 're going for sort of a rough and ready . Mm - hmm . Mm - hmm . OK . OK . I mean , I {disfmarker} I {disfmarker} I {disfmarker} I was {disfmarker} uh I was talking about the , you know , if you wanted to do it really in detail and we don't really need all the detail for what we 're doing right now but anyway in terms of just narrowing that task you know which fifty do I do , I wanna see what people are using , so Well , it will inspire me . Right , sure sure . Right . Yeah , sure . Sure . Yeah . OK . Touche . Good enough ."
+        }
+    ]
+}
