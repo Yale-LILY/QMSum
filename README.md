@@ -33,7 +33,7 @@ The format of json data is as follows:
             "relevant_text_span": [["21","57"], ["113","119"], ["191","217"]]
         },
         ...
-	],
+    ],
     "general_query_list": [
         {
             "query": "Summarize the whole meeting.",
