@@ -47,7 +47,7 @@ The format of json data is as follows:
             "answer": "The Chair brought the meeting to order, announcing that the purpose of the meeting was to discuss COVID-19 's impact on Canada. Five petitions were presented ...",
             "relevant_text_span": [["0","19"]]
         },
-		{
+	{
             "query": "What did Paul-Hus think about the introduction of petitions and prioritization of government matters?",
             "answer": "Mr. Paul-Hus thought that the government should not take firearms away from law-abiding Canadian citizens. He inquired into ...",
             "relevant_text_span": [["9","18"]]
@@ -64,7 +64,7 @@ The format of json data is as follows:
             "content": "Mr. Chair, I'm pleased to be presenting two petitions today. The first petition is with respect to government Bill C-7 ..."
         },
         ...
-		{
+	{
             "speaker": "Hon. Seamus O'Regan",
             "content": "Mr. Chair, we have been working with our provincial partners. We have been working with businesses of all sizes in the oil and gas industry ...."
         },
