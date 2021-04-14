@@ -2,7 +2,7 @@
 
 ### Overview
 
-This repository maintains dataset for NAACL 2021 paper: "QMSum: A New Benchmark for Query-based Multi-domain Meeting Summarization".
+This repository maintains dataset for NAACL 2021 paper: *[QMSum: A New Benchmark for Query-based Multi-domain Meeting Summarization](https://arxiv.org/abs/2104.05938)*.
 
 **QMSum** is a new human-annotated benchmark for query-based multi-domain meeting summarization task, which consists of 1,808 query-summary pairs over 232 meetings in multiple domains.
 
