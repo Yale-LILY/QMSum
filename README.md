@@ -86,3 +86,13 @@ Please note that there may be multiple relevant text spans for a topic or a spec
 <p align="center">
   <img src="https://github.com/Yale-LILY/QMSum/blob/main/figures/Experimental%20Results.jpg" width="350" alt="statistics">
 </p>
+
+### Citation
+```
+@inproceedings{zhong2021qmsum,
+   title={{QMS}um: {A} {N}ew {B}enchmark for {Q}uery-based {M}ulti-domain {M}eeting {S}ummarization},
+   author={Zhong, Ming and Yin, Da and Yu, Tao and Zaidi, Ahmad and Mutuma, Mutethia and Jha, Rahul and Hassan Awadallah, Ahmed and Celikyilmaz, Asli and Liu, Yang and Qiu, Xipeng and Radev, Dragomir},
+   booktitle={North American Association for Computational Linguistics (NAACL)},
+   year={2021}
+}
+```
