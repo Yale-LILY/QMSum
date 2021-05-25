@@ -81,9 +81,13 @@ We provide a notebook to convert our data into the format required by some seq2s
 
 ### Models
 We run many popular models in this paper. Here we provide the code that can be used to implement each model.
+
 For our Locator, we use the code from [this link](https://github.com/maszhongming/Effective_Extractive_Summarization). Notably, we find that removing Transformers in Locator has little impact on performance, so the Locator without Transformer is used in all the experiments.
+
 For PGNet, you can refer to the implementation of the original paper [here](https://github.com/abisee/pointer-generator).
+
 For BART, we use the interface provided by [fairseq](https://github.com/pytorch/fairseq/blob/master/examples/bart/README.summarization.md), of course you can also refer to the implementation of [transformers](https://github.com/huggingface/transformers/tree/master/examples/pytorch/summarization).
+
 For HMNet, please use the official implementation [here](https://github.com/microsoft/HMNet).
 
 ### Extracted Span
