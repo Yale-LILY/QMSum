@@ -1,106 +1,106 @@
 {
     "topic_list": [
         {
-            "topic": "Discussion about future meetings",
+            "topic": "value for user and situation models",
             "relevant_text_span": [
                 [
-                    "0",
-                    "154"
+                    "45",
+                    "81"
                 ]
             ]
         },
         {
-            "topic": "Recording equipment and location",
+            "topic": "endpoint decision",
             "relevant_text_span": [
                 [
-                    "155",
-                    "368"
+                    "89",
+                    "279"
                 ]
             ]
         },
         {
-            "topic": "Disk storage",
+            "topic": "Go-there decision",
             "relevant_text_span": [
                 [
-                    "368",
-                    "468"
+                    "433",
+                    "533"
                 ]
             ]
         },
         {
-            "topic": "Handling speech overlap and speaker anonymity",
+            "topic": "probability computation",
             "relevant_text_span": [
                 [
-                    "469",
-                    "768"
+                    "669",
+                    "749"
                 ]
             ]
         }
     ],
     "general_query_list": [
         {
-            "query": "What was the overall discussion of the meeting?",
-            "answer": "In this meeting, the speakers addressed issues that related to their meeting annotation progress. They talked about the types and variability of the future meetings. This led to them speaking about how to use their recording equipment if they got groups outside of their own departments to record meetings. Additionally, they discussed how to handle the storage of meetings on disk. They eventually address how to handle speech overlap and speaker anonymity, which were two crucial issues."
+            "query": "Summarize the whole meeting.",
+            "answer": "The group members mainly talked about the details of the belief-net framework. They first discussed the way to make the definition of user and situation clear and set up the standards, e.g., user thrift, based on user's budget. Then they turned to the discussion about endpoint decision. They mentioned approaches including setting features/modes of like selling, fixing and exhibiting, and this inspired the group members to design user compatibility nodes of which value would depend on the user status and situation. They further discussed Go-there decision, which is related to the previous idea using the similar set of the ontologies. Finally, they shifted the topic to different probability computation methods for belief-nets and thought of solutions to issues with limited data annotation."
         }
     ],
     "specific_query_list": [
         {
-            "query": "Discussion about future meeting",
-            "answer": "PHD F wanted the group to record different meetings with the same group to help in tasks such as summarization, the Professor D however, wanted random meeting participants to have diversity that would be instrumental in acoustical research.",
+            "query": "Summarize the discussion about value for user and situation models.",
+            "answer": "First, Grad E proposed a question about better discriminating the definition of user and situation models, and it was necessary to set values for the models. Then, they discussed the issues in terms of the user's running budget, which was vital for the outcome of decisions. They tried to design a set of terms to describe the user's financial policy, such as thrift, average, spendy, or more finer scale ones.",
             "relevant_text_span": [
                 [
-                    "0",
-                    "154"
+                    "45",
+                    "81"
                 ]
             ]
         },
         {
-            "query": "What was said on getting fluent English speakers?",
-            "answer": "Postdoc E was championing the need to get proficient English speakers so as to allow for a stable language model. This did not mean limiting the type of accents that the speakers had but rather ensuring the speakers could proficiently follow the English grammar when they expressed themselves.",
+            "query": "What did the group members think of the value of user budget when discussing value for user and situation models?",
+            "answer": "The reason why they mentioned user budget was that they wanted to take this example to further discuss the value for user model. Also, user budget was an important factor for the outcomes of decisions. Then, they tried to decide which set of words could represent the budget better. Finally, they found that the words that could describe financial policy of users, such as user thrift, was appropriate.",
             "relevant_text_span": [
                 [
-                    "65",
-                    "102"
+                    "47",
+                    "81"
                 ]
             ]
         },
         {
-            "query": "What were the options that were discussed on the location of the recording equipment?",
-            "answer": "Mode would invovle the mode of transportation while the endpoint would be the final destiniation. The team did not clarify what the endpoint would be in some of the edge cases such as crossing the bridge.",
+            "query": "Summarize the discussion about Go-there decision.",
+            "answer": "Grad E proposed the idea that Go-there decision was also worth thinking about. Professor B suggested that the decision could stick to the discourse properties as a placeholder. With regard to the lack of ontologies, Professor B thought that it could use the same properties like exhibiting and selling. Grad E doubted the choice of binary EVA values, but Professor B insisted that it was still necessary to make this choice. Then the group members discussed the layout of belief-nets, for example, the connection between Go-there nodes and other ones such as endpoints. And Professor B reminded me that the belief-nets should not have loops.",
             "relevant_text_span": [
                 [
-                    "157",
-                    "160"
+                    "433",
+                    "533"
                 ]
             ]
         },
         {
-            "query": "What did the group say on portable equipment?",
-            "answer": "The group wanted to introduce portable equipment so as to get more meetings from different groups. However, this was challenged by the complexity of setting up the recording equipment.",
+            "query": "What did Grad E say when discussing Go-there decision?",
+            "answer": "Grad E first started the topic about Go-there decision, and then proposed the question about how to represent discourse. Though Professor B insisted on using true-and-false values, Grad E challenged Professor B's opinion by taking examples about whether people really wanted to go some place or not when they asked how to get there.",
             "relevant_text_span": [
                 [
-                    "162",
-                    "233"
+                    "433",
+                    "533"
                 ]
             ]
         },
         {
-            "query": "What were Grad B\u2019s updates on meeting disk storage? ",
-            "answer": "Grad B said that archiving of the data by creating a clone had been done, though it took eleven hours. However, Grad B commented that accessing the data would be much faster. This archiving had freed ten gigabytes of free space. Additionally, two copies would be made: one offisite, another onsite.",
+            "query": "Summarize the discussion about probability computation.",
+            "answer": "Professor B first emphasized the necessity of combining influences mathematically and asked Grad D to further explain the potential solutions. Then the students discussed the computation methods including weighted combination and mixture of experts, based on the mechanism of belief-nets. But there was no consensus on which method should be applied in belief-nets.",
             "relevant_text_span": [
                 [
-                    "370",
-                    "412"
+                    "669",
+                    "749"
                 ]
             ]
         },
         {
-            "query": "What were other ways to get more space?",
-            "answer": "Professor D said they would be getting another disk rack that would bring in four thirty-six gigabyte disks, increasing the space. Additionally, the directories of Aurora data, Carmen\u2019s Data and SPINE were likely to be moved.",
+            "query": "What did Grad D say about mixture of experts when discussing probability computation?",
+            "answer": "Grad D first said that different experts were reliable in different situations and it was necessary to organically combine them to make the network adapt to diverse situations. The network could be divided into several parts and the network would decide which of the experts would be trusted in this particular situation. Grad D then answered other group members' questions about the layout of mixture of expert models and their detailed computation process.",
             "relevant_text_span": [
                 [
-                    "421",
-                    "437"
+                    "727",
+                    "749"
                 ]
             ]
         }
