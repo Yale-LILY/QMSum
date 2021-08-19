@@ -1,88 +1,118 @@
 {
     "topic_list": [
         {
-            "topic": "Data collection",
+            "topic": "Discussion about future meetings",
             "relevant_text_span": [
                 [
-                    "1",
-                    "39"
+                    "0",
+                    "154"
                 ]
             ]
         },
         {
-            "topic": "Parser",
+            "topic": "Recording equipment and location",
             "relevant_text_span": [
                 [
-                    "40",
-                    "184"
+                    "155",
+                    "368"
                 ]
             ]
         },
         {
-            "topic": "XML-Object interaction",
+            "topic": "Disk storage",
             "relevant_text_span": [
                 [
-                    "185",
-                    "310"
+                    "369",
+                    "468"
                 ]
             ]
         },
         {
-            "topic": "Technical implementation",
+            "topic": "Handling speech overlap",
             "relevant_text_span": [
                 [
-                    "311",
-                    "708"
+                    "469",
+                    "1024"
+                ]
+            ]
+        },
+        {
+            "topic": "Speaker anonymity",
+            "relevant_text_span": [
+                [
+                    "1025",
+                    "1367"
                 ]
             ]
         }
     ],
     "general_query_list": [
         {
-            "query": "Summarize the meeting.",
-            "answer": "The meeting discussed various topics such as data collection and updates on the German parser. They discussed XML modifications and future thoughts on the ontology. Additionally, object representations will include an EVA vector. This can be incorporated in the database entry for a particular building or inherited from the ontology of the building type. The actual number of the inputs can create a combinatorial explosion when setting the probabilities. In any case, further to fulfilling the basic requirements (translating the parser and the generator into english), the project is entirely open-ended in terms of focus of research."
+            "query": "What was the overall discussion of the meeting?",
+            "answer": "In this meeting, the speakers addressed issues that related to their meeting annotation progress. They talked about the types and variability of the future meetings. This led to them speaking about how to use their recording equipment if they got groups outside of their own departments to record meetings. Additionally, they discussed how to handle the storage of meetings on disk. They eventually address how to handle speech overlap and speaker anonymity, which were two crucial issues."
         }
     ],
     "specific_query_list": [
         {
-            "query": "What was the advantage of using Noisy-ORs?",
-            "answer": "The actual number of the inputs in the Bayes-net can create a combinatorial explosion when setting the probabilities. Noisy-OR's can help avoid this by simplifying the probability tables and applying a deterministic function to produce their complete version.",
+            "query": "What were some of the ideas proposed about future meeting recordings?",
+            "answer": "PhD F wanted the group to record different meetings with the same group to help in tasks such as summarization, the Professor D however, wanted random meeting participants to have diversity that would be instrumental in acoustical research.",
             "relevant_text_span": [
                 [
-                    "502",
-                    "517"
+                    "38",
+                    "64"
                 ]
             ]
         },
         {
-            "query": "What was suggested to incorporate the EVA into the Bayes-net?",
-            "answer": "Object representations will include an EVA vector. This can be incorporated in the database entry for a particular building or inherited from the ontology of the building type. As the project evolves, further enrichment of the ontology (actions, linguistic features) will be necessary.",
+            "query": "What was said on getting fluent English speakers?",
+            "answer": "Postdoc E was championing the need to get proficient English speakers so as to allow for a stable language model. This did not mean limiting the type of accents that the speakers had but rather ensuring the speakers could proficiently follow the English grammar when they expressed themselves.",
             "relevant_text_span": [
                 [
-                    "600",
-                    "680"
+                    "65",
+                    "102"
                 ]
             ]
         },
         {
-            "query": "What was said about data collection?",
-            "answer": "As the data collection is about to begin, there are some minor changes to be done in the design of the experiment, the script and the permission forms. Subjects can be recruited either from within the university or through other social circles.",
+            "query": "What were the options that were discussed on the location of the recording equipment?",
+            "answer": "One proposed solution was to set up another room in the linguistics department. This needed a dedicated partner and safety of the equipment for it to work. Professor D talked about making the equipment portable allowing it to be transported from meeting to meeting.",
             "relevant_text_span": [
                 [
-                    "6",
-                    "17"
+                    "157",
+                    "162"
                 ]
             ]
         },
         {
-            "query": "What did the team say about interaction of data participants with their data?",
-            "answer": "The team wanted the data participants to minimize their contact with their data. They wanted them to sign a waiver first not to view the transcript by default only allowing them to view it.",
+            "query": "What did the group say on portable equipment?",
+            "answer": "The group wanted to introduce portable equipment so as to get more meetings from different groups. However, this was challenged by the complexity of setting up the recording equipment.",
             "relevant_text_span": [
                 [
-                    "20",
-                    "39"
+                    "162",
+                    "233"
                 ]
             ]
+        },
+        {
+            "query": "What were Grad B’s updates on meeting disk storage?",
+            "answer": "Grad B said that archiving of the data by creating a clone had been done, though it took eleven hours. However, Grad B commented that accessing the data would be much faster. This archiving had freed ten gigabytes of free space. Additionally, two copies would be made: one offisite, another onsite.",
+            "relevant_text_span": [
+                [
+                    "370",
+                    "412"
+                ]
+            ]
+        },
+        {
+            "query": "What were other ways to get more space?",
+            "answer": "Professor D said they would be getting another disk rack that would bring in four thirty-six gigabyte disks, increasing the space. Additionally, the directories of Aurora data, Carmen’s Data and SPINE were likely to be moved.",
+            "relevant_text_span": [
+                [
+                    "421",
+                    "437"
+                ]
+            ]
+
         }
     ],
     "meeting_transcripts": [
