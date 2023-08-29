@@ -5,8 +5,6 @@ This repository maintains dataset for NAACL 2021 paper: *[QMSum: A New Benchmark
 
 **QMSum** is a new human-annotated benchmark for query-based multi-domain meeting summarization task, which consists of 1,808 query-summary pairs over 232 meetings in multiple domains.
 
-If you use our dataset, please limit it to research purposes and cite our paper.
-
 ### Dataset
 You can access the train/valid/test set of QMSum through the ```data/ALL``` folder. In addition, QMSum is composed of three domains: ```data/Academic```, ```data/Product``` and ```data/Committee``` contain data in a single domain.
 
